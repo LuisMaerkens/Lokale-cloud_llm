@@ -1,0 +1,68 @@
+{
+  "href": "#/EIP/Listener/JavaListener",
+  "chip": "L",
+  "linkText": "JavaListener",
+  "scrapedAt": "2025-10-31T11:09:15.907Z",
+  "title": "FF! Doc | JavaListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JavaListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "To understand what this listener does exactly, please remember that the Frank!Framework is a Java application. The JavaListener listens to Java method calls. You can issue Java method calls using a IbisJavaSender (external call) or IbisLocalSender (internal call).",
+    "Calling the JavaListener via the IbisJavaSender forces all request messages to be passed as strings without metadata.",
+    "When calling the JavaListener via the IbisLocalSender all messages are passed in their native format, retaining all their metadata.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "IbisLocalSender",
+    "Adapter",
+    "Receiver",
+    "FrankSender",
+    "MqttListener",
+    "IbisJavaSender",
+    "Github - JavaListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.JavaListener",
+    "JavaListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JavaListener name=\"\"/>",
+    "<JavaListener name=\"\"/>",
+    "javaListener",
+    "serviceName",
+    "true",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nIbisLocalSender\nAdapter\nReceiver\nFrankSender\nMqttListener\nIbisJavaSender\nJavaListener\nBasicListenersListenerJVM\nUse this listener to receive messages from other adapters or a scheduler within the same Frank-application or from other components residing in the same JVM. JavaListeners can receive calls made via de ibis-servicedispatcher, which should be located on the JVM classpath to receive calls from other components in the JVM. If you want to call an adapter in the same Frank-application, consider using the IbisLocalSender.\n\nTo understand what this listener does exactly, please remember that the Frank!Framework is a Java application. The JavaListener listens to Java method calls. You can issue Java method calls using a IbisJavaSender (external call) or IbisLocalSender (internal call).\n\nCalling the JavaListener via the IbisJavaSender forces all request messages to be passed as strings "
+}

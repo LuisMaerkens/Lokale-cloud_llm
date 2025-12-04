@@ -1,0 +1,74 @@
+{
+  "href": "#/TYPE/SAP/IdocSender",
+  "chip": "S",
+  "linkText": "IdocSender",
+  "scrapedAt": "2025-10-31T11:28:39.555Z",
+  "title": "FF! Doc | IdocSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IdocSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - IdocSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.sap.IdocSender",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "IdocSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<IdocSender />",
+    "<IdocSender />",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "keystoreAlias",
+    "keystoreAlias",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "true",
+    "true",
+    "true",
+    "true",
+    "staleChecking",
+    "true",
+    "sapSystemName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nIdocSender\nSendersEndpointSAP\nImplementation of sender that sends an IDoc to SAP. N.B. The sending of the iDoc is committed right after the XA transaction is completed.\nSee also\nGithub - IdocSender Implementation Examples\nJavadoc - org.frankframework.extensions.sap.IdocSender\nSyntax\nCopy\n<IdocSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntimeout\tnumber\t10000\nTimeout in ms of obtaining a connection/result.\nmaxConnections\tnumber\t10\nThe maximum number of concurrent connections\nmaxExecuteRetries\tnumber\t1 (for repeatable messages) else 0\nThe maximum number of times the execution is retried\nproxyHost\ttext\t-\nProxy host\nproxyPort\tnumber\t80\nProxy port\nproxyAuthAlias\ttext\t-\nAlias used to obtain credentials for authentication to proxy\nproxyUsername\ttext\t-\nProxy username\nproxyPassword\ttext\t-\nProxy password\nproxyRealm\ttex"
+}

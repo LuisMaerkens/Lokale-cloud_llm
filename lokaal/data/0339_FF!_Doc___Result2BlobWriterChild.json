@@ -1,0 +1,61 @@
+{
+  "href": "#/Components/Batch/Result2BlobWriterChild",
+  "chip": "B",
+  "linkText": "Result2BlobWriterChild",
+  "scrapedAt": "2025-10-31T11:04:05.011Z",
+  "title": "FF! Doc | Result2BlobWriterChild",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Result2BlobWriterChild"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "Result2FilewriterChild",
+    "Result2FilewriterResultHandler",
+    "Result2BlobWriterResultHandler",
+    "Github - Result2BlobWriterChild Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.Result2BlobWriter",
+    "Result2BlobWriterChild",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Result2BlobWriterChild />",
+    "<Result2BlobWriterChild />",
+    "jdbc.datasource.default",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nResult2FilewriterChild\nResult2FilewriterResultHandler\nResult2BlobWriterResultHandler\nResult2BlobWriterChild\nBatch\nResultHandler that writes the transformed record to a BLOB.\nSee also\nGithub - Result2BlobWriterChild Implementation Examples\nJavadoc - org.frankframework.jdbc.Result2BlobWriter\nSyntax\nCopy\n<Result2BlobWriterChild />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nblobColumn\tnumber\t1\nColumn that contains the BLOB to be updated\nblobsCompressed\tboolean\ttrue\nControls whether blobdata is stored compressed in the database\nblobCharset\ttext\t-\nCharset that is used to read and write BLOBs. This assumes the blob contains character data. If blobCharset and"
+}

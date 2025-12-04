@@ -1,0 +1,96 @@
+{
+  "href": "#/Components/Pipes/CompressPipe",
+  "chip": "P",
+  "linkText": "CompressPipe",
+  "scrapedAt": "2025-10-31T10:51:37.548Z",
+  "title": "FF! Doc | CompressPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CompressPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - CompressPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CompressPipe",
+    "GZ Gzip format. It is used when compressing (compress=\"true\") and resultIsContent=\"true\", or when decompressing (compress=\"false\") and messageIsContent=\"true\".",
+    "ZIP Zip format. It is also used when compressing (compress=\"true\") and resultIsContent=\"false\", or when decompressing (compress=\"false\") and messageIsContent=\"false\".",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CompressPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CompressPipe name=\"\"/>",
+    "<CompressPipe name=\"\"/>",
+    "path",
+    "true",
+    "GZ",
+    "compress=\"true\"",
+    "resultIsContent=\"true\"",
+    "compress=\"false\"",
+    "messageIsContent=\"true\"",
+    "ZIP",
+    "compress=\"true\"",
+    "resultIsContent=\"false\"",
+    "compress=\"false\"",
+    "messageIsContent=\"false\"",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nCompressPipe\nPipes\nPipe to zip or unzip a message or file.\nSee also\nGithub - CompressPipe Implementation Examples\nJavadoc - org.frankframework.pipes.CompressPipe\nSyntax\nCopy\n<CompressPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncompress\tboolean\tfalse\nIf true, the pipe compresses; otherwise, it decompresses.\nfilenamePattern\ttext\t-\nRequired if result is a file, the pattern for the result filename. Can be set with variables e.g. {file}.{ext}.zip in this example the {file} and {ext} variables are resolved with sessionKeys with the same name\nmessageIsContent\tboolean\tfalse\nA flag that indicates whether the message is the content or the path to a file with the contents. For multiple files, use ';' as a deli"
+}

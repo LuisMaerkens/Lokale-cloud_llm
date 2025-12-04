@@ -1,0 +1,59 @@
+{
+  "href": "#/EIP/Endpoint/JavascriptSender",
+  "chip": "E",
+  "linkText": "JavascriptSender",
+  "scrapedAt": "2025-10-31T11:11:41.350Z",
+  "title": "FF! Doc | JavascriptSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JavascriptSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This sender can execute a function of a given Javascript file, the result of the function will be the output of the sender. The parameters of the Javascript function to run are given as parameters by the adapter configuration The sender doesn't accept nor uses the given input, instead for each argument for the jsFunctionNam method, you will need to create a parameter on the sender.",
+    "The result of the Javascript function should be of type String, or directly convertible to String from a primitive type or an array of primitive types / strings, as the output of the sender will be of type String.",
+    "Failure to ensure the output is a string may mean the result will look like [Object object].",
+    "J2V8 is not compatible with ARM based environments.",
+    "The default Javascript runtime has been changed from J2V8 to GraalJS.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - JavascriptSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.JavascriptSender",
+    "JavascriptSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "[Object object]",
+    "Copy\n<JavascriptSender jsFileName=\"\"/>",
+    "<JavascriptSender jsFileName=\"\"/>",
+    "J2V8",
+    "GRAALJS",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nJavascriptSender\nAdvancedSendersEndpoint\nSender used to run JavaScript code using `JavascriptEngine` implementations.\n\nThis sender can execute a function of a given Javascript file, the result of the function will be the output of the sender. The parameters of the Javascript function to run are given as parameters by the adapter configuration The sender doesn't accept nor uses the given input, instead for each argument for the jsFunctionNam method, you will need to create a parameter on the sender.\n\nThe result of the Javascript function should be of type String, or directly convertible to String from a primitive type or an array of primitive types / strings, as the output of the sender will be of type String.\n\nFailure to ensure the output is a string may mean the result will look like [Object object].\n\nJ2V8 is not compatible with ARM based environments.\n\nThe default Javascript runtime h"
+}

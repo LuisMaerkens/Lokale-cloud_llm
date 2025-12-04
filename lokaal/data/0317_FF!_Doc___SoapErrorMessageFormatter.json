@@ -1,0 +1,51 @@
+{
+  "href": "#/Components/ErrorMessageFormatters/SoapErrorMessageFormatter",
+  "chip": "E",
+  "linkText": "SoapErrorMessageFormatter",
+  "scrapedAt": "2025-10-31T11:02:14.648Z",
+  "title": "FF! Doc | SoapErrorMessageFormatter",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SoapErrorMessageFormatter"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - SoapErrorMessageFormatter Implementation Examples",
+    "Javadoc - org.frankframework.errormessageformatters.SoapErrorMessageFormatter",
+    "SoapErrorMessageFormatter",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SoapErrorMessageFormatter />",
+    "<SoapErrorMessageFormatter />",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nSoapErrorMessageFormatter\nErrorMessageFormatters\nErrorMessageFormatter that returns a standard SOAP fault message.\nSee also\nGithub - SoapErrorMessageFormatter Implementation Examples\nJavadoc - org.frankframework.errormessageformatters.SoapErrorMessageFormatter\nSyntax\nCopy\n<SoapErrorMessageFormatter />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstyleSheet\ttext\t-\nURL to the stylesheet used to transform the output of the standard ErrorMessageFormatter\nstyleSheetName\ttext\t-\nURL to the stylesheet used to transform the output of the standard ErrorMessageFormatter\nxpathExpression\ttext\t-\nXPathExpression to use for transformation\nErrorMessageFormatter\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nmessageFormat\toptions\tXML\nFormat the error message as XML or as JSON.\nAvailable Options: XML, JSON\nactive\ttext\t-\nIf defined and empty "
+}

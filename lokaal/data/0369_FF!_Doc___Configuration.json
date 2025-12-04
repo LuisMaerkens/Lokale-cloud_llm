@@ -1,0 +1,55 @@
+{
+  "href": "#/Components/Other/Configuration",
+  "chip": "O",
+  "linkText": "Configuration",
+  "scrapedAt": "2025-10-31T11:06:35.442Z",
+  "title": "FF! Doc | Configuration",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Configuration"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "See the Quartz scheduler documentation",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "HttpSession",
+    "HttpSessionSharedResource",
+    "Adapter",
+    "Github - Configuration Implementation Examples",
+    "Javadoc - org.frankframework.configuration.Configuration",
+    "Configuration",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Configuration />",
+    "<Configuration />",
+    "ErrorMessageFormatter"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nHttpSession\nHttpSessionSharedResource\nAdapter\nConfiguration\nOther\nContainer of Adapters that belong together. A configuration may be deployed independently from other configurations. Names of nested elements like Adapters, Receivers, listeners and senders can be reused in other configurations.\n\nConfigurations are shown in the Frank!Console along with their Adapters, Receivers, listeners and senders. The Adapter Status page of the Frank!Console has a tab for each configuration that only shows information about that configuration. See the Frank!Manual for details.\nSee also\nGithub - Configuration Implementation Examples\nJavadoc - org.frankframework.configuration.Configuration\nSyntax\nCopy\n<Configuration />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nautoStart\tboolean\t-\nIf the Configuration should automatically start all "
+}

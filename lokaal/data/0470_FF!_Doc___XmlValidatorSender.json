@@ -1,0 +1,72 @@
+{
+  "href": "#/EIP/Endpoint/XmlValidatorSender",
+  "chip": "E",
+  "linkText": "XmlValidatorSender",
+  "scrapedAt": "2025-10-31T11:15:02.034Z",
+  "title": "FF! Doc | XmlValidatorSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XmlValidatorSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "see property http://apache.org/xml/features/validation/schema-full-checking",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CmisSender",
+    "LdapSender",
+    "SapSender",
+    "FixedQuerySender",
+    "XmlQuerySender",
+    "JsonXsltSender",
+    "MailSender",
+    "SendGridSender",
+    "IsUserInRolePipe",
+    "Afm2EdiFactSender",
+    "Github - XmlValidatorSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.XmlValidatorSender",
+    "XmlValidatorSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XmlValidatorSender />",
+    "<XmlValidatorSender />",
+    "false",
+    "reasonSessionKey",
+    "true",
+    "validateFile",
+    "true",
+    "true",
+    "schema",
+    "noNamespaceSchemaLocation",
+    "true",
+    "1.1",
+    "1.0",
+    "xsd.processor.version"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nCmisSender\nLdapSender\nSapSender\nFixedQuerySender\nXmlQuerySender\nJsonXsltSender\nMailSender\nSendGridSender\nIsUserInRolePipe\nAfm2EdiFactSender\nXmlValidatorSender\nAdvancedSendersEndpoint\nSender that validates the input message against a XML Schema. N.B. noNamespaceSchemaLocation may contain spaces, but not if the schema is stored in a .jar or .zip file on the class path.\nSee also\nGithub - XmlValidatorSender Implementation Examples\nJavadoc - org.frankframework.senders.XmlValidatorSender\nSyntax\nCopy\n<XmlValidatorSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nAbstractXmlValidator\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfullSchemaChecking\tboolean\tfalse\nEnable full schema grammar constraint checking, including checking which may be time-consuming or memory intensive. Cu"
+}

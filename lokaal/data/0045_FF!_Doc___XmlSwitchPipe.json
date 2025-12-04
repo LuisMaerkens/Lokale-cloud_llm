@@ -1,0 +1,100 @@
+{
+  "href": "#/Category/Basic/XmlSwitchPipe",
+  "chip": "B",
+  "linkText": "XmlSwitchPipe",
+  "scrapedAt": "2025-10-31T10:39:30.139Z",
+  "title": "FF! Doc | XmlSwitchPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XmlSwitchPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlInputValidator",
+    "FxfXmlOutputValidator",
+    "FxfXmlValidatorPipe",
+    "EsbSoapValidatorPipe",
+    "JsonPathPipe",
+    "BytesOutputPipe",
+    "Github - XmlSwitchPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.XmlSwitch",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "XmlSwitchPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XmlSwitchPipe name=\"\"/>",
+    "<XmlSwitchPipe name=\"\"/>",
+    "path",
+    "false",
+    "JVM",
+    "DLL",
+    "ADAPTER",
+    "LISTENER",
+    "/",
+    "target",
+    "prefix=namespaceuri",
+    "emptyforwardname",
+    "notfoundforwardname",
+    "2",
+    "3",
+    "0",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "styleSheetName",
+    "xpathExpression"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nFxfXmlInputValidator\nFxfXmlOutputValidator\nFxfXmlValidatorPipe\nEsbSoapValidatorPipe\nJsonPathPipe\nBytesOutputPipe\nXmlSwitchPipe\nBasicPipesRouter\nSelects an exitState, based on either the content of the input message, by means of an XSLT-stylesheet, the content of a session variable or, by default, by returning the name of the root-element.\n\nSee also\nGithub - XmlSwitchPipe Implementation Examples\nJavadoc - org.frankframework.pipes.XmlSwitch\nSyntax\nCopy\n<XmlSwitchPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\ttrue\nSynchronous or Asynchronous execution of the call to other adapter or system.\nSet to false to make the call asynchronously. This means that the current adapter continues wit"
+}

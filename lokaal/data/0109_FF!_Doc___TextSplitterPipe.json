@@ -1,0 +1,90 @@
+{
+  "href": "#/Components/Pipes/TextSplitterPipe",
+  "chip": "P",
+  "linkText": "TextSplitterPipe",
+  "scrapedAt": "2025-10-31T10:44:51.207Z",
+  "title": "FF! Doc | TextSplitterPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "TextSplitterPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LogContextPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "Text2XmlPipe",
+    "EscapePipe",
+    "Github - TextSplitterPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.TextSplitterPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "TextSplitterPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<TextSplitterPipe name=\"\"/>",
+    "<TextSplitterPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nLogContextPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nText2XmlPipe\nEscapePipe\nTextSplitterPipe\nPipesTranslator\nBreaks up the text input in blocks of a maximum length. By default, the maximum block length is 160 characters, to enable them to be sent as SMS messages.\nSee also\nGithub - TextSplitterPipe Implementation Examples\nJavadoc - org.frankframework.pipes.TextSplitterPipe\nSyntax\nCopy\n<TextSplitterPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nmaxBlockLength\tnumber\t160\nSet the maximum number of characters of a block\nsoftSplit\tboolean\tfalse\nIf true, try to break up the message at spaces, instead of in the middle of words\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ns"
+}

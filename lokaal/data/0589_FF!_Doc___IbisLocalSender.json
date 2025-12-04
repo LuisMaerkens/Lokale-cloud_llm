@@ -1,0 +1,101 @@
+{
+  "href": "#/TYPE/ADAPTER/IbisLocalSender",
+  "chip": "A",
+  "linkText": "IbisLocalSender",
+  "scrapedAt": "2025-10-31T11:24:58.936Z",
+  "title": "FF! Doc | IbisLocalSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IbisLocalSender"
+    },
+    {
+      "level": 3,
+      "text": "Configuration of the Adapter to be called"
+    },
+    {
+      "level": 4,
+      "text": "configuring IbisLocalSender and JavaListener"
+    },
+    {
+      "level": 4,
+      "text": "configuring IbisLocalSender and WebServiceListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "The IbisLocalSender is now considered to be legacy. The new way to call another adapter from your own adapter is by using the FrankSender.",
+    "Returns exit.code as forward name to SenderPipe provided that exit.code can be parsed as integer. For example, if the called adapter has an exit state with code 2, then the SenderPipe supports a forward with name 2 that is followed when the called adapter exits with the mentioned exit. This does not work if the code is for example c2.",
+    "An IbisLocalSender makes a call to a org.frankframework.receivers.Receiver with either a WebServiceListener or a JavaListener.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlInputValidator",
+    "FxfXmlOutputValidator",
+    "FxfXmlValidatorPipe",
+    "JavaListener",
+    "MessageStoreSender",
+    "Adapter",
+    "Receiver",
+    "FrankSender",
+    "IbisJavaSender",
+    "Define a SenderPipe with an IbisLocalSender",
+    "Set the attribute javaListener to yourServiceName",
+    "Do not set the attribute serviceName",
+    "Define a Receiver with a JavaListener",
+    "Set the attribute name to yourServiceName",
+    "Do not set the attribute serviceName, except if the service is to be called also from applications other than this Frank!Framework-instance",
+    "Define a SenderPipe with an IbisLocalSender",
+    "Set the attribute serviceName to yourIbisWebServiceName",
+    "Do not set the attribute javaListener",
+    "Define a Receiver with a WebServiceListener",
+    "Set the attribute name to yourIbisWebServiceName",
+    "Github - IbisLocalSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.IbisLocalSender",
+    "IbisLocalSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "exit",
+    "exception",
+    "2",
+    "2",
+    "c2",
+    "javaListener",
+    "serviceName",
+    "name",
+    "serviceName",
+    "serviceName",
+    "javaListener",
+    "name",
+    "Copy\n<IbisLocalSender />",
+    "<IbisLocalSender />",
+    "false",
+    "isolated=true",
+    "true",
+    "true",
+    "false"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nFxfXmlInputValidator\nFxfXmlOutputValidator\nFxfXmlValidatorPipe\nJavaListener\nMessageStoreSender\nAdapter\nReceiver\nFrankSender\nIbisJavaSender\nIbisLocalSender\nBasicSendersEndpointADAPTER\nPosts a message to another Frank!Framework-adapter in the same Frank!Framework instance. If the callee exits with an <exit> that has state PipeLine.ExitState.ERROR, an error is considered to happen in the caller which means that the exception forward is followed if it is present.\n\nThe IbisLocalSender is now considered to be legacy. The new way to call another adapter from your own adapter is by using the FrankSender.\n\nReturns exit.code as forward name to SenderPipe provided that exit.code can be parsed as integer. For example, if the called adapter has an exit state with code 2, then the SenderPipe supports a forward with name 2 that is followed when the called adapter exits with the mentioned exit. This do"
+}

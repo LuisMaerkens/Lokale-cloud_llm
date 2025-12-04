@@ -1,0 +1,63 @@
+{
+  "href": "#/Components/Other/EhCache",
+  "chip": "O",
+  "linkText": "EhCache",
+  "scrapedAt": "2025-10-31T11:07:25.597Z",
+  "title": "FF! Doc | EhCache",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "EhCache"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - EhCache Implementation Examples",
+    "Javadoc - org.frankframework.cache.EhCache",
+    "EhCache",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "cache.default.",
+    "Copy\n<EhCache />",
+    "<EhCache />",
+    "LRU",
+    "LFU",
+    "FIFO",
+    "true",
+    "true",
+    "true",
+    "<ownerName>",
+    "TEXT",
+    "XML",
+    "prefix=namespaceuri",
+    "TEXT",
+    "XML",
+    "prefix=namespaceuri"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nEhCache\nOther\nGeneral Cache provider. N.B. the default values shown can be overridden using properties in appConstants. The property names are found by prefixing the attribute name with cache.default..\nSee also\nGithub - EhCache Implementation Examples\nJavadoc - org.frankframework.cache.EhCache\nSyntax\nCopy\n<EhCache />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nmaxElementsInMemory\tnumber\t100\nThe maximum number of elements in memory, before they are evicted\nmemoryStoreEvictionPolicy\ttext\tLRU\nEither LRU=Least Recent Use,LFU=Least Frequent Use or FIFO=First In - First Out\neternal\tboolean\tfalse\nIf true, the elements in the cache are eternal, i.e. never expire\ntimeToLiveSeconds\tnumber\t36000\nThe amount of time in seconds to live for an element from its creation date\ntimeToIdleSeconds\tnumber\t36000\nThe amount of time in secon"
+}

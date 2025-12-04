@@ -1,0 +1,57 @@
+{
+  "href": "#/Components/Senders/MqttSender",
+  "chip": "S",
+  "linkText": "MqttSender",
+  "scrapedAt": "2025-10-31T10:53:52.973Z",
+  "title": "FF! Doc | MqttSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "MqttSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "MqttListener",
+    "Github - MqttSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.mqtt.MqttSender",
+    "MqttSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "resources.yml",
+    "mqtt:\n   - name: \"my-connection\"\n     url: \"tcp://host:port\"\n     username: \"\"\n     password: \"\"\n     authalias: \"${property.name.here}\"\n     properties:\n       automaticReconnect: \"true\"\n       cleanSession: \"false\"",
+    "mqtt:\n   - name: \"my-connection\"\n     url: \"tcp://host:port\"\n     username: \"\"\n     password: \"\"\n     authalias: \"${property.name.here}\"\n     properties:\n       automaticReconnect: \"true\"\n       cleanSession: \"false\"",
+    "transactionmanager.uid",
+    "persistenceDirectory",
+    "Copy\n<MqttSender topic=\"\" resourceName=\"\"/>",
+    "<MqttSender topic=\"\" resourceName=\"\"/>",
+    "topic"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nMqttListener\nMqttSender\nSendersEndpointMQTT\nMQTT listener which will connect to a broker and subscribe to a topic. Links to https://www.eclipse.org/paho/files/javadoc are opened in a new window/tab because the response from eclipse.org contains header X-Frame-Options:SAMEORIGIN which will make the browser refuse to open the link inside this frame. Requires a resource to be configured. Example resources.yml:\nmqtt:\n   - name: \"my-connection\"\n     url: \"tcp://host:port\"\n     username: \"\"\n     password: \"\"\n     authalias: \"${property.name.here}\"\n     properties:\n       automaticReconnect: \"true\"\n       cleanSession: \"false\"\n\nThe clientId is automatically determined from transactionmanager.uid, but can optionally be overwritten. Be aware that the clientId must be unique for each instance of the framework.\n\nInbound and outbound messages are persisted while they are in flight to prevent data l"
+}

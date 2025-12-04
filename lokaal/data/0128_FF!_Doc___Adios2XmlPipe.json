@@ -1,0 +1,90 @@
+{
+  "href": "#/Components/Pipes/Adios2XmlPipe",
+  "chip": "P",
+  "linkText": "Adios2XmlPipe",
+  "scrapedAt": "2025-10-31T10:46:26.534Z",
+  "title": "FF! Doc | Adios2XmlPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Adios2XmlPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Sample xml:",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - Adios2XmlPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.rekenbox.Adios2XmlPipe",
+    "Xml2Adios Transform an Adios-XML file to ASCII-Adios",
+    "Adios2Xml Transform an ASCII-Adios file to Adios-XML",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "Adios2XmlPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<adios rekenbox=\"L76HB150\">\n     <rubriek naam=\"BER_VERZ_CD\" waarde=\"COMBIFLEX_BELEGGING\" />\n     <rubriek naam=\"INBR_CD\" waarde=\"NIEUWE_VERZEKERING\" />\n     <rubriek naam=\"PENS_DT_BEP_CD\"  waarde=\"DT_UIT_PENS_LFT\" />\n     <rubriek nummer=\"313\" naam=\"AS_OPSL_PRD_TRM_PRM\" index=\"3\" recordnr=\"74\" record=\"VUT_VERZEKERING\" waarde=\"52.34\" />\n     ...\n </adios>",
+    "<adios rekenbox=\"L76HB150\">\n     <rubriek naam=\"BER_VERZ_CD\" waarde=\"COMBIFLEX_BELEGGING\" />\n     <rubriek naam=\"INBR_CD\" waarde=\"NIEUWE_VERZEKERING\" />\n     <rubriek naam=\"PENS_DT_BEP_CD\"  waarde=\"DT_UIT_PENS_LFT\" />\n     <rubriek nummer=\"313\" naam=\"AS_OPSL_PRD_TRM_PRM\" index=\"3\" recordnr=\"74\" record=\"VUT_VERZEKERING\" waarde=\"52.34\" />\n     ...\n </adios>",
+    "Copy\n<Adios2XmlPipe name=\"\"/>",
+    "<Adios2XmlPipe name=\"\"/>",
+    "path",
+    "Xml2Adios",
+    "Adios2Xml",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nAdios2XmlPipe\nNN-SpecialPipes\nTransforms between ascii-ADIOS and an XML representation of ADIOS.\n\nSample xml:\n\n\n<adios rekenbox=\"L76HB150\">\n     <rubriek naam=\"BER_VERZ_CD\" waarde=\"COMBIFLEX_BELEGGING\" />\n     <rubriek naam=\"INBR_CD\" waarde=\"NIEUWE_VERZEKERING\" />\n     <rubriek naam=\"PENS_DT_BEP_CD\"  waarde=\"DT_UIT_PENS_LFT\" />\n     <rubriek nummer=\"313\" naam=\"AS_OPSL_PRD_TRM_PRM\" index=\"3\" recordnr=\"74\" record=\"VUT_VERZEKERING\" waarde=\"52.34\" />\n     ...\n </adios>\n\nFor input, a 'naam' or a 'nummer'-attribute must be specified. If both are specified, their match is checked. On output, 'nummer', 'naam' and 'waarde'-attributes are always present in each rubriek-element. Where applicable 'index', 'recordnr', 'record' and 'recordindex' are present, too. If sub-records exist, they are present with a 'sub' prefix to all attributes.\n\nSee also\nGithub - Adios2XmlPipe Implementation Examples\nJava"
+}

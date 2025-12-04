@@ -1,0 +1,50 @@
+{
+  "href": "#/Components/Batch/DelphiStringRecordReaderFactory",
+  "chip": "B",
+  "linkText": "DelphiStringRecordReaderFactory",
+  "scrapedAt": "2025-10-31T11:03:39.921Z",
+  "title": "FF! Doc | DelphiStringRecordReaderFactory",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DelphiStringRecordReaderFactory"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Warning: non-maintained functionality.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - DelphiStringRecordReaderFactory Implementation Examples",
+    "Javadoc - org.frankframework.batch.DelphiStringRecordReaderFactory",
+    "DelphiStringRecordReaderFactory",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DelphiStringRecordReaderFactory />",
+    "<DelphiStringRecordReaderFactory />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nDelphiStringRecordReaderFactory\nDeprecatedBatch\n\nWarning: non-maintained functionality.\n\nIReaderFactory that provides a reader that reads Delphi records containing Strings.\nSee also\nGithub - DelphiStringRecordReaderFactory Implementation Examples\nJavadoc - org.frankframework.batch.DelphiStringRecordReaderFactory\nSyntax\nCopy\n<DelphiStringRecordReaderFactory />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nseparator\ttext\t|\nSeparator placed between each string read\nstringLength\tnumber\t50\nThe maximum length of each string. each string is preceded by a one byte length indication.\nstringsPerRecord\tnumber\t0\nThe number of strings read for each record. 0 means file consists of one logical record\nseparatorReplacement\ttext\t_\nReplacement character, used when separator is found in string read\nactive\ttext\t-\nIf defined and empty or f"
+}

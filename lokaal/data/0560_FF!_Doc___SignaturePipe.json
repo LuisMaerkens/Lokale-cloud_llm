@@ -1,0 +1,97 @@
+{
+  "href": "#/EIP/Translator/SignaturePipe",
+  "chip": "T",
+  "linkText": "SignaturePipe",
+  "scrapedAt": "2025-10-31T11:22:33.491Z",
+  "title": "FF! Doc | SignaturePipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SignaturePipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - SignaturePipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.SignaturePipe",
+    "SIGN signs the input",
+    "VERIFY verifies a signature",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "SignaturePipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SignaturePipe name=\"\" keystore=\"\"/>",
+    "<SignaturePipe name=\"\" keystore=\"\"/>",
+    "path",
+    "SIGN",
+    "VERIFY",
+    "true",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nSignaturePipe\nPipesTranslator\nSee also\nGithub - SignaturePipe Implementation Examples\nJavadoc - org.frankframework.pipes.SignaturePipe\nSyntax\nCopy\n<SignaturePipe name=\"\" keystore=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nkeystore\ttext\t-\nKeystore to obtain signing key\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naction\toptions\tSIGN\nAction to be taken when pipe is executed.\nAvailable Options:\nSIGN signs the input\nVERIFY verifies a signature\n\nalgorithm\ttext\tALGORITHM_DEFAULT\nThe signing algorithm\nprovider\ttext\t-\nCryptography provider\nsignatureBase64\tboolean\ttrue\nIf true, the signature is (expected to be) base64 encoded\nkeystoreType\toptions\tpkcs12\nType of keystore, can be pkcs12 or pem\nAvailable Options:\nPEM Currently only used by the SignaturePipe to use"
+}

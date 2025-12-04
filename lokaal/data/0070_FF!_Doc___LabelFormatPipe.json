@@ -1,0 +1,101 @@
+{
+  "href": "#/Category/NN-Special/LabelFormatPipe",
+  "chip": "N",
+  "linkText": "LabelFormatPipe",
+  "scrapedAt": "2025-10-31T10:41:35.570Z",
+  "title": "FF! Doc | LabelFormatPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LabelFormatPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Sample xml:",
+    "Configuration:",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "DomainTransformerPipe",
+    "IfPipe",
+    "FixedResultPipe",
+    "ZipIteratorPipe",
+    "FxfInputWrapper",
+    "FxfOutputWrapper",
+    "FxfWrapperPipe",
+    "RekenBoxCallerPipe",
+    "\"Xml2Label\": transform an XML file to ascii",
+    "\"Label2Xml\": transform an ascii file to XML",
+    "Github - LabelFormatPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.rekenbox.LabelFormat",
+    "\"Xml2Label\": transform an XML file to ascii",
+    "\"Label2Xml\": transform an ascii file to XML",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LabelFormatPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<CALCBOXMESSAGE>\n \t\t<OPDRACHT>\n \t\t    <OPDRACHTSOORT>ONTTREK_RISICO_EN_KOSTEN</OPDRACHTSOORT>\n \t\t    <BASISRENDEMENTSOORT>NVT</BASISRENDEMENTSOORT>\n \t\t    <BEDRAG>625</BEDRAG>\n \t\t    <DATUM>20071201</DATUM>\n     ...\n </CALCBOXMESSAGE>",
+    "<CALCBOXMESSAGE>\n \t\t<OPDRACHT>\n \t\t    <OPDRACHTSOORT>ONTTREK_RISICO_EN_KOSTEN</OPDRACHTSOORT>\n \t\t    <BASISRENDEMENTSOORT>NVT</BASISRENDEMENTSOORT>\n \t\t    <BEDRAG>625</BEDRAG>\n \t\t    <DATUM>20071201</DATUM>\n     ...\n </CALCBOXMESSAGE>",
+    "OPDRACHT : #SAMENGESTELD\n \tOPDRACHT.OPDRACHTSOORT :ONTTREK_RISICO_EN_KOSTEN\n \tOPDRACHT.BASISRENDEMENTSOORT :NVT\n \tOPDRACHT.BEDRAG :625\n \tOPDRACHT.DATUM :20071201\n\n          ...\n \tEINDEREKENVERZOEK :EINDE",
+    "OPDRACHT : #SAMENGESTELD\n \tOPDRACHT.OPDRACHTSOORT :ONTTREK_RISICO_EN_KOSTEN\n \tOPDRACHT.BASISRENDEMENTSOORT :NVT\n \tOPDRACHT.BEDRAG :625\n \tOPDRACHT.DATUM :20071201\n\n          ...\n \tEINDEREKENVERZOEK :EINDE",
+    "Copy\n<LabelFormatPipe name=\"\"/>",
+    "<LabelFormatPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated8\nDomainTransformerPipe\nIfPipe\nFixedResultPipe\nZipIteratorPipe\nFxfInputWrapper\nFxfOutputWrapper\nFxfWrapperPipe\nRekenBoxCallerPipe\nLabelFormatPipe\nNN-SpecialPipes\nTransforms between ascii and an XML representation.\n\nSample xml:\n\n\n<CALCBOXMESSAGE>\n \t\t<OPDRACHT>\n \t\t    <OPDRACHTSOORT>ONTTREK_RISICO_EN_KOSTEN</OPDRACHTSOORT>\n \t\t    <BASISRENDEMENTSOORT>NVT</BASISRENDEMENTSOORT>\n \t\t    <BEDRAG>625</BEDRAG>\n \t\t    <DATUM>20071201</DATUM>\n     ...\n </CALCBOXMESSAGE>\n\nSample ascii:\n\nOPDRACHT : #SAMENGESTELD\n \tOPDRACHT.OPDRACHTSOORT :ONTTREK_RISICO_EN_KOSTEN\n \tOPDRACHT.BASISRENDEMENTSOORT :NVT\n \tOPDRACHT.BEDRAG :625\n \tOPDRACHT.DATUM :20071201\n\n          ...\n \tEINDEREKENVERZOEK :EINDE\n\nConfiguration:\n\nattributes\tdescription\tdefault\ndirection\ttransformation direction. Possible values\n\"Xml2Label\": transform an XML file to ascii\n\"Label2Xml\": transform an ascii file to XML\n\tXml2Label\n\nSee also\nGithub -"
+}

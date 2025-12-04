@@ -1,0 +1,66 @@
+{
+  "href": "#/Category/Advanced/IbisJavaSender",
+  "chip": "A",
+  "linkText": "IbisJavaSender",
+  "scrapedAt": "2025-10-31T10:40:35.362Z",
+  "title": "FF! Doc | IbisJavaSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IbisJavaSender"
+    },
+    {
+      "level": 4,
+      "text": "configuring IbisJavaSender and JavaListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "An IbisJavaSender makes a call to a Receiver with a JavaListener or any other application in the same JVM that has registered a RequestProcessor with the IbisServiceDispatcher.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JavaListener",
+    "IbisLocalSender",
+    "MessageStoreSender",
+    "FrankSender",
+    "NB: Using IbisJavaSender to call another adapter is inefficient and therefore not recommended. It is much more efficient to use for this a FrankSender or IbisLocalSender.",
+    "Define a org.frankframework.pipes.SenderPipe with an IbisJavaSender",
+    "Set the attribute serviceName to yourExternalServiceName",
+    "Define a Receiver with a JavaListener",
+    "Set the attribute serviceName to yourExternalServiceName",
+    "Github - IbisJavaSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.IbisJavaSender",
+    "IbisJavaSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "RequestProcessor",
+    "serviceName",
+    "serviceName",
+    "Copy\n<IbisJavaSender />",
+    "<IbisJavaSender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nJavaListener\nIbisLocalSender\nMessageStoreSender\nFrankSender\nIbisJavaSender\nAdvancedSendersEndpointJVM\nPosts a message to another Frank!Framework-adapter or an application in the same JVM using IbisServiceDispatcher.\n\nAn IbisJavaSender makes a call to a Receiver with a JavaListener or any other application in the same JVM that has registered a RequestProcessor with the IbisServiceDispatcher.\n\nThe IbisJavaSender is now considered to be legacy. The new way to call another adapter or java application from your own adapter is by using the FrankSender.\n\nconfiguring IbisJavaSender and JavaListener\nNB: Using IbisJavaSender to call another adapter is inefficient and therefore not recommended. It is much more efficient to use for this a FrankSender or IbisLocalSender.\nDefine a org.frankframework.pipes.SenderPipe with an IbisJavaSender\nSet the attribute serviceName to yourExternalServiceName\nIn th"
+}

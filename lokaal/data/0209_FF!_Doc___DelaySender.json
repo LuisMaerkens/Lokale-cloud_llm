@@ -1,0 +1,49 @@
+{
+  "href": "#/Components/Senders/DelaySender",
+  "chip": "S",
+  "linkText": "DelaySender",
+  "scrapedAt": "2025-10-31T10:53:12.851Z",
+  "title": "FF! Doc | DelaySender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DelaySender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - DelaySender Implementation Examples",
+    "Javadoc - org.frankframework.senders.DelaySender",
+    "DelaySender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DelaySender />",
+    "<DelaySender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nDelaySender\nAdvancedSendersEndpoint\nSender that sleeps for a specified time, which defaults to 5000 msecs. Useful for testing purposes.\nSee also\nGithub - DelaySender Implementation Examples\nJavadoc - org.frankframework.senders.DelaySender\nSyntax\nCopy\n<DelaySender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndelayTime\tnumber\t5000 [ms]\nThe time in milliseconds the thread will be put to sleep\nAbstractSender\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the sender\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nDelaySender\nSee also\nSyntax\nAttributes\nOptional\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

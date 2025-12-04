@@ -1,0 +1,92 @@
+{
+  "href": "#/Components/Pipes/JsonWellFormedCheckerPipe",
+  "chip": "P",
+  "linkText": "JsonWellFormedCheckerPipe",
+  "scrapedAt": "2025-10-31T10:51:27.524Z",
+  "title": "FF! Doc | JsonWellFormedCheckerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JsonWellFormedCheckerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JsonPathPipe",
+    "IfPipe",
+    "JsonPipe",
+    "Json2XmlValidatorPipe",
+    "SwitchPipe",
+    "DataSonnetPipe",
+    "JsonValidatorPipe",
+    "JsonXsltPipe",
+    "Github - JsonWellFormedCheckerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.JsonWellFormedCheckerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "JsonWellFormedCheckerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Pipe",
+    "Copy\n<JsonWellFormedCheckerPipe name=\"\"/>",
+    "<JsonWellFormedCheckerPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated8\nJsonPathPipe\nIfPipe\nJsonPipe\nJson2XmlValidatorPipe\nSwitchPipe\nDataSonnetPipe\nJsonValidatorPipe\nJsonXsltPipe\nJsonWellFormedCheckerPipe\nPipes\nPipe that checks the well-formedness of the input message.\nSee also\nGithub - JsonWellFormedCheckerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.JsonWellFormedCheckerPipe\nSyntax\nCopy\n<JsonWellFormedCheckerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfrom\ttext\tparent\nEither parent (adapter of pipeline which contains this pipe) or input (name of adapter specified by input of pipe), adapter must be within the same Configuration\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues"
+}

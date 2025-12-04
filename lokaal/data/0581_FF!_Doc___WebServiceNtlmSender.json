@@ -1,0 +1,57 @@
+{
+  "href": "#/TYPE/HTTP/WebServiceNtlmSender",
+  "chip": "H",
+  "linkText": "WebServiceNtlmSender",
+  "scrapedAt": "2025-10-31T11:24:18.805Z",
+  "title": "FF! Doc | WebServiceNtlmSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "WebServiceNtlmSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "NTLM authentication is unsecure and should be avoided.",
+    "Since: 8.0",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "MQSender",
+    "WebServiceListener",
+    "IMSSender",
+    "ApiListener",
+    "WebServiceSender",
+    "IbisLocalSender",
+    "Github - WebServiceNtlmSender Implementation Examples",
+    "Javadoc - org.frankframework.http.WebServiceNtlmSender",
+    "WebServiceNtlmSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<WebServiceNtlmSender />",
+    "<WebServiceNtlmSender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nMQSender\nWebServiceListener\nIMSSender\nApiListener\nWebServiceSender\nIbisLocalSender\nWebServiceNtlmSender\nDeprecatedSendersEndpointHTTP\n\nNTLM authentication is unsecure and should be avoided.\n\nSince: 8.0\n\nSender that sends a message via a WebService based on NTLM authentication.\nSee also\nGithub - WebServiceNtlmSender Implementation Examples\nJavadoc - org.frankframework.http.WebServiceNtlmSender\nSyntax\nCopy\n<WebServiceNtlmSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncontentType\ttext\ttext/html; charset=utf-8\nContent-type of the request\nurl\ttext\t-\nUrl or base of url to be used\ntimeout\tnumber\t10000\nTimeout in ms of obtaining a connection/result. 0 means no timeout\nmaxConnections\tnumber\t10\nThe maximum number of concurrent connections\nauthAlias\ttext\t-\nAlias used to obtain credentials for authentication to host\nusern"
+}

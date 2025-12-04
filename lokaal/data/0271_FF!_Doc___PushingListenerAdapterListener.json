@@ -1,0 +1,62 @@
+{
+  "href": "#/Components/Listeners/PushingListenerAdapterListener",
+  "chip": "L",
+  "linkText": "PushingListenerAdapterListener",
+  "scrapedAt": "2025-10-31T10:58:23.877Z",
+  "title": "FF! Doc | PushingListenerAdapterListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "PushingListenerAdapterListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JmsListener",
+    "SapListener",
+    "FxfListener",
+    "PushingJmsListener",
+    "EsbJmsListener",
+    "TibcoLogJmsListener",
+    "Github - PushingListenerAdapterListener Implementation Examples",
+    "Javadoc - org.frankframework.http.PushingListenerAdapter",
+    "PushingListenerAdapterListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<PushingListenerAdapterListener />",
+    "<PushingListenerAdapterListener />",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJmsListener\nSapListener\nFxfListener\nPushingJmsListener\nEsbJmsListener\nTibcoLogJmsListener\nPushingListenerAdapterListener\nListenersListener\nBaseclass of a IPushingListener that enables a Receiver to receive messages from Servlets.\nSee also\nGithub - PushingListenerAdapterListener Implementation Examples\nJavadoc - org.frankframework.http.PushingListenerAdapter\nSyntax\nCopy\n<PushingListenerAdapterListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the listener as known to the adapter\napplicationFaultsAsExceptions\tboolean\t-\nonException\toptions\tRETHROW\nWhen an exception happens in the execution of the pipeline, with RETHROW the exception is thrown to the caller. With FORMAT_AND_RETURN the exception is processed by the Adapter.setErrorMessageFormatter(IErrorMessageFormatter) and returned as result-mes"
+}

@@ -1,0 +1,82 @@
+{
+  "href": "#/Components/Listeners/ExchangeMailListener",
+  "chip": "L",
+  "linkText": "ExchangeMailListener",
+  "scrapedAt": "2025-10-31T10:59:34.108Z",
+  "title": "FF! Doc | ExchangeMailListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ExchangeMailListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "ExchangeFileSystemSender",
+    "MessageStoreListener",
+    "Github - ExchangeMailListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.ExchangeMailListener",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "ExchangeMailListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ExchangeMailListener />",
+    "<ExchangeMailListener />",
+    "replyTo,from,sender,Return-Path",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "keystoreAlias",
+    "keystoreAlias",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "true",
+    "true",
+    "true",
+    "success",
+    "true",
+    "true",
+    "true",
+    "true",
+    "true",
+    "originalMessage",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nExchangeFileSystemSender\nMessageStoreListener\nExchangeMailListener\nAdvancedListenersListenerFILE_SYSTEM\nMicrosoft Exchange Implementation of a mailbox based filesystem.\nSee also\nGithub - ExchangeMailListener Implementation Examples\nJavadoc - org.frankframework.receivers.ExchangeMailListener\nSyntax\nCopy\n<ExchangeMailListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nmailAddress\ttext\t-\nThe mail address of the mailbox connected to (also used for auto discovery)\nclientId\ttext\t-\nClient ID that represents a registered application in Azure AD which could be found at Azure AD -> App Registrations -> MyApp -> Overview.\nclientSecret\ttext\t-\nClient secret that belongs to registered application in Azure AD which could be found at Azure AD -> App Registrations -> MyApp -> Certificates and Secrets\ntenantId\ttext\t-\nTenant ID tha"
+}

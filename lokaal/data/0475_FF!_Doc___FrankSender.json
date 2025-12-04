@@ -1,0 +1,171 @@
+{
+  "href": "#/EIP/Endpoint/FrankSender",
+  "chip": "E",
+  "linkText": "FrankSender",
+  "scrapedAt": "2025-10-31T11:15:27.115Z",
+  "title": "FF! Doc | FrankSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "FrankSender"
+    },
+    {
+      "level": 3,
+      "text": "Configuration of the Adapter to be called"
+    },
+    {
+      "level": 4,
+      "text": "Configuring FrankSender and Adapter"
+    },
+    {
+      "level": 4,
+      "text": "Configuring FrankSender with FrankListener"
+    },
+    {
+      "level": 4,
+      "text": "Configuring FrankSender and Remote Application"
+    },
+    {
+      "level": 4,
+      "text": "Using FrankSender to call an adapter from Larva tests"
+    },
+    {
+      "level": 3,
+      "text": "Migrating Existing Configurations"
+    },
+    {
+      "level": 4,
+      "text": "Example of Existing Configuration"
+    },
+    {
+      "level": 4,
+      "text": "Rewritten Example Configuration With FrankSender"
+    },
+    {
+      "level": 4,
+      "text": "Rewritten Example Configuration With FrankSender and FrankListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Sends a message to another Frank!Framework-adapter in the same Frank!Framework instance, or an external program running in the same JVM as the Frank!Framework. If the callee exits with an <Exit/> that has state PipeLine.ExitState.ERROR, an error is considered to happen in the caller which means that the exception forward is followed if it is present.",
+    "Returns exit.code as forward name to the SenderPipe, provided that exit.code can be parsed as integer. For example, if the called adapter has an exit state with code 2, then the SenderPipe supports a forward with name 2 that is followed when the called adapter exits with the mentioned exit. This does not work if the code is for example c2.",
+    "A FrankSender makes a call to either an Adapter or an external program by setting the scop. By default, the scope is ADAPTER.",
+    "A call to another Adapter in the same Frank!Framework instance is preferably made using the combination of a FrankSender configured with the name of the adapter.",
+    "NB: Please make sure that the IbisServiceDispatcher-1.4.jar or newer is present on the class path of the server. For more information, see:",
+    "In the other application:",
+    "See also the repository of the IbisServiceDispatcher: https://github.com/frankframework/servicedispatcher",
+    "You can configure a FrankSender in Larva property files to use the FrankSender to invoke an adapter to test. When doing this, keep the following in mind:",
+    "When one adapter (named A) needs to call another adapter (named B) like a subroutine, you will usually have an IbisLocalSender or an IbisJavaSender in adapter A, and a org.frankframework.receivers.JavaListener in adapter B.",
+    "NB: For the example it is assumed that all adapters are defined in the same configuration.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LdapSender",
+    "JavaListener",
+    "IbisLocalSender",
+    "FixedResultPipe",
+    "Adapter",
+    "FrankListener",
+    "Receiver",
+    "IbisJavaSender",
+    "Define a SenderPipe with a FrankSender",
+    "Set the attribute target to targetAdapterName",
+    "If the adapter is in another Configuration deployed in the same Frank!Framework instance, then set target to targetConfigurationName/targetAdapterName (note the slash-separator between Configuration name and Adapter name).",
+    "The adapter does not need to have a dedicated receiver configured to be called from a FrankSender.",
+    "The adapter will run in the same transaction as the calling adapter.",
+    "If the called adapter does not to run in its own transaction, set the transaction attributes on the PipeLine attribute of this adapter or on the SenderPipe that contains this FrankSender.",
+    "Define a SenderPipe with a FrankSender",
+    "In the target adapter, define a org.frankframework.receivers.Receiver with a FrankListener",
+    "Give a unique name to the listener: FrankListener.setName(String). If the name is not set, the name of the Adapter will be used.",
+    "Set the setScope to LISTENER and the setTarget to the listener name as per previous point",
+    "If the listener is in a different configuration, prefix the listener name with the name of the configuration and a slash (/) as separator between configuration and listener name",
+    "Define a SenderPipe with a FrankSender",
+    "Set the attribute scope to either JVM for a Java application, or to DLL for code loaded from a DLL",
+    "Set the attribute target to the service-name the other application used to register itself",
+    "Implement the interface nl.nn.adapterframework.dispatcher.RequestProcessor from the IbisServiceDispatcher library",
+    "Register the instance with the nl.nn.adapterframework.dispatcher.DispatcherManager obtained via the nl.nn.adapterframework.dispatcher.DispatcherManagerFactory",
+    "See the implementation code of the org.frankframework.receivers.JavaListener in the Frank!Framework for an example",
+    "If you leave the default scope as ADAPTER, then the target property needs to have both configuration name and adapter name, separated by a / character",
+    "When scope is left as default, the receiver and JavaListener are skipped and no transaction is started unless it is set on the adapter's PipeLine",
+    "If you do need a transaction and the adapter has a JavaListener that has org.frankframework.receivers.JavaListener.setServiceName(String) defined, you can use the FrankSender with scope JVM and set the target attribute to the serviceName attribute of the JavaListener.",
+    "Github - FrankSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.FrankSender",
+    "FrankSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<Exit/>",
+    "exception",
+    "exit.code",
+    "exit.code",
+    "2",
+    "2",
+    "c2",
+    "ADAPTER",
+    "target",
+    "target",
+    "targetConfigurationName/targetAdapterName",
+    "FrankSender",
+    "LISTENER",
+    "/",
+    "scope",
+    "JVM",
+    "DLL",
+    "target",
+    "nl.nn.adapterframework.dispatcher.RequestProcessor",
+    "nl.nn.adapterframework.dispatcher.DispatcherManager",
+    "nl.nn.adapterframework.dispatcher.DispatcherManagerFactory",
+    "ADAPTER",
+    "target",
+    "/",
+    "PipeLine",
+    "JVM",
+    "target",
+    "serviceName",
+    "JavaListener",
+    "<module>\n     <adapter name=\"Adapter A\">\n         <receiver name=\"Adapter A Receiver\">\n             <listener name=\"Adapter A Listener\"\n                 className=\"org.frankframework...\" etc/>\n         </receiver>\n  \t   <pipeline firstPipe=\"...\">\n  \t       <pipe name=\"send\" className=\"org.frankframework.pipes.SenderPipe\">\n  \t           <sender className=\"org.frankframework.senders.IbisJavaSender\"\n  \t               serviceName=\"service-Adapter-B\" />\n                 <forward name=\"success\" path=\"...\" />\n  \t       </pipe>\n         </pipeline>\n     </adapter>\n </module>",
+    "<module>\n     <adapter name=\"Adapter A\">\n         <receiver name=\"Adapter A Receiver\">\n             <listener name=\"Adapter A Listener\"\n                 className=\"org.frankframework...\" etc/>\n         </receiver>\n  \t   <pipeline firstPipe=\"...\">\n  \t       <pipe name=\"send\" className=\"org.frankframework.pipes.SenderPipe\">\n  \t           <sender className=\"org.frankframework.senders.IbisJavaSender\"\n  \t               serviceName=\"service-Adapter-B\" />\n                 <forward name=\"success\" path=\"...\" />\n  \t       </pipe>\n         </pipeline>\n     </adapter>\n </module>",
+    "<Module>\n     <Adapter name=\"Adapter A\">\n         <Receiver name=\"Adapter A Receiver\">\n             ... Listener setup and other configuration\n         </Receiver>\n         <Pipeline>\n             <SenderPipe name=\"send\">\n                 <IbisLocalSender name=\"call Adapter B\"\n                     javaListener=\"Adapter B Listener\"/>\n                 <Forward name=\"success\" path=\"EXIT\" />\n             </SenderPipe>\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n     <Adapter name=\"Adapter A\">\n         <Receiver name=\"Adapter A Receiver\">\n             ... Listener setup and other configuration\n         </Receiver>\n         <Pipeline>\n             <SenderPipe name=\"send\">\n                 <IbisLocalSender name=\"call Adapter B\"\n                     javaListener=\"Adapter B Listener\"/>\n                 <Forward name=\"success\" path=\"EXIT\" />\n             </SenderPipe>\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n     <Adapter name=\"adapter B\">\n         <Receiver name=\"Receiver B\">\n             <JavaListener name=\"Adapter B Listener\" serviceName=\"service-Adapter-B\"/>\n         </Receiver>\n         <Pipeline>\n             ...\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n     <Adapter name=\"adapter B\">\n         <Receiver name=\"Receiver B\">\n             <JavaListener name=\"Adapter B Listener\" serviceName=\"service-Adapter-B\"/>\n         </Receiver>\n         <Pipeline>\n             ...\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n     <Adapter name=\"Adapter A\">\n         <Receiver name=\"Adapter A Receiver\">\n             ... Listener setup and other configuration\n         </Receiver>\n         <Pipeline>\n             <SenderPipe name=\"send\">\n                 <!-- when scope=\"ADAPTER\", then target is directly the name of the adapter you want to call -->\n                 <FrankSender name=\"call Adapter C\"\n                     scope=\"ADAPTER\"\n                     target=\"adapter B\"\n                 />\n                 <Forward name=\"success\" path=\"EXIT\" />\n             </SenderPipe>\n         </Pipeline>\n     </Adapter>\n     <Adapter name=\"adapter B\">\n         <!-- No receiver needed for FrankSender in this scenario -->\n         <Pipeline>\n             ... Exits, Pipes etc\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n     <Adapter name=\"Adapter A\">\n         <Receiver name=\"Adapter A Receiver\">\n             ... Listener setup and other configuration\n         </Receiver>\n         <Pipeline>\n             <SenderPipe name=\"send\">\n                 <!-- when scope=\"ADAPTER\", then target is directly the name of the adapter you want to call -->\n                 <FrankSender name=\"call Adapter C\"\n                     scope=\"ADAPTER\"\n                     target=\"adapter B\"\n                 />\n                 <Forward name=\"success\" path=\"EXIT\" />\n             </SenderPipe>\n         </Pipeline>\n     </Adapter>\n     <Adapter name=\"adapter B\">\n         <!-- No receiver needed for FrankSender in this scenario -->\n         <Pipeline>\n             ... Exits, Pipes etc\n         </Pipeline>\n     </Adapter>\n </Module>",
+    "<Module>\n    <Adapter name=\"Adapter A\">\n        <Receiver name=\"Adapter A Receiver\">\n         ... Listener setup and other configuration\n \t\t  </Receiver>\n \t\t  <Pipeline>\n            <SenderPipe name=\"send\">\n                <!-- when scope=\"LISTENER\", then target is directly the name of the FrankListener in the adapter you want to call -->\n                <FrankSender\n                    scope=\"LISTENER\"\n                    target=\"Adapter B Listener\"/>\n                <Forward name=\"success\" path=\"EXIT\" />\n            </SenderPipe>\n        </Pipeline>\n     </Adapter>\n     <Adapter name=\"adapter B\">\n         <!-- Messages will only be sent to the error storage if:\n             - The target receiver is not transactional, and has maxTries=\"0\", or\n             - The target receiver is transaction, and the Sender is set up to retry sending on error\n             For internal adapters, sending / receiving with retries might not make sense so the example does not show that.\n         -->\n         <Receiver name=\"Receiver B\" maxRetries=\"0\" transactionAttribute=\"NotSupported\">\n             <!-- Listener name is optional, defaults to Adapter name -->\n             <FrankListener name=\"Adapter B Listener\"/>\n                 <!-- This adapter now has an error storage -- without Receiver and FrankListener the sub-adapter couldn't have that -->\n             <JdbcErrorStorage slotId=\"Adapter B - Errors\" />\n         </Receiver>\n         <!-- If transactions are required, set transaction-attribute on the Pipeline -->\n         <Pipeline transactionAttribute=\"RequiresNew\">\n             ... Exits, Pipes etc\n         </Pipeline>\n    </Adapter>\n </Module>",
+    "<Module>\n    <Adapter name=\"Adapter A\">\n        <Receiver name=\"Adapter A Receiver\">\n         ... Listener setup and other configuration\n \t\t  </Receiver>\n \t\t  <Pipeline>\n            <SenderPipe name=\"send\">\n                <!-- when scope=\"LISTENER\", then target is directly the name of the FrankListener in the adapter you want to call -->\n                <FrankSender\n                    scope=\"LISTENER\"\n                    target=\"Adapter B Listener\"/>\n                <Forward name=\"success\" path=\"EXIT\" />\n            </SenderPipe>\n        </Pipeline>\n     </Adapter>\n     <Adapter name=\"adapter B\">\n         <!-- Messages will only be sent to the error storage if:\n             - The target receiver is not transactional, and has maxTries=\"0\", or\n             - The target receiver is transaction, and the Sender is set up to retry sending on error\n             For internal adapters, sending / receiving with retries might not make sense so the example does not show that.\n         -->\n         <Receiver name=\"Receiver B\" maxRetries=\"0\" transactionAttribute=\"NotSupported\">\n             <!-- Listener name is optional, defaults to Adapter name -->\n             <FrankListener name=\"Adapter B Listener\"/>\n                 <!-- This adapter now has an error storage -- without Receiver and FrankListener the sub-adapter couldn't have that -->\n             <JdbcErrorStorage slotId=\"Adapter B - Errors\" />\n         </Receiver>\n         <!-- If transactions are required, set transaction-attribute on the Pipeline -->\n         <Pipeline transactionAttribute=\"RequiresNew\">\n             ... Exits, Pipes etc\n         </Pipeline>\n    </Adapter>\n </Module>",
+    "Copy\n<FrankSender />",
+    "<FrankSender />",
+    "false",
+    "JVM",
+    "DLL",
+    "ADAPTER",
+    "LISTENER",
+    "/",
+    "target",
+    "ADAPTER"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nLdapSender\nJavaListener\nIbisLocalSender\nFixedResultPipe\nAdapter\nFrankListener\nReceiver\nIbisJavaSender\nFrankSender\nBasicSendersEndpointADAPTER\nSender to send a message to another Frank! Adapter, or an external program running in the same JVM as the Frank!Framework.\n\nSends a message to another Frank!Framework-adapter in the same Frank!Framework instance, or an external program running in the same JVM as the Frank!Framework. If the callee exits with an <Exit/> that has state PipeLine.ExitState.ERROR, an error is considered to happen in the caller which means that the exception forward is followed if it is present.\n\nReturns exit.code as forward name to the SenderPipe, provided that exit.code can be parsed as integer. For example, if the called adapter has an exit state with code 2, then the SenderPipe supports a forward with name 2 that is followed when the called adapter exits with the men"
+}

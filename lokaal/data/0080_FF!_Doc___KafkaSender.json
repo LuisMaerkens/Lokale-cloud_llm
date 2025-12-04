@@ -1,0 +1,51 @@
+{
+  "href": "#/Category/Experimental/KafkaSender",
+  "chip": "E",
+  "linkText": "KafkaSender",
+  "scrapedAt": "2025-10-31T10:42:25.767Z",
+  "title": "FF! Doc | KafkaSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "KafkaSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "KafkaListener",
+    "Github - KafkaSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.kafka.KafkaSender",
+    "KafkaSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<KafkaSender />",
+    "<KafkaSender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nKafkaListener\nKafkaSender\nExperimentalSendersEndpointKAFKA\nExperimental ISender for sending messages to a Kafka instance. The Kafka integration is still under development so do not currently use unless you wish to participate in this development.\nSee also\nGithub - KafkaSender Implementation Examples\nJavadoc - org.frankframework.extensions.kafka.KafkaSender\nSyntax\nCopy\n<KafkaSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntopic\ttext\t-\nThe topic to send messages to. Only one topic per sender. Wildcards are not supported.\nname\ttext\t-\nThe functional name of the object.\nAbstractKafkaFacade\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nbootstrapServers\ttext\t-\nThe bootstrap servers to connect to, as a comma separated list.\nclientId\ttext\t-\nThe client id to use when connecting to the Kafka cluster.\nactive\ttext\t-"
+}

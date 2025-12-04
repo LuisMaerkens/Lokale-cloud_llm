@@ -1,0 +1,71 @@
+{
+  "href": "#/TYPE/JDBC/JdbcQueryListener",
+  "chip": "J",
+  "linkText": "JdbcQueryListener",
+  "scrapedAt": "2025-10-31T11:26:24.166Z",
+  "title": "FF! Doc | JdbcQueryListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JdbcQueryListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Please replace with JdbcTableListener for ease of configuration and improved manageability",
+    "Since: 7.6.0",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JdbcTableListener",
+    "JdbcErrorStorage",
+    "JdbcMessageLog",
+    "MessageStoreSender",
+    "SimpleJdbcListener",
+    "JdbcListener",
+    "MessageStoreListener",
+    "Github - JdbcQueryListener Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.JdbcQueryListener",
+    "JdbcQueryListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JdbcQueryListener selectQuery=\"\" updateStatusToProcessedQuery=\"\"/>",
+    "<JdbcQueryListener selectQuery=\"\" updateStatusToProcessedQuery=\"\"/>",
+    "updateStatusToProcessedQuery",
+    "peekUntransacted",
+    "true",
+    "STRING",
+    "CLOB",
+    "BLOB",
+    "messageId",
+    "correlationId",
+    "messageId",
+    "correlationId",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJdbcTableListener\nJdbcErrorStorage\nJdbcMessageLog\nMessageStoreSender\nSimpleJdbcListener\nJdbcListener\nMessageStoreListener\nJdbcQueryListener\nDeprecatedListenersListenerJDBC\n\nPlease replace with JdbcTableListener for ease of configuration and improved manageability\n\nSince: 7.6.0\n\nDatabase Listener that operates on a table having at least a key and a status field.\nSee also\nGithub - JdbcQueryListener Implementation Examples\nJavadoc - org.frankframework.jdbc.JdbcQueryListener\nSyntax\nCopy\n<JdbcQueryListener selectQuery=\"\" updateStatusToProcessedQuery=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nselectQuery\ttext\t-\nQuery that returns a row to be processed. Must contain a key field and optionally a message field.\nupdateStatusToProcessedQuery\ttext\t-\nSQL statement to set the status of a row to 'processed'. Must contain one parameter, that is set to the value of the key\nOption"
+}

@@ -1,0 +1,67 @@
+{
+  "href": "#/Components/Listeners/WebServiceListener",
+  "chip": "L",
+  "linkText": "WebServiceListener",
+  "scrapedAt": "2025-10-31T10:57:13.641Z",
+  "title": "FF! Doc | WebServiceListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "WebServiceListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "ApiListener",
+    "WebServiceSender",
+    "MIME headers are described in a 'mimeHeaders'-XML stored under session key 'mimeHeaders'",
+    "Attachments present in the request are described by an 'attachments'-XML stored under session key 'attachments'",
+    "SOAP protocol is stored under a session key 'soapProtocol'",
+    "SOAP action is stored under a session key 'SOAPAction'",
+    "Github - WebServiceListener Implementation Examples",
+    "Javadoc - org.frankframework.http.WebServiceListener",
+    "WebServiceListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<soap:address>",
+    "soap",
+    "http://schemas.xmlsoap.org/wsdl/soap/",
+    "address",
+    "multipartXmlSessionKey",
+    "Copy\n<WebServiceListener />",
+    "<WebServiceListener />",
+    "true",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nApiListener\nWebServiceSender\nWebServiceListener\nListenersListenerHTTP\nListener that allows a Receiver to receive messages as a SOAP webservice. The structure of the SOAP messages is expressed in a WSDL (Web Services Description Language) document. The Frank!Framework generates a WSDL document for each adapter that contains WebServiceListeners. You can find these documents in the Frank!Console under main menu item Webservices, heading Available WSDL's. The WSDL documents that we generate document how the SOAP services can be accessed. In particular, the URL of a SOAP service can be found in an XML element <soap:address> with soap pointing to namespace http://schemas.xmlsoap.org/wsdl/soap/.\nIf address is set, then for each request:\nMIME headers are described in a 'mimeHeaders'-XML stored under session key 'mimeHeaders'\nAttachments present in the request are described by an 'attachments'-X"
+}

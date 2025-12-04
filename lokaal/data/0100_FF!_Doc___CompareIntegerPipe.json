@@ -1,0 +1,87 @@
+{
+  "href": "#/Components/Pipes/CompareIntegerPipe",
+  "chip": "P",
+  "linkText": "CompareIntegerPipe",
+  "scrapedAt": "2025-10-31T10:44:06.059Z",
+  "title": "FF! Doc | CompareIntegerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CompareIntegerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CompareStringPipe",
+    "IncreaseIntegerPipe",
+    "FixedResultPipe",
+    "CompressPipe",
+    "Github - CompareIntegerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CompareIntegerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CompareIntegerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CompareIntegerPipe name=\"\"/>",
+    "<CompareIntegerPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "ExceptionForward",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nCompareStringPipe\nIncreaseIntegerPipe\nFixedResultPipe\nCompressPipe\nCompareIntegerPipe\nBasicPipesRouter\nPipe that compares the two integer values. If one of the parameters is missing, then the input message will be used as the missing operand. This pipe can be used in combination with IncreaseIntegerPipe to construct loops.\nSee also\nGithub - CompareIntegerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.CompareIntegerPipe\nSyntax\nCopy\n<CompareIntegerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nexport\tboolean\tfalse\nIf true the ThreadContext parameters will be exported from the current PipeLine up in the call tree.\ncontinueOnError\tboolean\tfalse\nIf true the pipe will never forward to the Ex"
+}

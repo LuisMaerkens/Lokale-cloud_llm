@@ -1,0 +1,63 @@
+{
+  "href": "#/Components/Monitoring/Monitor",
+  "chip": "M",
+  "linkText": "Monitor",
+  "scrapedAt": "2025-10-31T11:05:05.171Z",
+  "title": "FF! Doc | Monitor",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Monitor"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Example configuration:",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Monitoring",
+    "Destination",
+    "Github - Monitor Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.Monitor",
+    "Monitor",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<Monitor name=\"Receiver Shutdown\" destinations=\"MONITOR_LOG\">\n    <AlarmTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </AlarmTrigger>\n    <ClearingTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </ClearingTrigger>\n </Monitor>",
+    "<Monitor name=\"Receiver Shutdown\" destinations=\"MONITOR_LOG\">\n    <AlarmTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </AlarmTrigger>\n    <ClearingTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </ClearingTrigger>\n </Monitor>",
+    "Copy\n<Monitor name=\"\"/>",
+    "<Monitor name=\"\"/>",
+    "TECHNICAL",
+    "FUNCTIONAL",
+    "HEARTBEAT",
+    "CLEARING",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nMonitoring\nDestination\nMonitor\nMonitoring\n\nExample configuration:\n\n<Monitor name=\"Receiver Shutdown\" destinations=\"MONITOR_LOG\">\n    <AlarmTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </AlarmTrigger>\n    <ClearingTrigger severity=\"WARNING\">\n        <Event>Receiver Shutdown</Event>\n    </ClearingTrigger>\n </Monitor>\nSee also\nGithub - Monitor Implementation Examples\nJavadoc - org.frankframework.monitoring.Monitor\nSyntax\nCopy\n<Monitor name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndestinations\ttext\t-\nraised\tboolean\t-\nadditionalHitCount\tnumber\t-\ntype\toptions\t-\nAvailable Options: TECHNICAL, FUNCTIONAL, HEARTBEAT, CLEARING\nalarmSeverity\toptions\t-\nAvailable Options: HARMLESS, WARNING, CRITICAL, FATAL\nactive\ttext\t-\nIf defined and empty or false, "
+}

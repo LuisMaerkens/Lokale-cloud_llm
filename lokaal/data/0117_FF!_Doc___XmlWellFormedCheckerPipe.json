@@ -1,0 +1,90 @@
+{
+  "href": "#/Components/Pipes/XmlWellFormedCheckerPipe",
+  "chip": "P",
+  "linkText": "XmlWellFormedCheckerPipe",
+  "scrapedAt": "2025-10-31T10:45:31.333Z",
+  "title": "FF! Doc | XmlWellFormedCheckerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XmlWellFormedCheckerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlValidatorPipe",
+    "EsbSoapValidatorPipe",
+    "JsonPathPipe",
+    "BytesOutputPipe",
+    "IfPipe",
+    "Github - XmlWellFormedCheckerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.XmlWellFormedCheckerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "XmlWellFormedCheckerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Pipe",
+    "root",
+    "Copy\n<XmlWellFormedCheckerPipe name=\"\"/>",
+    "<XmlWellFormedCheckerPipe name=\"\"/>",
+    "path",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nFxfXmlValidatorPipe\nEsbSoapValidatorPipe\nJsonPathPipe\nBytesOutputPipe\nIfPipe\nXmlWellFormedCheckerPipe\nPipes\nPipe that checks the well-formedness of the input message. If root is given then this is also checked.\nSee also\nGithub - XmlWellFormedCheckerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.XmlWellFormedCheckerPipe\nSyntax\nCopy\n<XmlWellFormedCheckerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nroot\ttext\t-\nName of the root element\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues directly at the forward "
+}

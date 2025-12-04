@@ -1,0 +1,61 @@
+{
+  "href": "#/Components/Listeners/SimpleJdbcListener",
+  "chip": "L",
+  "linkText": "SimpleJdbcListener",
+  "scrapedAt": "2025-10-31T10:58:38.928Z",
+  "title": "FF! Doc | SimpleJdbcListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SimpleJdbcListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JmsListener",
+    "SapListener",
+    "JdbcErrorStorage",
+    "JdbcMessageLog",
+    "FxfListener",
+    "PushingJmsListener",
+    "EsbJmsListener",
+    "StoredProcedureQuerySender",
+    "TibcoLogJmsListener",
+    "Github - SimpleJdbcListener Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.SimpleJdbcListener",
+    "SimpleJdbcListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SimpleJdbcListener />",
+    "<SimpleJdbcListener />",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nJmsListener\nSapListener\nJdbcErrorStorage\nJdbcMessageLog\nFxfListener\nPushingJmsListener\nEsbJmsListener\nStoredProcedureQuerySender\nTibcoLogJmsListener\nSimpleJdbcListener\nListenersListenerJDBC\nDatabase Listener that returns a count of messages available, but does not perform any locking or other management of processing messages in parallel.\nSee also\nGithub - SimpleJdbcListener Implementation Examples\nJavadoc - org.frankframework.jdbc.SimpleJdbcListener\nSyntax\nCopy\n<SimpleJdbcListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nselectQuery\ttext\t-\nCount query that returns the number of available records. when there are available records the pipeline is activated\ntrace\tboolean\t-\nJdbcFacade\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the sender or the listener\ndatasourceName\ttext\tjdbc.datasource.defau"
+}

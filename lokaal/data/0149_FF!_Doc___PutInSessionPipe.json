@@ -1,0 +1,93 @@
+{
+  "href": "#/Components/Pipes/PutInSessionPipe",
+  "chip": "P",
+  "linkText": "PutInSessionPipe",
+  "scrapedAt": "2025-10-31T10:48:11.887Z",
+  "title": "FF! Doc | PutInSessionPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "PutInSessionPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "StreamLineIteratorPipe",
+    "SkipPipe",
+    "JsonPathPipe",
+    "LogContextPipe",
+    "CompareIntegerPipe",
+    "RegExPipe",
+    "ExceptionPipe",
+    "Github - PutInSessionPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.PutInSessionPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "PutInSessionPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "value",
+    "sessionKey",
+    "Copy\n<PutInSessionPipe name=\"\"/>",
+    "<PutInSessionPipe name=\"\"/>",
+    "path",
+    "pipeLineSession",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nStreamLineIteratorPipe\nSkipPipe\nJsonPathPipe\nLogContextPipe\nCompareIntegerPipe\nRegExPipe\nExceptionPipe\nPutInSessionPipe\nPipesSession\nPuts the input or the value in the PipeLineSession, under the key specified by sessionKey. Additionally, stores parameter values in the PipeLineSession.\nSee also\nGithub - PutInSessionPipe Implementation Examples\nJavadoc - org.frankframework.pipes.PutInSessionPipe\nSyntax\nCopy\n<PutInSessionPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsessionKey\ttext\t-\nKey of the session variable to store the input in\nvalue\ttext\t-\nValue to store in the pipeLineSession. If not set, the input of the pipe is stored\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tb"
+}

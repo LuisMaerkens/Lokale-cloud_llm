@@ -1,0 +1,71 @@
+{
+  "href": "#/TYPE/MONGODB/MongoDbSender",
+  "chip": "M",
+  "linkText": "MongoDbSender",
+  "scrapedAt": "2025-10-31T11:28:14.493Z",
+  "title": "FF! Doc | MongoDbSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "MongoDbSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - MongoDbSender Implementation Examples",
+    "Javadoc - org.frankframework.mongodb.MongoDbSender",
+    "MongoDbSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<MongoDbSender action=\"\"/>",
+    "<MongoDbSender action=\"\"/>",
+    "INSERTONE",
+    "INSERTMANY",
+    "FINDONE",
+    "FINDMANY",
+    "UPDATEONE",
+    "UPDATEMANY",
+    "DELETEONE",
+    "DELETEMANY",
+    "mongodb.datasource.default",
+    "database",
+    "collection",
+    "?{",
+    "}",
+    "filter",
+    "limit",
+    "XML",
+    "JSON",
+    "database",
+    "collection",
+    "filter",
+    "limit"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nMongoDbSender\nSendersEndpointMONGODB\nSender to perform action on a MongoDB database.\nSee also\nGithub - MongoDbSender Implementation Examples\nJavadoc - org.frankframework.mongodb.MongoDbSender\nSyntax\nCopy\n<MongoDbSender action=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naction\toptions\t-\nAction\nAvailable Options: INSERTONE, INSERTMANY, FINDONE, FINDMANY, UPDATEONE, UPDATEMANY, DELETEONE, DELETEMANY\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndatasourceName\ttext\tmongodb.datasource.default\nThe MongoDB datasource\ndatabase\ttext\t-\nDatabase to connect to. Can be overridden by parameter database\ncollection\ttext\t-\nCollection to act upon. Can be overridden by parameter collection\nfilter\ttext\t-\nFilter. Can contain references to parameters between ?{ and }. Can be overridden by parameter filter\nlimit\tnumber\t0\nLimit to number of results returned. A value of 0 means 'no l"
+}

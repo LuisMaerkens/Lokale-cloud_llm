@@ -1,0 +1,85 @@
+{
+  "href": "#/EIP/Translator/CrlPipe",
+  "chip": "T",
+  "linkText": "CrlPipe",
+  "scrapedAt": "2025-10-31T11:23:48.724Z",
+  "title": "FF! Doc | CrlPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CrlPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - CrlPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CrlPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CrlPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<pipe name=\"Read input CSV file\"\n                 className=\"org.frankframework.pipes.FixedResultPipe\">\n \t\t<param name=\"filename\" sessionKey=\"filePathName\"/>\n \t\t<forward name=\"success\" path=\"Process each Line\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read issuer\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfilename=\"dir/issuer.cer\"\n \t\tstoreResultInSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path=\"Read CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read CRL\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfileName=\"dir/CRL.crl\">\n \t\t<forward name=\"success\" path=\"Transform CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Transform CRL\"\n \t\tclassName=\"org.frankframework.pipes.CrlPipe\"\n \t\tissuerSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path=\"EXIT\" />\n \t</pipe>",
+    "<pipe name=\"Read input CSV file\"\n                 className=\"org.frankframework.pipes.FixedResultPipe\">\n \t\t<param name=\"filename\" sessionKey=\"filePathName\"/>\n \t\t<forward name=\"success\" path=\"Process each Line\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read issuer\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfilename=\"dir/issuer.cer\"\n \t\tstoreResultInSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path=\"Read CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read CRL\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfileName=\"dir/CRL.crl\">\n \t\t<forward name=\"success\" path=\"Transform CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Transform CRL\"\n \t\tclassName=\"org.frankframework.pipes.CrlPipe\"\n \t\tissuerSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path=\"EXIT\" />\n \t</pipe>",
+    "Copy\n<CrlPipe name=\"\"/>",
+    "<CrlPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nCrlPipe\nPipesTranslator\nPipe that reads a CRL from an input stream and transforms it to an XML. The stream is closed after reading. Example configuration:\n<pipe name=\"Read input CSV file\"\n                 className=\"org.frankframework.pipes.FixedResultPipe\">\n \t\t<param name=\"filename\" sessionKey=\"filePathName\"/>\n \t\t<forward name=\"success\" path=\"Process each Line\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read issuer\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfilename=\"dir/issuer.cer\"\n \t\tstoreResultInSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path=\"Read CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Read CRL\"\n \t\tclassName=\"org.frankframework.pipes.FixedResultPipe\"\n \t\tfileName=\"dir/CRL.crl\">\n \t\t<forward name=\"success\" path=\"Transform CRL\" />\n \t</pipe>\n \t<pipe\n \t\tname=\"Transform CRL\"\n \t\tclassName=\"org.frankframework.pipes.CrlPipe\"\n \t\tissuerSessionKey=\"issuer\">\n \t\t<forward name=\"success\" path="
+}

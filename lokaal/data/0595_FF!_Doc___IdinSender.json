@@ -1,0 +1,52 @@
+{
+  "href": "#/TYPE/IDIN/IdinSender",
+  "chip": "I",
+  "linkText": "IdinSender",
+  "scrapedAt": "2025-10-31T11:25:29.004Z",
+  "title": "FF! Doc | IdinSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IdinSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - IdinSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.idin.IdinSender",
+    "IdinSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<IdinSender configurationXML=\"\"/>",
+    "<IdinSender configurationXML=\"\"/>",
+    "DIRECTORY",
+    "RESPONSE",
+    "AUTHENTICATE"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nIdinSender\nSendersEndpointIDIN\nRequires the net.bankid.merchant.library V1.2.9\nSee also\nGithub - IdinSender Implementation Examples\nJavadoc - org.frankframework.extensions.idin.IdinSender\nSyntax\nCopy\n<IdinSender configurationXML=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nconfigurationXML\ttext\t-\nLoad configuration from XML. Attributes may overwrite this 'default'.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naction\toptions\t-\nAvailable Options: DIRECTORY, RESPONSE, AUTHENTICATE\nmerchantID\ttext\t-\nThis is the contract number for iDIN the Merchant received from its Acquirer after registration, and is used to unambiguously identify the Merchant. This number is 10-digits long, where the first four digits are equal to the AcquirerID.\nmerchantSubID\tnumber\t-\nThe SubID that uniquely defines the name and address of the Merchant to be used for iDIN, if operating under d"
+}

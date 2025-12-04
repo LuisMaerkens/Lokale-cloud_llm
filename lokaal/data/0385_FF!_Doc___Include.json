@@ -1,0 +1,50 @@
+{
+  "href": "#/Components/Other/Include",
+  "chip": "O",
+  "linkText": "Include",
+  "scrapedAt": "2025-10-31T11:07:55.666Z",
+  "title": "FF! Doc | Include",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Include"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Pipeline",
+    "Github - Include Implementation Examples",
+    "Javadoc - org.frankframework.configuration.Include",
+    "Include",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Include />",
+    "<Include />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nPipeline\nInclude\nOther\nSee also\nGithub - Include Implementation Examples\nJavadoc - org.frankframework.configuration.Include\nSyntax\nCopy\n<Include />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nref\ttext\t-\nReference to a configuration to be included in the current.\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nInclude\nSee also\nSyntax\nAttributes\nOptional\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

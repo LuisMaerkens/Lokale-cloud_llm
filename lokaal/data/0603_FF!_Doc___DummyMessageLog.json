@@ -1,0 +1,101 @@
+{
+  "href": "#/TYPE/JDBC/DummyMessageLog",
+  "chip": "J",
+  "linkText": "DummyMessageLog",
+  "scrapedAt": "2025-10-31T11:26:09.128Z",
+  "title": "FF! Doc | DummyMessageLog",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DummyMessageLog"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "It is no longer necessary to use the DummyTransactionalStorage",
+    "Since: 7.8.0",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - DummyMessageLog Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.DummyTransactionalStorage",
+    "ALL to mask the entire string",
+    "FIRSTHALF to only mask the first half of the string",
+    "DummyMessageLog",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DummyMessageLog />",
+    "<DummyMessageLog />",
+    "true",
+    "E",
+    "A",
+    "L",
+    "E",
+    "M",
+    "L",
+    "A",
+    "E",
+    "A",
+    "L",
+    "M",
+    "true",
+    "true",
+    "(100)",
+    "(1000)",
+    "true",
+    "true",
+    "false",
+    "true",
+    "true",
+    "E",
+    "A",
+    "L",
+    "E",
+    "M",
+    "L",
+    "A",
+    "E",
+    "A",
+    "L",
+    "M",
+    "true",
+    "true",
+    "(100)",
+    "(1000)",
+    "true",
+    "true",
+    "false",
+    "true",
+    "NONE",
+    "ASC",
+    "DESC",
+    "ALL",
+    "FIRSTHALF",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nDummyMessageLog\nDeprecatedTransactionalStoragesJDBC\n\nIt is no longer necessary to use the DummyTransactionalStorage\n\nSince: 7.8.0\n\nClass for a messageLog element to be used in combination with a MessageStoreSender who's messages are processed by a MessageStoreListener.\nSee also\nGithub - DummyMessageLog Implementation Examples\nJavadoc - org.frankframework.jdbc.DummyTransactionalStorage\nSyntax\nCopy\n<DummyMessageLog />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nslotId\ttext\t-\nSet the slotId, an identifier to keep separate the messages inserted by different JdbcTransactionalStorage instances.\nThis field is optional, unless the attribute onlyStoreWhenMessageIdUniqu is set to true.\ntype\ttext\tE for errorStorage on Receiver\nA for messageLog on Receiver\nL for messageLog on Pipe\nPossible values are E (error store), M (message "
+}

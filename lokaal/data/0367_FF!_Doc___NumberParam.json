@@ -1,0 +1,97 @@
+{
+  "href": "#/Components/Parameters/NumberParam",
+  "chip": "P",
+  "linkText": "NumberParam",
+  "scrapedAt": "2025-10-31T11:06:25.408Z",
+  "title": "FF! Doc | NumberParam",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "NumberParam"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Param",
+    "JsonParam",
+    "Github - NumberParam Implementation Examples",
+    "Javadoc - org.frankframework.parameters.NumberParameter",
+    "{now}: the current system time",
+    "{uid}: an unique identifier, based on the IP address and java.rmi.server.UID",
+    "{uuid}: an unique identifier, based on the IP address and java.util.UUID",
+    "{hostname}: the name of the machine the application runs on",
+    "{username}: username from the credentials found using authAlias, or the username attribute",
+    "{password}: password from the credentials found using authAlias, or the password attribute",
+    "{principal}: Name of the current principal, similar to the org.frankframework.pipes.GetPrincipalPipe.",
+    "{fixeddate}: fake date, for testing only",
+    "{fixeduid}: fake uid, for testing only",
+    "{fixedhostname}: fake hostname, for testing only",
+    "NumberParam",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<NumberParam />",
+    "<NumberParam />",
+    "number",
+    "number",
+    "*",
+    "sessionKey",
+    "sessionKey",
+    "jsonPathExpression",
+    "xpathExpression",
+    "2",
+    "3",
+    "0",
+    "prefix=namespaceuri",
+    "false",
+    "true",
+    "defaultValue",
+    "defaultValue",
+    "sessionKey",
+    "pattern",
+    "value",
+    "input",
+    "session-variables",
+    "parameters",
+    "parameters",
+    "fname",
+    "pattern",
+    "type",
+    "formatString",
+    "pattern",
+    "pattern",
+    "pattern",
+    "pattern",
+    "true",
+    "false",
+    "true",
+    "INPUT",
+    "OUTPUT",
+    "INOUT"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nParam\nJsonParam\nNumberParam\nParameters\nSee also\nGithub - NumberParam Implementation Examples\nJavadoc - org.frankframework.parameters.NumberParameter\nSyntax\nCopy\n<NumberParam />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndecimalSeparator\ttext\tsystem default\nSeparate the integer part from the fractional part of a number.\ngroupingSeparator\ttext\tsystem default\nIn the United States, the comma is typically used for the grouping separator; however, several publication standards follow international standards in using either a space or a thin space character.\nmaxInclusive\ttext\t-\nUsed in combination with type number; if set and the value of the parameter exceeds this maximum value, this maximum value is taken\nminInclusive\ttext\t-\nUsed in combination with type number; if set and the value of the parameter falls short of this m"
+}

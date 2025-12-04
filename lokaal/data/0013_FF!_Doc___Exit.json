@@ -1,0 +1,76 @@
+{
+  "href": "#/Category/Basic/Exit",
+  "chip": "B",
+  "linkText": "Exit",
+  "scrapedAt": "2025-10-31T10:36:49.657Z",
+  "title": "FF! Doc | Exit",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Exit"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Forward",
+    "Exits",
+    "SwitchPipe",
+    "IbisLocalSender",
+    "FixedResultPipe",
+    "Pipeline",
+    "Adapter",
+    "Receiver",
+    "FrankSender",
+    "XmlSwitchPipe",
+    "Github - Exit Implementation Examples",
+    "Javadoc - org.frankframework.core.PipeLineExit",
+    "Exit",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "READY",
+    "SUCCESS",
+    "path",
+    "Copy\n<Exit name=\"\" state=\"\"/>",
+    "<Exit name=\"\" state=\"\"/>",
+    "path",
+    "READY",
+    "READY",
+    "SUCCESS",
+    "ERROR",
+    "REJECTED",
+    "500",
+    "SUCCESS",
+    "false",
+    "true",
+    "false",
+    "true",
+    "false",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nForward\nExits\nSwitchPipe\nIbisLocalSender\nFixedResultPipe\nPipeline\nAdapter\nReceiver\nFrankSender\nXmlSwitchPipe\nExit\nBasicOther\nThe Exit of a Pipeline that specifies the end state of a PipeLine. The state is returned to the receiver as well as the optionally specified http status code. Each Exit should have a unique name. See Exits for examples.\n\nWhen a Pipeline doesn't have an Exits element configured it will be initialized with one Exit having name READY and state SUCCESS.\n\nThe name of an Exit can be referenced by the path attribute of a Forward within a Pipe.\nSee also\nGithub - Exit Implementation Examples\nJavadoc - org.frankframework.core.PipeLineExit\nSyntax\nCopy\n<Exit name=\"\" state=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe name of the Exit that can be referenced by a PipeForward's path attribute. When a Pipeline doesn't have an Exits element co"
+}

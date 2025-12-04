@@ -1,0 +1,102 @@
+{
+  "href": "#/Components/Pipes/MailSenderPipe",
+  "chip": "P",
+  "linkText": "MailSenderPipe",
+  "scrapedAt": "2025-10-31T10:47:56.839Z",
+  "title": "FF! Doc | MailSenderPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "MailSenderPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - MailSenderPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.MailSenderPipe",
+    "ALL to mask the entire string",
+    "FIRSTHALF to only mask the first half of the string",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "MailSenderPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<email>\n \t    <recipients>\n \t        <recipient>***@natned</recipient>\n \t        <recipient>***@nn.nl</recipient>\n \t    </recipients>\n \t    <from>***@nn.nl</from>\n \t    <subject>this is the subject</subject>\n \t    <message>dit is de message</message>\n \t</email>",
+    "<email>\n \t    <recipients>\n \t        <recipient>***@natned</recipient>\n \t        <recipient>***@nn.nl</recipient>\n \t    </recipients>\n \t    <from>***@nn.nl</from>\n \t    <subject>this is the subject</subject>\n \t    <message>dit is de message</message>\n \t</email>",
+    "<message><![CDATA[<h1>This is a HtmlMessage</h1>]]></message>",
+    "<message><![CDATA[<h1>This is a HtmlMessage</h1>]]></message>",
+    "Copy\n<MailSenderPipe name=\"\" styleSheetName=\"\"/>",
+    "<MailSenderPipe name=\"\" styleSheetName=\"\"/>",
+    "path",
+    "JSON",
+    "CSV",
+    "XML",
+    "YAML",
+    "MESSAGEID",
+    "CORRELATIONID",
+    "ALL",
+    "FIRSTHALF",
+    "true",
+    "retryXPath",
+    "retryMaxInterval",
+    "true",
+    "prefix=namespaceUri",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nMailSenderPipe\nPipes\nPipe that sends a mail-message using a MailSender as its sender.\nSample email.xml:\n\n<email>\n \t    <recipients>\n \t        <recipient>***@natned</recipient>\n \t        <recipient>***@nn.nl</recipient>\n \t    </recipients>\n \t    <from>***@nn.nl</from>\n \t    <subject>this is the subject</subject>\n \t    <message>dit is de message</message>\n \t</email>\n\nNotice: it must be valid XML. Therefore, especially the message element must be plain text or be wrapped as CDATA.\n\nexample:\n\n<message><![CDATA[<h1>This is a HtmlMessage</h1>]]></message>\n\n\nSee also\nGithub - MailSenderPipe Implementation Examples\nJavadoc - org.frankframework.pipes.MailSenderPipe\nSyntax\nCopy\n<MailSenderPipe name=\"\" styleSheetName=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstyleSheetName\ttext\t-\nLocation of the stylesheet to apply to the input message.\nname\ttext\t-\nThe functional name of t"
+}

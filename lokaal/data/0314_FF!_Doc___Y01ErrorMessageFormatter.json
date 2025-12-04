@@ -1,0 +1,50 @@
+{
+  "href": "#/Components/ErrorMessageFormatters/Y01ErrorMessageFormatter",
+  "chip": "E",
+  "linkText": "Y01ErrorMessageFormatter",
+  "scrapedAt": "2025-10-31T11:01:59.589Z",
+  "title": "FF! Doc | Y01ErrorMessageFormatter",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Y01ErrorMessageFormatter"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This element is deprecated!",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - Y01ErrorMessageFormatter Implementation Examples",
+    "Javadoc - org.frankframework.errormessageformatters.Y01ErrorMessageFormatter",
+    "Y01ErrorMessageFormatter",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Y01ErrorMessageFormatter />",
+    "<Y01ErrorMessageFormatter />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nY01ErrorMessageFormatter\nDeprecatedErrorMessageFormatters\n\nThis element is deprecated!\n\nErrorMessageFormatter for JUICE, introduced with the Y01-project.\nSee also\nGithub - Y01ErrorMessageFormatter Implementation Examples\nJavadoc - org.frankframework.errormessageformatters.Y01ErrorMessageFormatter\nSyntax\nCopy\n<Y01ErrorMessageFormatter />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nY01ErrorMessageFormatter\nSee also\nSyntax\nAttributes\nOptional\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

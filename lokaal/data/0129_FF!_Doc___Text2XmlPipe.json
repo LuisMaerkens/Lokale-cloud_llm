@@ -1,0 +1,89 @@
+{
+  "href": "#/Components/Pipes/Text2XmlPipe",
+  "chip": "P",
+  "linkText": "Text2XmlPipe",
+  "scrapedAt": "2025-10-31T10:46:31.552Z",
+  "title": "FF! Doc | Text2XmlPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Text2XmlPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LogContextPipe",
+    "TextSplitterPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "EscapePipe",
+    "Github - Text2XmlPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.Text2XmlPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "Text2XmlPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Text2XmlPipe name=\"\" xmlTag=\"\"/>",
+    "<Text2XmlPipe name=\"\" xmlTag=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nLogContextPipe\nTextSplitterPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nEscapePipe\nText2XmlPipe\nPipesTranslator\nPipe for converting TEXT to XML.\nSee also\nGithub - Text2XmlPipe Implementation Examples\nJavadoc - org.frankframework.pipes.Text2XmlPipe\nSyntax\nCopy\n<Text2XmlPipe name=\"\" xmlTag=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nxmlTag\ttext\t-\nThe xml tag to encapsulate the text in\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsplitLines\tboolean\tfalse\nControls whether the lines of the input are places in separated <line> tags\nreplaceNonXmlChars\tboolean\ttrue\nReplace all non xml chars (not in the character range as specified by the xml specification) with the inverted question mark (0x00bf)\nuseCdataSection\tboolean\ttrue\nControls whethe"
+}

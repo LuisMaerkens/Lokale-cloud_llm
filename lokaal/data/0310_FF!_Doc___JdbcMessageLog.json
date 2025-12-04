@@ -1,0 +1,94 @@
+{
+  "href": "#/Components/TransactionalStorages/JdbcMessageLog",
+  "chip": "T",
+  "linkText": "JdbcMessageLog",
+  "scrapedAt": "2025-10-31T11:01:39.515Z",
+  "title": "FF! Doc | JdbcMessageLog",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JdbcMessageLog"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JdbcTableListener",
+    "JdbcErrorStorage",
+    "MessageStoreSender",
+    "SimpleJdbcListener",
+    "JdbcListener",
+    "MessageStoreListener",
+    "Github - JdbcMessageLog Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.JdbcTransactionalStorage",
+    "ALL to mask the entire string",
+    "FIRSTHALF to only mask the first half of the string",
+    "JdbcMessageLog",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "JdbcMessageLog",
+    "JdbcErrorStorage",
+    "MessageStoreSender",
+    "MessageStoreListener",
+    "MessageStoreSender",
+    "MessageStoreListener",
+    "JdbcMessageLog",
+    "JdbcErrorStorage",
+    "The error code was XAER_RMERR. The exception stack trace follows: javax.transaction.xa.XAException\n\tat oracle.jdbc.xa.OracleXAResource.recover(OracleXAResource.java:508)",
+    "Copy\n<JdbcMessageLog />",
+    "<JdbcMessageLog />",
+    "true",
+    "E",
+    "A",
+    "L",
+    "E",
+    "M",
+    "L",
+    "A",
+    "E",
+    "A",
+    "L",
+    "M",
+    "true",
+    "true",
+    "(100)",
+    "(1000)",
+    "true",
+    "true",
+    "false",
+    "true",
+    "NONE",
+    "ASC",
+    "DESC",
+    "ALL",
+    "FIRSTHALF",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJdbcTableListener\nJdbcErrorStorage\nMessageStoreSender\nSimpleJdbcListener\nJdbcListener\nMessageStoreListener\nJdbcMessageLog\nTransactionalStoragesJDBC\nImplements a message log (JdbcMessageLog) or error store (JdbcErrorStorage) that uses database table IBISSTORE. A MessageStoreSender and MessageStoreListener pair implicitly includes a message log and an error store. If you have a MessageStoreSender and MessageStoreListener pair it is superfluous to add a JdbcMessageLog or JdbcErrorStorage within the same sender pipe or the same receiver.\n\nMessage log: A message log writes messages in persistent storage for logging purposes. When a message log appears in a receiver, it also ensures that the same message is only processed once, even if a related pushing listener receives the same message multiple times.\n\nError store: Appears in a receiver or sender pipe to store messages that could not be pro"
+}

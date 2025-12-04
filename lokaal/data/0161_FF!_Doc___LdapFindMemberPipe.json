@@ -1,0 +1,88 @@
+{
+  "href": "#/Components/Pipes/LdapFindMemberPipe",
+  "chip": "P",
+  "linkText": "LdapFindMemberPipe",
+  "scrapedAt": "2025-10-31T10:49:12.076Z",
+  "title": "FF! Doc | LdapFindMemberPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LdapFindMemberPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LdapFindGroupMembershipsPipe",
+    "Github - LdapFindMemberPipe Implementation Examples",
+    "Javadoc - org.frankframework.ldap.LdapFindMemberPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LdapFindMemberPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<LdapFindMemberPipe name=\"\"/>",
+    "<LdapFindMemberPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "notFoundForwardName",
+    "exceptionForwardName",
+    "notFoundForwardName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nLdapFindGroupMembershipsPipe\nLdapFindMemberPipe\nPipes\nPipe that checks if a specified dn exists as 'member' in another specified dn in LDAP.\nSee also\nGithub - LdapFindMemberPipe Implementation Examples\nJavadoc - org.frankframework.ldap.LdapFindMemberPipe\nSyntax\nCopy\n<LdapFindMemberPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndnSearchIn\ttext\t-\nThe dn of the group to search in when the parameter dnSearchIn is not set\ndnFind\ttext\t-\nThe dn of the member to search for when the parameter dnFind is not set\nrecursiveSearch\tboolean\ttrue\nWhen true, the member attribute is also searched in all the found members\nAbstractLdapQueryPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nldapProviderURL\ttext\t-\nUrl to context"
+}

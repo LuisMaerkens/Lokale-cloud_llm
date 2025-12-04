@@ -1,0 +1,103 @@
+{
+  "href": "#/Components/Pipes/ZipWriterPipe",
+  "chip": "P",
+  "linkText": "ZipWriterPipe",
+  "scrapedAt": "2025-10-31T10:49:42.182Z",
+  "title": "FF! Doc | ZipWriterPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ZipWriterPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "A chain of zipWriterPipes can be used to create a ZIP archive. You can use the pipe with different actions (see specified below). Action CLOSE will generate the ZIP archive which is returned as the pipe ouput.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "BytesOutputPipe",
+    "UnzipPipe",
+    "ZipIteratorPipe",
+    "CompressPipe",
+    "Github - ZipWriterPipe Implementation Examples",
+    "Javadoc - org.frankframework.compression.ZipWriterPipe",
+    "OPEN To initiate a new collection",
+    "WRITE Add an item to an existing collection",
+    "LAST Combination of WRITE and CLOSE: Add an item to an existing collection, then finalize the collection",
+    "CLOSE Finalize the collection",
+    "STREAM",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "ZipWriterPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "CLOSE",
+    "Copy\n<ZipWriterPipe name=\"\"/>",
+    "<ZipWriterPipe name=\"\"/>",
+    "path",
+    "true",
+    "OPEN",
+    "WRITE",
+    "LAST",
+    "CLOSE",
+    "STREAM",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "action=WRITE",
+    "action=WRITE"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nBytesOutputPipe\nUnzipPipe\nZipIteratorPipe\nCompressPipe\nZipWriterPipe\nPipes\nPipe that creates a ZIP archive (on action close).\n\nA chain of zipWriterPipes can be used to create a ZIP archive. You can use the pipe with different actions (see specified below). Action CLOSE will generate the ZIP archive which is returned as the pipe ouput.\n\nSee also\nGithub - ZipWriterPipe Implementation Examples\nJavadoc - org.frankframework.compression.ZipWriterPipe\nSyntax\nCopy\n<ZipWriterPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nzipWriterHandle\ttext\tzipwriterhandle\nSession key used to refer to zip session. Must be specified with another value if ZipWriterPipes are nested. Deprecated, use collectionName instead.\ncomplet"
+}

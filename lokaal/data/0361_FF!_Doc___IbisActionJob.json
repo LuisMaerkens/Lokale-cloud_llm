@@ -1,0 +1,85 @@
+{
+  "href": "#/Components/Scheduling/IbisActionJob",
+  "chip": "S",
+  "linkText": "IbisActionJob",
+  "scrapedAt": "2025-10-31T11:05:55.321Z",
+  "title": "FF! Doc | IbisActionJob",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IbisActionJob"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "IbisActionJob has been renamed to ActionJob",
+    "Since: 8.2.0",
+    "The following attributes are all inherited",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LoadDatabaseSchedulesJob",
+    "CleanupDatabaseJob",
+    "CheckReloadJob",
+    "Github - IbisActionJob Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.job.IbisActionJob",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "IbisActionJob",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<IbisActionJob action=\"\" adapterName=\"\" name=\"\" function=\"\"/>",
+    "<IbisActionJob action=\"\" adapterName=\"\" name=\"\" function=\"\"/>",
+    "StopAdapter",
+    "StartAdapter",
+    "StopReceiver",
+    "StartReceiver",
+    "SendMessage",
+    "ExecuteQuery",
+    "cleanupDatabase",
+    "cleanupFileSystem",
+    "recoverAdapters",
+    "checkReload",
+    "loadDatabaseSchedules",
+    "STOPADAPTER",
+    "STARTADAPTER",
+    "STOPRECEIVER",
+    "STARTRECEIVER",
+    "0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nLoadDatabaseSchedulesJob\nCleanupDatabaseJob\nCheckReloadJob\nIbisActionJob\nDeprecatedScheduling\n\nIbisActionJob has been renamed to ActionJob\n\nSince: 8.2.0\n\nSee also\nGithub - IbisActionJob Implementation Examples\nJavadoc - org.frankframework.scheduler.job.IbisActionJob\nSyntax\nCopy\n<IbisActionJob action=\"\" adapterName=\"\" name=\"\" function=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfunction\toptions\t-\nAvailable Options: StopAdapter, StartAdapter, StopReceiver, StartReceiver, SendMessage, ExecuteQuery, cleanupDatabase, cleanupFileSystem, recoverAdapters, checkReload, loadDatabaseSchedules\naction\toptions\t-\nAvailable Options: STOPADAPTER, STARTADAPTER, STOPRECEIVER, STARTRECEIVER\nadapterName\ttext\t-\nAdapter on which job operates\nname\ttext\t-\nName of the job\nOptional\n\nThe following attributes are all inherited\n\nActionJob\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nconfiguration"
+}

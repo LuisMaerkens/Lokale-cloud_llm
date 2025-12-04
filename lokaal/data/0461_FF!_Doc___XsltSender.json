@@ -1,0 +1,63 @@
+{
+  "href": "#/EIP/Endpoint/XsltSender",
+  "chip": "E",
+  "linkText": "XsltSender",
+  "scrapedAt": "2025-10-31T11:14:16.867Z",
+  "title": "FF! Doc | XsltSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XsltSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JsonXsltSender",
+    "Github - XsltSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.XsltSender",
+    "XsltSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XsltSender />",
+    "<XsltSender />",
+    "true",
+    "@disable-output-escaping='yes'",
+    "prefix=namespaceuri",
+    "TEXT",
+    "XML",
+    "true",
+    "true",
+    "true",
+    "true",
+    "2",
+    "3",
+    "0",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nJsonXsltSender\nXsltSender\nSendersEndpoint\nPerform an XSLT transformation with a specified stylesheet or XPath-expression.\nSee also\nGithub - XsltSender Implementation Examples\nJavadoc - org.frankframework.senders.XsltSender\nSyntax\nCopy\n<XsltSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstyleSheetName\ttext\t-\nLocation of stylesheet to apply to the input message\nstyleSheetNameSessionKey\ttext\t-\nSession key to retrieve stylesheet location. Overrides stylesheetName or xpathExpression attribute\nstyleSheetCacheSize\tnumber\t100\nSize of cache of stylesheets retrieved from styleSheetNameSessionKey\nxpathExpression\ttext\t-\nAlternatively: XPath-expression to create stylesheet from\nomitXmlDeclaration\tboolean\tfalse, if not set in stylesheet\nOmit the XML declaration on top of the output. If not set, the value specified in the st"
+}

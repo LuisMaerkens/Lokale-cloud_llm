@@ -1,0 +1,103 @@
+{
+  "href": "#/Components/Pipes/BytesOutputPipe",
+  "chip": "P",
+  "linkText": "BytesOutputPipe",
+  "scrapedAt": "2025-10-31T10:44:36.152Z",
+  "title": "FF! Doc | BytesOutputPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "BytesOutputPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LocalFileSystemPipe",
+    "SkipPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "Adios2XmlPipe",
+    "GetBytesFromString, a conversion from string to bytes as specified by java.lang.String.getBytes(String charsetName).",
+    "PackedDecimal, a conversion from string to Packed-decimal.",
+    "A description as found at http://www.simotime.com/datapk01.htm.",
+    "AS400PackedDecimal.java from jtopen_6_1_source.zip downloaded at http://jt400.sourceforge.net/.",
+    "The string +12345 will be translated to three bytes with the following hexadecimal representation: 12 34 5C.",
+    "The string -12345 will be translated to three bytes with the following hexadecimal representation: 12 34 5D.",
+    "The string 12345 will be translated to three bytes with the following hexadecimal representation: 12 34 5F.",
+    "The string 1234 will be translated to three bytes with the following hexadecimal representation: 01 23 4F.",
+    "Github - BytesOutputPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.BytesOutputPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "BytesOutputPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "GetBytesFromString",
+    "PackedDecimal",
+    "<fields>\n   <field type=\"GetBytesFromString\" value=\" TEST 1234 \" charset=\"Cp037\"/>\n </fields>",
+    "<fields>\n   <field type=\"PackedDecimal\" value=\"+12345\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+67890\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+1234\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-12345\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-67890\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-1234\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"12345\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"67890\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"1234\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+1\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-1\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+12\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-12\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+123\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-123\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+1234\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-1234\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+12345\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-12345\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+123456\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-123456\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+1234567\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-1234567\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"+12345678\" size=\"16\"/>\n   <field type=\"PackedDecimal\" value=\"-12345678\" size=\"16\"/>\n </fields>",
+    "Copy\n<BytesOutputPipe name=\"\"/>",
+    "<BytesOutputPipe name=\"\"/>",
+    "path",
+    "xpathExpression",
+    "jsonPathExpression",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nLocalFileSystemPipe\nSkipPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nAdios2XmlPipe\nBytesOutputPipe\nPipesTranslator\nOutput bytes as specified by the input XML. Actions are taken on every field tag found in the input XML. Every field tag should have a type attribute that specifies the type of conversion that needs to be done on the string specified by the value attribute. A value attribute also needs to be present for every field tag. Currently, two types of conversion are supported:\nGetBytesFromString, a conversion from string to bytes as specified by java.lang.String.getBytes(String charsetName).\nPackedDecimal, a conversion from string to Packed-decimal.\nAn additional charset attribute is needed for a GetBytesFromString conversion. An input XML that would encode the string \" TEST 1234 \" into EBCDIC format would look like:  <fields>\n   <field type=\"GetBytesFromString"
+}

@@ -1,0 +1,90 @@
+{
+  "href": "#/Components/Pipes/ApiPrincipalPipe",
+  "chip": "P",
+  "linkText": "ApiPrincipalPipe",
+  "scrapedAt": "2025-10-31T10:45:16.288Z",
+  "title": "FF! Doc | ApiPrincipalPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ApiPrincipalPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LarvaPipe",
+    "EsbSoapInputWrapper",
+    "ApiWsdlXmlValidatorPipe",
+    "SoapInputWrapper",
+    "ApiSoapInputWrapper",
+    "ApiSoapOutputWrapper",
+    "ApiSoapWrapperPipe",
+    "Github - ApiPrincipalPipe Implementation Examples",
+    "Javadoc - org.frankframework.http.rest.ApiPrincipalPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "ApiPrincipalPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ApiPrincipalPipe name=\"\"/>",
+    "<ApiPrincipalPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nLarvaPipe\nEsbSoapInputWrapper\nApiWsdlXmlValidatorPipe\nSoapInputWrapper\nApiSoapInputWrapper\nApiSoapOutputWrapper\nApiSoapWrapperPipe\nApiPrincipalPipe\nPipes\nPipe to manage the ApiPrincipal handling\nSee also\nGithub - ApiPrincipalPipe Implementation Examples\nJavadoc - org.frankframework.http.rest.ApiPrincipalPipe\nSyntax\nCopy\n<ApiPrincipalPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naction\ttext\t-\nauthenticationMethod\ttext\t-\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues directly at the forward of this pipe, without executing the pipe itself, if the input is empty.\nifParam\ttext\t-\nIf set, this pipe is only executed when the value of"
+}

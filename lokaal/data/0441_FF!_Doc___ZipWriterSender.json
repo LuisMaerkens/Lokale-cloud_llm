@@ -1,0 +1,51 @@
+{
+  "href": "#/EIP/Endpoint/ZipWriterSender",
+  "chip": "E",
+  "linkText": "ZipWriterSender",
+  "scrapedAt": "2025-10-31T11:12:36.550Z",
+  "title": "FF! Doc | ZipWriterSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ZipWriterSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "XmlValidatorSender",
+    "Github - ZipWriterSender Implementation Examples",
+    "Javadoc - org.frankframework.compression.ZipWriterSender",
+    "ZipWriterSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ZipWriterSender />",
+    "<ZipWriterSender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nXmlValidatorSender\nZipWriterSender\nSendersEndpoint\nSender that writes an entry to a ZipStream, similar to ZipWriterPipe with action='write'. Filename and contents are taken from parameters. If one of the parameters is not present, the input message is used for either filename or contents.\nSee also\nGithub - ZipWriterSender Implementation Examples\nJavadoc - org.frankframework.compression.ZipWriterSender\nSyntax\nCopy\n<ZipWriterSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nzipWriterHandle\ttext\tzipwriterhandle\nSession key used to refer to zip session. Must be specified with another value if ZipWriterPipes are nested\nbackwardsCompatibility\tboolean\t-\nInput will be 'piped' to the output, and the message will be preserved. Avoid using this if possible.\nAbstractCollectorSender\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nc"
+}

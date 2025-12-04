@@ -1,0 +1,94 @@
+{
+  "href": "#/Components/Senders/XmlJmsBrowserSender",
+  "chip": "S",
+  "linkText": "XmlJmsBrowserSender",
+  "scrapedAt": "2025-10-31T10:56:03.416Z",
+  "title": "FF! Doc | XmlJmsBrowserSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XmlJmsBrowserSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "When input root element is browse all queue messages are returned.",
+    "When input root element is remove all queue messages are removed.",
+    "example (input):",
+    "example (browse output):",
+    "example (remove output):",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CmisSender",
+    "LdapSender",
+    "SapSender",
+    "FixedQuerySender",
+    "XmlQuerySender",
+    "JsonXsltSender",
+    "MailSender",
+    "SendGridSender",
+    "Afm2EdiFactSender",
+    "XmlValidatorSender",
+    "Github - XmlJmsBrowserSender Implementation Examples",
+    "Javadoc - org.frankframework.jms.XmlJmsBrowserSender",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "XmlJmsBrowserSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "browse",
+    "remove",
+    "<browse>\n    <jmsRealm>qcf</jmsRealm>\n    <destinationName>jms/GetPolicyDetailsRequest</destinationName>\n    <destinationType>QUEUE</destinationType>\n </browse>",
+    "<browse>\n    <jmsRealm>qcf</jmsRealm>\n    <destinationName>jms/GetPolicyDetailsRequest</destinationName>\n    <destinationType>QUEUE</destinationType>\n </browse>",
+    "<result>\n   <items count=\"2\">\n      <item>\n         <timestamp>Thu Nov 20 13:36:31 CET 2014</timestamp>\n         <messageId>ID:LPAB00000003980-61959-1416486781822-3:5:33:1:1</messageId>\n         <correlationId>...</correlationId>\n         <message><![CDATA[...]]></message>\n      </item>\n      <item>\n         <timestamp>Thu Dec 12 11:59:22 CET 2014</timestamp>\n         <messageId>ID:LPAB00000003980-58359-1721486799722-3:4:19:1:1</messageId>\n         <correlationId>...</correlationId>\n         <message><![CDATA[...]]></message>\n      </item>\n \t </items>\n </result>",
+    "<result>\n   <items count=\"2\">\n      <item>\n         <timestamp>Thu Nov 20 13:36:31 CET 2014</timestamp>\n         <messageId>ID:LPAB00000003980-61959-1416486781822-3:5:33:1:1</messageId>\n         <correlationId>...</correlationId>\n         <message><![CDATA[...]]></message>\n      </item>\n      <item>\n         <timestamp>Thu Dec 12 11:59:22 CET 2014</timestamp>\n         <messageId>ID:LPAB00000003980-58359-1721486799722-3:4:19:1:1</messageId>\n         <correlationId>...</correlationId>\n         <message><![CDATA[...]]></message>\n      </item>\n \t </items>\n </result>",
+    "<result>\n     <itemsRemoved>2</itemsRemoved>\n </result>",
+    "<result>\n     <itemsRemoved>2</itemsRemoved>\n </result>",
+    "Copy\n<XmlJmsBrowserSender />",
+    "<XmlJmsBrowserSender />",
+    "replyTo,from,sender,Return-Path",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "keystoreAlias",
+    "keystoreAlias",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "true",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nCmisSender\nLdapSender\nSapSender\nFixedQuerySender\nXmlQuerySender\nJsonXsltSender\nMailSender\nSendGridSender\nAfm2EdiFactSender\nXmlValidatorSender\nXmlJmsBrowserSender\nSendersEndpoint\nSender for browsing and removing queue messages (with input and output in a XML message).\n\nWhen input root element is browse all queue messages are returned.\n\nWhen input root element is remove all queue messages are removed.\n\nexample (input):\n\n<browse>\n    <jmsRealm>qcf</jmsRealm>\n    <destinationName>jms/GetPolicyDetailsRequest</destinationName>\n    <destinationType>QUEUE</destinationType>\n </browse>\n\nexample (browse output):\n\n<result>\n   <items count=\"2\">\n      <item>\n         <timestamp>Thu Nov 20 13:36:31 CET 2014</timestamp>\n         <messageId>ID:LPAB00000003980-61959-1416486781822-3:5:33:1:1</messageId>\n         <correlationId>...</correlationId>\n         <message><![CDATA[...]]></message>\n      </item>\n"
+}

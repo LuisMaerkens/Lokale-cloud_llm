@@ -1,0 +1,93 @@
+{
+  "href": "#/Components/Pipes/LdapFindGroupMembershipsPipe",
+  "chip": "P",
+  "linkText": "LdapFindGroupMembershipsPipe",
+  "scrapedAt": "2025-10-31T10:49:07.062Z",
+  "title": "FF! Doc | LdapFindGroupMembershipsPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LdapFindGroupMembershipsPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Pipe that returns the memberships of a userDN. The input is a fullDn, of a user or a group.",
+    "Sample result:",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LdapFindMemberPipe",
+    "Github - LdapFindGroupMembershipsPipe Implementation Examples",
+    "Javadoc - org.frankframework.ldap.LdapFindGroupMembershipsPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LdapFindGroupMembershipsPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<ldap>\n     <entry name=\"CN=xxyyzz,OU=Users,DC=domain,DC=ext\">\n         <attributes>\n             <attribute>\n             <attribute name=\"memberOf\" value=\"Extern\"/>\n             <attribute name=\"departmentCode\" value=\"358000\"/>\n             <attribute name=\"organizationalHierarchy\">\n                 <item value=\"ou=zzyyxx\"/>\n                 <item value=\"ou=OPS&IT,ou=Group,ou=domain,o=ext\"/>\n             </attribute>\n             <attribute name=\"givenName\" value=\"Gerrit\">\n         </attributes>\n     </entry>\n     <entry> .... </entry>\n </ldap>",
+    "<ldap>\n     <entry name=\"CN=xxyyzz,OU=Users,DC=domain,DC=ext\">\n         <attributes>\n             <attribute>\n             <attribute name=\"memberOf\" value=\"Extern\"/>\n             <attribute name=\"departmentCode\" value=\"358000\"/>\n             <attribute name=\"organizationalHierarchy\">\n                 <item value=\"ou=zzyyxx\"/>\n                 <item value=\"ou=OPS&IT,ou=Group,ou=domain,o=ext\"/>\n             </attribute>\n             <attribute name=\"givenName\" value=\"Gerrit\">\n         </attributes>\n     </entry>\n     <entry> .... </entry>\n </ldap>",
+    "Copy\n<LdapFindGroupMembershipsPipe name=\"\"/>",
+    "<LdapFindGroupMembershipsPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "notFoundForwardName",
+    "exceptionForwardName",
+    "notFoundForwardName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nLdapFindMemberPipe\nLdapFindGroupMembershipsPipe\nPipes\n\nPipe that returns the memberships of a userDN. The input is a fullDn, of a user or a group.\n\nSample result:\n\n<ldap>\n     <entry name=\"CN=xxyyzz,OU=Users,DC=domain,DC=ext\">\n         <attributes>\n             <attribute>\n             <attribute name=\"memberOf\" value=\"Extern\"/>\n             <attribute name=\"departmentCode\" value=\"358000\"/>\n             <attribute name=\"organizationalHierarchy\">\n                 <item value=\"ou=zzyyxx\"/>\n                 <item value=\"ou=OPS&IT,ou=Group,ou=domain,o=ext\"/>\n             </attribute>\n             <attribute name=\"givenName\" value=\"Gerrit\">\n         </attributes>\n     </entry>\n     <entry> .... </entry>\n </ldap>\nSee also\nGithub - LdapFindGroupMembershipsPipe Implementation Examples\nJavadoc - org.frankframework.ldap.LdapFindGroupMembershipsPipe\nSyntax\nCopy\n<LdapFindGroupMembershipsPipe name=\""
+}

@@ -1,0 +1,52 @@
+{
+  "href": "#/Components/Other/DirectoryCleaner",
+  "chip": "O",
+  "linkText": "DirectoryCleaner",
+  "scrapedAt": "2025-10-31T11:06:45.474Z",
+  "title": "FF! Doc | DirectoryCleaner",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DirectoryCleaner"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - DirectoryCleaner Implementation Examples",
+    "Javadoc - org.frankframework.util.DirectoryCleaner",
+    "DirectoryCleaner",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DirectoryCleaner />",
+    "<DirectoryCleaner />",
+    "true",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nDirectoryCleaner\nOther\nCleans up a directory.\nSee also\nGithub - DirectoryCleaner Implementation Examples\nJavadoc - org.frankframework.util.DirectoryCleaner\nSyntax\nCopy\n<DirectoryCleaner />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndirectory\ttext\t-\nDirectory to be cleaned up\nretention\ttext\t30d\nMinimum amount of time (with suffix 'd', 'h', 'm' or 's') that must have passed before a file will be deleted. You may only use one suffix!\nsubdirectories\tboolean\tfalse\nWhen true, files in subdirectories will be deleted, too\ndeleteEmptySubdirectories\tboolean\tfalse\nWhen true, empty subdirectories will be deleted, too\nnotExistWarn\tboolean\ttrue\nWhen set true, send warnings to logging and console about not existing directories\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nDirectory"
+}

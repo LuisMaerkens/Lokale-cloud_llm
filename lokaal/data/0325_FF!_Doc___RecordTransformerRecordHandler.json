@@ -1,0 +1,63 @@
+{
+  "href": "#/Components/Batch/RecordTransformerRecordHandler",
+  "chip": "B",
+  "linkText": "RecordTransformerRecordHandler",
+  "scrapedAt": "2025-10-31T11:02:54.779Z",
+  "title": "FF! Doc | RecordTransformerRecordHandler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "RecordTransformerRecordHandler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "RecordTransformerChild",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "FixedPositionChild",
+    "FixedPositionManager",
+    "Manager",
+    "Github - RecordTransformerRecordHandler Implementation Examples",
+    "Javadoc - org.frankframework.batch.RecordTransformer",
+    "RecordTransformerRecordHandler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<RecordTransformerRecordHandler />",
+    "<RecordTransformerRecordHandler />",
+    "inputSeparator",
+    "inputFields",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nRecordTransformerChild\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nFixedPositionChild\nFixedPositionManager\nManager\nRecordTransformerRecordHandler\nBatch\nTranslate a record using an outputFields description. The outputFields description can contain the following functions:\nstring(value)\tinserts the value between the braces\tstring( Dit wordt geinsert inclusief spaties ervoor en erna. )\nalign(value,size,align,fillchar)\tinserts the value aligned\talign(test~10~left~ )\nfill(size,fillchar)\tinsert size fillchars\tfill(2,0)\nnow(outformat)\tinserts the current date\tnow(dd MMM yyyy)\nincopy(fieldnr)\tsimply inserts the value of the field\tincopy(2)\nsubstr(fieldnr,startindex,endindex)\tinsert part of the value of the field\tsubstr(2,0,8)\nlookup(fieldnr,orgvval=newval,...)\treplace ori"
+}

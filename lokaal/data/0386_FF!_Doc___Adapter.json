@@ -1,0 +1,135 @@
+{
+  "href": "#/Components/Other/Adapter",
+  "chip": "O",
+  "linkText": "Adapter",
+  "scrapedAt": "2025-10-31T11:08:00.686Z",
+  "title": "FF! Doc | Adapter",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Adapter"
+    },
+    {
+      "level": 2,
+      "text": "Error Handling in Adapters"
+    },
+    {
+      "level": 3,
+      "text": "Error Handling Example 1 - Call Sub-Adapter Direct"
+    },
+    {
+      "level": 4,
+      "text": "Calling Adapter:"
+    },
+    {
+      "level": 4,
+      "text": "Sub Adapter:"
+    },
+    {
+      "level": 3,
+      "text": "Error Handling Example 2 - Call Sub-Adapter via a Listener"
+    },
+    {
+      "level": 4,
+      "text": "Calling Adapter:"
+    },
+    {
+      "level": 4,
+      "text": "Sub Adapter:"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "An Adapter receives a specific type of messages and processes them. It has Receivers that receive the messages and a PipeLine that transforms the incoming messages. Each adapter is part of a Configuration.",
+    "If an adapter can receive its messages through multiple channels (e.g. RESTful HTTP requests, incoming files, etc), each channel appears as a separate Receiver nested in the adapter. Each Receiver is also responsible for dealing with the result of its received messages; the result is the output of the PipeLine. The result consists of the transformed message and a state. The Frank!Framework distinguishes between exit states SUCCESS and ERROR. There is also a state REJECTED for messages that are not accepted by the Frank!Framework and that are not processed by the PipeLine. If the exit state is ERROR, the result message may not be usable by the calling system. This can be fixed by adding an errorMessageFormatter that formats the result message if the state is ERROR.",
+    "Adapters gather statistics about the messages they process.",
+    "Adapters can process messages in parallel. They are thread-safe.",
+    "When an exception occurs in the execution of the Adapter pipeline, you can configure the listener to return a formatter error message using an ErrorMessageFormatter or to throw an exception (see org.frankframework.receivers.JavaListener.setOnException(RequestReplyListener.ExceptionHandlingMethod), org.frankframework.receivers.FrankListener.setOnException(RequestReplyListener.ExceptionHandlingMethod), org.frankframework.http.PushingListenerAdapter.setOnException(RequestReplyListener.ExceptionHandlingMethod)).",
+    "Listeners that do not return a reply will roll back the transaction (if any) and after a maximum number of retries, move the message to an error storage.",
+    "When one adapter calls another adapter using a org.frankframework.senders.FrankSender or org.frankframework.senders.IbisLocalSender, and the adapter returns a formatted error message, the SenderPipe can either use the exception forward or pick a forward based on the pipeline exitCode. The default exitCode in case of an error is",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Configuration",
+    "JavaListener",
+    "IbisLocalSender",
+    "Pipeline",
+    "SoapInputValidator",
+    "SoapOutputValidator",
+    "SoapValidatorPipe",
+    "FrankListener",
+    "Receiver",
+    "FrankSender",
+    "Github - Adapter Implementation Examples",
+    "Javadoc - org.frankframework.core.Adapter",
+    "OFF No logging",
+    "INFO Logs information from adapter level messages",
+    "BASIC Same as INFO",
+    "DEBUG Logs information from pipe messages",
+    "TERSE Same as DEBUG",
+    "Adapter",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "exception",
+    "exitCode",
+    "exitCode",
+    "500",
+    "exitCode",
+    "PipeLineSession",
+    "exitCode",
+    "exitCode",
+    "<Adapter name=\"ErrorHandling-Example-1\">\n \t\t<Receiver>\n \t\t\t<!-- Listener omitted, not relevant for the example -->\n \t\t</Receiver>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n \t\t\t<SenderPipe name=\"Call Subadapter To Test\">\n \t\t\t\t<FrankSender scope=\"ADAPTER\" target=\"Validate-Message\"/>\n \t\t\t\t<Forward name=\"42\" path=\"error\"/>\n \t\t\t</SenderPipe>\n \t\t\t<DataSonnetPipe name=\"Extract Name\" styleSheetName=\"stylesheets/buildResponse.jsonnet\"/>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"ErrorHandling-Example-1\">\n \t\t<Receiver>\n \t\t\t<!-- Listener omitted, not relevant for the example -->\n \t\t</Receiver>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n \t\t\t<SenderPipe name=\"Call Subadapter To Test\">\n \t\t\t\t<FrankSender scope=\"ADAPTER\" target=\"Validate-Message\"/>\n \t\t\t\t<Forward name=\"42\" path=\"error\"/>\n \t\t\t</SenderPipe>\n \t\t\t<DataSonnetPipe name=\"Extract Name\" styleSheetName=\"stylesheets/buildResponse.jsonnet\"/>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"Validate-Message\">\n \t\t<DataSonnetErrorMessageFormatter styleSheetName=\"stylesheets/BuildErrorMessage.jsonnet\"/>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n\t\t\t<!-- For simplicity of the example we assume the input message is valid if it contains a single item in an array 'results' -->\n \t\t\t<SwitchPipe name=\"Check Success\" jsonPathExpression='concat(\"result-count=\", $.results.length())' notFoundForwardName=\"result-count-too-many\"/>\n\n \t\t\t<!-- For simplicity we return the input unmodified in case of success. A realistic adapter might fetch a message remotely and return that after validations -->\n \t\t\t<EchoPipe name=\"result-count=1\" getInputFromSessionKey=\"originalMessage\">\n \t\t\t\t<Forward name=\"success\" path=\"done\"/>\n \t\t\t</EchoPipe>\n\n \t\t\t<!-- No results: use this ExceptionPipe to pass parameters to the error message formatter and set an exitCode -->\n \t\t\t<ExceptionPipe name=\"result-count=0\">\n \t\t\t\t<!-- When we do not set exitCode it will default to 500 when an adapter ends with an exception -->\n \t\t\t\t<NumberParam name=\"exitCode\" value=\"42\"/>\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"-1\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"No results found\"/>\n \t\t\t</ExceptionPipe>\n\n \t\t\t<!-- Too many results: use this ExceptionPipe to pass different parameters to the error message formatter and set an exitCode -->\n \t\t\t<ExceptionPipe name=\"result-count-too-many\">\n \t\t\t\t<NumberParam name=\"exitCode\" value=\"42\"/>\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"2\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"Too many results found, expected only single result\"/>\n \t\t\t</ExceptionPipe>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"Validate-Message\">\n \t\t<DataSonnetErrorMessageFormatter styleSheetName=\"stylesheets/BuildErrorMessage.jsonnet\"/>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n\t\t\t<!-- For simplicity of the example we assume the input message is valid if it contains a single item in an array 'results' -->\n \t\t\t<SwitchPipe name=\"Check Success\" jsonPathExpression='concat(\"result-count=\", $.results.length())' notFoundForwardName=\"result-count-too-many\"/>\n\n \t\t\t<!-- For simplicity we return the input unmodified in case of success. A realistic adapter might fetch a message remotely and return that after validations -->\n \t\t\t<EchoPipe name=\"result-count=1\" getInputFromSessionKey=\"originalMessage\">\n \t\t\t\t<Forward name=\"success\" path=\"done\"/>\n \t\t\t</EchoPipe>\n\n \t\t\t<!-- No results: use this ExceptionPipe to pass parameters to the error message formatter and set an exitCode -->\n \t\t\t<ExceptionPipe name=\"result-count=0\">\n \t\t\t\t<!-- When we do not set exitCode it will default to 500 when an adapter ends with an exception -->\n \t\t\t\t<NumberParam name=\"exitCode\" value=\"42\"/>\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"-1\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"No results found\"/>\n \t\t\t</ExceptionPipe>\n\n \t\t\t<!-- Too many results: use this ExceptionPipe to pass different parameters to the error message formatter and set an exitCode -->\n \t\t\t<ExceptionPipe name=\"result-count-too-many\">\n \t\t\t\t<NumberParam name=\"exitCode\" value=\"42\"/>\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"2\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"Too many results found, expected only single result\"/>\n \t\t\t</ExceptionPipe>\n \t\t</Pipeline>\n \t</Adapter>",
+    "exception",
+    "exitCode",
+    "ERROR",
+    "exitCode",
+    "exception",
+    "exception",
+    "<Adapter name=\"ErrorHandling-Example-2\">\n \t\t<Receiver>\n \t\t\t<!-- Listener omitted, not relevant for the example -->\n \t\t</Receiver>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n \t\t\t<SenderPipe name=\"Call Subadapter To Test\">\n \t\t\t\t<FrankSender scope=\"LISTENER\" target=\"Validate-Message\"/>\n \t\t\t\t<Forward name=\"exception\" path=\"error\"/>\n \t\t\t</SenderPipe>\n \t\t\t<DataSonnetPipe name=\"Extract Name\" styleSheetName=\"stylesheets/buildResponse.jsonnet\"/>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"ErrorHandling-Example-2\">\n \t\t<Receiver>\n \t\t\t<!-- Listener omitted, not relevant for the example -->\n \t\t</Receiver>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n \t\t\t<SenderPipe name=\"Call Subadapter To Test\">\n \t\t\t\t<FrankSender scope=\"LISTENER\" target=\"Validate-Message\"/>\n \t\t\t\t<Forward name=\"exception\" path=\"error\"/>\n \t\t\t</SenderPipe>\n \t\t\t<DataSonnetPipe name=\"Extract Name\" styleSheetName=\"stylesheets/buildResponse.jsonnet\"/>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"Validate-Message\">\n \t\t<Receiver>\n \t\t\t<!-- We need to set onException=\"format_and_return\" to make sure error message is returned instead of an exception thrown -->\n \t\t\t<FrankListener name=\"Validate-Message\" onException=\"format_and_return\"/>\n \t\t</Receiver>\n \t\t<DataSonnetErrorMessageFormatter styleSheetName=\"stylesheets/BuildErrorMessage.jsonnet\"/>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n\t\t\t<!-- For simplicity of the example we assume the input message is valid if it contains a single item in an array 'results' -->\n \t\t\t<SwitchPipe name=\"Check Success\" jsonPathExpression='concat(\"result-count=\", $.results.length())' notFoundForwardName=\"result-count-too-many\"/>\n\n \t\t\t<!-- For simplicity we return the input unmodified in case of success. A realistic adapter might fetch a message remotely and return that after validations -->\n \t\t\t<EchoPipe name=\"result-count=1\" getInputFromSessionKey=\"originalMessage\">\n \t\t\t\t<Forward name=\"success\" path=\"done\"/>\n \t\t\t</EchoPipe>\n\n \t\t\t<!-- No results: use this ExceptionPipe to pass parameters to the error message formatter -->\n \t\t\t<ExceptionPipe name=\"result-count=0\">\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"-1\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"No results found\"/>\n \t\t\t</ExceptionPipe>\n\n \t\t\t<!-- Too many results: use this ExceptionPipe to pass different parameters to the error message formatter -->\n \t\t\t<ExceptionPipe name=\"result-count-too-many\">\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"2\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"Too many results found, expected only single result\"/>\n \t\t\t</ExceptionPipe>\n \t\t</Pipeline>\n \t</Adapter>",
+    "<Adapter name=\"Validate-Message\">\n \t\t<Receiver>\n \t\t\t<!-- We need to set onException=\"format_and_return\" to make sure error message is returned instead of an exception thrown -->\n \t\t\t<FrankListener name=\"Validate-Message\" onException=\"format_and_return\"/>\n \t\t</Receiver>\n \t\t<DataSonnetErrorMessageFormatter styleSheetName=\"stylesheets/BuildErrorMessage.jsonnet\"/>\n \t\t<Pipeline>\n \t\t\t<Exits>\n \t\t\t\t<Exit name=\"done\" state=\"SUCCESS\"/>\n \t\t\t\t<Exit name=\"error\" state=\"ERROR\"/>\n \t\t\t</Exits>\n\t\t\t<!-- For simplicity of the example we assume the input message is valid if it contains a single item in an array 'results' -->\n \t\t\t<SwitchPipe name=\"Check Success\" jsonPathExpression='concat(\"result-count=\", $.results.length())' notFoundForwardName=\"result-count-too-many\"/>\n\n \t\t\t<!-- For simplicity we return the input unmodified in case of success. A realistic adapter might fetch a message remotely and return that after validations -->\n \t\t\t<EchoPipe name=\"result-count=1\" getInputFromSessionKey=\"originalMessage\">\n \t\t\t\t<Forward name=\"success\" path=\"done\"/>\n \t\t\t</EchoPipe>\n\n \t\t\t<!-- No results: use this ExceptionPipe to pass parameters to the error message formatter -->\n \t\t\t<ExceptionPipe name=\"result-count=0\">\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"-1\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"No results found\"/>\n \t\t\t</ExceptionPipe>\n\n \t\t\t<!-- Too many results: use this ExceptionPipe to pass different parameters to the error message formatter -->\n \t\t\t<ExceptionPipe name=\"result-count-too-many\">\n \t\t\t\t<NumberParam name=\"errorCode\" value=\"2\"/>\n \t\t\t\t<Param name=\"errorMessage\" value=\"Too many results found, expected only single result\"/>\n \t\t\t</ExceptionPipe>\n \t\t</Pipeline>\n \t</Adapter>",
+    "Copy\n<Adapter name=\"\"/>",
+    "<Adapter name=\"\"/>",
+    "Adapter",
+    "true",
+    "false",
+    "true",
+    "INFO",
+    "msg.log.level.default",
+    "OFF",
+    "INFO",
+    "BASIC",
+    "DEBUG",
+    "TERSE",
+    "false",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nConfiguration\nJavaListener\nIbisLocalSender\nPipeline\nSoapInputValidator\nSoapOutputValidator\nSoapValidatorPipe\nFrankListener\nReceiver\nFrankSender\nAdapter\nBasicOther\nThe Adapter is the central manager in the framework. It has knowledge both of the Receivers as well as the PipeLine and statistics. The Adapter is the class that is responsible for configuring, initializing and accessing/activating Receivers, Pipelines, statistics etc.\n\nAn Adapter receives a specific type of messages and processes them. It has Receivers that receive the messages and a PipeLine that transforms the incoming messages. Each adapter is part of a Configuration.\n\nIf an adapter can receive its messages through multiple channels (e.g. RESTful HTTP requests, incoming files, etc), each channel appears as a separate Receiver nested in the adapter. Each Receiver is also responsible for dealing with the result of its recei"
+}

@@ -1,0 +1,51 @@
+{
+  "href": "#/Components/Other/JmsRealms",
+  "chip": "O",
+  "linkText": "JmsRealms",
+  "scrapedAt": "2025-10-31T11:07:10.551Z",
+  "title": "FF! Doc | JmsRealms",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JmsRealms"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JmsRealm",
+    "Github - JmsRealms Implementation Examples",
+    "Javadoc - org.frankframework.jms.JmsRealmFactory",
+    "JmsRealms",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JmsRealms />",
+    "<JmsRealms />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nJmsRealm\nJmsRealms\nOther\nSingleton that has the different jmsRealms.\nTypical use: JmsRealmFactory.getInstance().<method to execute>\n\nSee also\nGithub - JmsRealms Implementation Examples\nJavadoc - org.frankframework.jms.JmsRealmFactory\nSyntax\nCopy\n<JmsRealms />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nNested Components\nCOMPONENT NAME\tDESCRIPTION\tCARDINALITY\njmsRealm\tRegister a Realm\t0 .. n\nJmsRealms\nSee also\nSyntax\nAttributes\nOptional\nNested Elements\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

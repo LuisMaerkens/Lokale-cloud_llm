@@ -1,0 +1,99 @@
+{
+  "href": "#/Category/NN-Special/DirectWrapperPipe",
+  "chip": "N",
+  "linkText": "DirectWrapperPipe",
+  "scrapedAt": "2025-10-31T10:41:05.463Z",
+  "title": "FF! Doc | DirectWrapperPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DirectWrapperPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlValidatorPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "UnzipPipe",
+    "EscapePipe",
+    "LabelFormatPipe",
+    "Github - DirectWrapperPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.esb.DirectWrapperPipe",
+    "I2T ifsa2tibco",
+    "REG Regular",
+    "BIS Business Integration Services",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "DirectWrapperPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DirectWrapperPipe name=\"\"/>",
+    "<DirectWrapperPipe name=\"\"/>",
+    "path",
+    "INPUT",
+    "OUTPUT",
+    "I2T",
+    "REG",
+    "BIS",
+    "mode=reg",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nFxfXmlValidatorPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nUnzipPipe\nEscapePipe\nLabelFormatPipe\nDirectWrapperPipe\nNN-SpecialPipes\nKind of extension to EsbSoapWrapperPipe for real time destinations.\nSee also\nGithub - DirectWrapperPipe Implementation Examples\nJavadoc - org.frankframework.extensions.esb.DirectWrapperPipe\nSyntax\nCopy\n<DirectWrapperPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndirection\toptions\t-\nAvailable Options: INPUT, OUTPUT\nmode\toptions\t-\nAvailable Options:\nI2T ifsa2tibco\nREG Regular\nBIS Business Integration Services\n\ncmhVersion\tnumber\t1\nOnly used when mode=reg! Sets the Common Message Header version. 1 or 2\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFA"
+}

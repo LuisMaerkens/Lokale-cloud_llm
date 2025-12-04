@@ -1,0 +1,57 @@
+{
+  "href": "#/Components/Other/Exits",
+  "chip": "O",
+  "linkText": "Exits",
+  "scrapedAt": "2025-10-31T11:07:15.562Z",
+  "title": "FF! Doc | Exits",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Exits"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Forward",
+    "Exit",
+    "Pipeline",
+    "Adapter",
+    "Receiver",
+    "Github - Exits Implementation Examples",
+    "Javadoc - org.frankframework.core.PipeLineExits",
+    "Exits",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<Exits>\n    <Exit name=\"<code>READY</code>\" state=\"<code>SUCCESS</code>\" />\n    <Exit name=\"Created\" state=\"ERROR\" code=\"201\" empty=\"true\" />\n    <Exit name=\"NotModified\" state=\"ERROR\" code=\"304\" empty=\"true\" />\n    <Exit name=\"BadRequest\" state=\"ERROR\" code=\"400\" empty=\"true\" />\n    <Exit name=\"NotAuthorized\" state=\"ERROR\" code=\"401\" empty=\"true\" />\n    <Exit name=\"NotAllowed\" state=\"ERROR\" code=\"403\" empty=\"true\" />\n    <Exit name=\"Teapot\" state=\"SUCCESS\" code=\"418\" />\n    <Exit name=\"ServerError\" state=\"ERROR\" code=\"500\" />\n </Exits>",
+    "<Exits>\n    <Exit name=\"<code>READY</code>\" state=\"<code>SUCCESS</code>\" />\n    <Exit name=\"Created\" state=\"ERROR\" code=\"201\" empty=\"true\" />\n    <Exit name=\"NotModified\" state=\"ERROR\" code=\"304\" empty=\"true\" />\n    <Exit name=\"BadRequest\" state=\"ERROR\" code=\"400\" empty=\"true\" />\n    <Exit name=\"NotAuthorized\" state=\"ERROR\" code=\"401\" empty=\"true\" />\n    <Exit name=\"NotAllowed\" state=\"ERROR\" code=\"403\" empty=\"true\" />\n    <Exit name=\"Teapot\" state=\"SUCCESS\" code=\"418\" />\n    <Exit name=\"ServerError\" state=\"ERROR\" code=\"500\" />\n </Exits>",
+    "Copy\n<Exits />",
+    "<Exits />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nForward\nExit\nPipeline\nAdapter\nReceiver\nExits\nOther\nPipeline exit container in which all (required) Exits must be defined. Multiple exits may be provided each with their unique name.\n\nIf no exits are specified, a default one is created with name=\"READY\" and state=\"SUCCESS\".\n\nexample:\n<Exits>\n    <Exit name=\"<code>READY</code>\" state=\"<code>SUCCESS</code>\" />\n    <Exit name=\"Created\" state=\"ERROR\" code=\"201\" empty=\"true\" />\n    <Exit name=\"NotModified\" state=\"ERROR\" code=\"304\" empty=\"true\" />\n    <Exit name=\"BadRequest\" state=\"ERROR\" code=\"400\" empty=\"true\" />\n    <Exit name=\"NotAuthorized\" state=\"ERROR\" code=\"401\" empty=\"true\" />\n    <Exit name=\"NotAllowed\" state=\"ERROR\" code=\"403\" empty=\"true\" />\n    <Exit name=\"Teapot\" state=\"SUCCESS\" code=\"418\" />\n    <Exit name=\"ServerError\" state=\"ERROR\" code=\"500\" />\n </Exits>\nSee also\nGithub - Exits Implementation Examples\nJavadoc - org.frankframe"
+}

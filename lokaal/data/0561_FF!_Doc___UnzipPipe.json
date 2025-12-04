@@ -1,0 +1,95 @@
+{
+  "href": "#/EIP/Translator/UnzipPipe",
+  "chip": "T",
+  "linkText": "UnzipPipe",
+  "scrapedAt": "2025-10-31T11:22:38.511Z",
+  "title": "FF! Doc | UnzipPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "UnzipPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CompressPipe",
+    "Github - UnzipPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.UnzipPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "UnzipPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<results count=\"num_of_items\">\n    <result item=\"1\">\n      <zipEntry>name in ZIP archive of first item</zipEntry>\n      <fileName>filename of first item</fileName>\n    </result>\n    <result item=\"2\">\n      <zipEntry>name in ZIP archive of second item</zipEntry>\n      <fileName>filename of second item</fileName>\n    </result>\n       ...\n  </results>",
+    "<results count=\"num_of_items\">\n    <result item=\"1\">\n      <zipEntry>name in ZIP archive of first item</zipEntry>\n      <fileContent>content of first item</fileContent>\n    </result>\n    <result item=\"2\">\n      <zipEntry>name in ZIP archive of second item</zipEntry>\n      <fileContent>content of second item</fileContent>\n    </result>\n       ...\n  </results>",
+    "<basename> + \".\" + <extension>",
+    "<basename> + <unique number> + \".\" + <extension>",
+    "Copy\n<UnzipPipe name=\"\"/>",
+    "<UnzipPipe name=\"\"/>",
+    "path",
+    "true",
+    "false",
+    "true",
+    "false",
+    "true",
+    "true",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nCompressPipe\nUnzipPipe\nPipesTranslator\nAssumes input to be the file name of a ZIP archive, and unzips it to a directory and/or an XML message.\nThe output of each unzipped item is returned in XML as follows when collectFileContents is false:   <results count=\"num_of_items\">\n    <result item=\"1\">\n      <zipEntry>name in ZIP archive of first item</zipEntry>\n      <fileName>filename of first item</fileName>\n    </result>\n    <result item=\"2\">\n      <zipEntry>name in ZIP archive of second item</zipEntry>\n      <fileName>filename of second item</fileName>\n    </result>\n       ...\n  </results>\n \nThe output of each unzipped item is returned in XML as follows when collectFileContents is true:   <results count=\"num_of_items\">\n    <result item=\"1\">\n      <zipEntry>name in ZIP archive of first item</zipEntry>\n      <fileContent>content of first item</fileContent>\n    </result>\n    <result item=\"2\">"
+}

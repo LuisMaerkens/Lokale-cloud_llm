@@ -1,0 +1,55 @@
+{
+  "href": "#/TYPE/CMIS/CmisEventListener",
+  "chip": "C",
+  "linkText": "CmisEventListener",
+  "scrapedAt": "2025-10-31T11:25:13.970Z",
+  "title": "FF! Doc | CmisEventListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CmisEventListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - CmisEventListener Implementation Examples",
+    "Javadoc - org.frankframework.extensions.cmis.CmisEventListener",
+    "CmisEventListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CmisEventListener />",
+    "<CmisEventListener />",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nCmisEventListener\nListenersListenerCMIS\nSee also\nGithub - CmisEventListener Implementation Examples\nJavadoc - org.frankframework.extensions.cmis.CmisEventListener\nSyntax\nCopy\n<CmisEventListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\neventListener\ttext\t-\nPushingListenerAdapter\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the listener as known to the adapter\napplicationFaultsAsExceptions\tboolean\t-\nonException\toptions\tRETHROW\nWhen an exception happens in the execution of the pipeline, with RETHROW the exception is thrown to the caller. With FORMAT_AND_RETURN the exception is processed by the Adapter.setErrorMessageFormatter(IErrorMessageFormatter) and returned as result-message of the Adapter.\nThe default is currently RETHROW for backwards compatibility but will become FORMAT_AND_RETURN in a fut"
+}

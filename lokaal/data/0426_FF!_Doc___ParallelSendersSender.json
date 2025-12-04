@@ -1,0 +1,51 @@
+{
+  "href": "#/EIP/Endpoint/ParallelSendersSender",
+  "chip": "E",
+  "linkText": "ParallelSendersSender",
+  "scrapedAt": "2025-10-31T11:11:21.282Z",
+  "title": "FF! Doc | ParallelSendersSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ParallelSendersSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - ParallelSendersSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.ParallelSenders",
+    "ParallelSendersSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ParallelSendersSender />",
+    "<ParallelSendersSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nParallelSendersSender\nAdvancedSendersEndpoint\nCollection of Senders, that are executed all at the same time.\nSee also\nGithub - ParallelSendersSender Implementation Examples\nJavadoc - org.frankframework.senders.ParallelSenders\nSyntax\nCopy\n<ParallelSendersSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nmaxConcurrentThreads\tnumber\t0\nSet the upper limit to the amount of concurrent threads that can be run simultaneously. Use 0 to disable.\nSenderSeries\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\t-\nAbstractSenderWrapper\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ngetInputFromSessionKey\ttext\t-\nIf set, input is taken from this session key, instead of regular input\ngetInputFromFixedValue\ttext\t-\nIf set, this fixed value is taken as input, instead of regular input\npreserveInput\tboolean\tfalse\nIf true, the in"
+}

@@ -1,0 +1,94 @@
+{
+  "href": "#/Category/Basic/EchoPipe",
+  "chip": "B",
+  "linkText": "EchoPipe",
+  "scrapedAt": "2025-10-31T10:39:25.125Z",
+  "title": "FF! Doc | EchoPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "EchoPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "EchoSender",
+    "ForPipe",
+    "FixedResultPipe",
+    "Adapter",
+    "Github - EchoPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.EchoPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "EchoPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<EchoPipe name=\"\"/>",
+    "<EchoPipe name=\"\"/>",
+    "path",
+    "false",
+    "JVM",
+    "DLL",
+    "ADAPTER",
+    "LISTENER",
+    "/",
+    "target",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nEchoSender\nForPipe\nFixedResultPipe\nAdapter\nEchoPipe\nBasicPipesTranslator\nReturns simply the input message.\nSee also\nGithub - EchoPipe Implementation Examples\nJavadoc - org.frankframework.pipes.EchoPipe\nSyntax\nCopy\n<EchoPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\ttrue\nSynchronous or Asynchronous execution of the call to other adapter or system.\nSet to false to make the call asynchronously. This means that the current adapter continues with the next pipeline and the result of the sub-adapter that was called, or other system that was called, is ignored. Instead, the input message will be returned as the result message.\nscope\toptions\tADAPTER\nScope decides if the FrankSender calls ano"
+}

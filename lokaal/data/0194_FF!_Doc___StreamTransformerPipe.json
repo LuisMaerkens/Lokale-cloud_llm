@@ -1,0 +1,93 @@
+{
+  "href": "#/Components/Pipes/StreamTransformerPipe",
+  "chip": "P",
+  "linkText": "StreamTransformerPipe",
+  "scrapedAt": "2025-10-31T10:51:57.609Z",
+  "title": "FF! Doc | StreamTransformerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "StreamTransformerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "StreamLineIteratorPipe",
+    "StreamPipe",
+    "ZipIteratorPipe",
+    "ForEachChildElementPipe",
+    "CrlPipe",
+    "Github - StreamTransformerPipe Implementation Examples",
+    "Javadoc - org.frankframework.batch.StreamTransformerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "StreamTransformerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<StreamTransformerPipe name=\"\"/>",
+    "<StreamTransformerPipe name=\"\"/>",
+    "path",
+    "true",
+    "originalBlock",
+    "false",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "reader"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated6\nStreamLineIteratorPipe\nStreamPipe\nZipIteratorPipe\nForEachChildElementPipe\nCrlPipe\nStreamTransformerPipe\nPipesTranslator\nPipe for transforming a stream with records. Records in the stream must be separated with new line characters, or be of fixed length. For files containing only a single type of lines, a simpler configuration without managers and flows can be specified. A single recordHandler with key=\"*\" and (optional) a single resultHandler need to be specified. Each line will be handled by this recordHandler and resultHandler.\nSee also\nGithub - StreamTransformerPipe Implementation Examples\nJavadoc - org.frankframework.batch.StreamTransformerPipe\nSyntax\nCopy\n<StreamTransformerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DE"
+}

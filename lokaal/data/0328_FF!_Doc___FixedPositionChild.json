@@ -1,0 +1,53 @@
+{
+  "href": "#/Components/Batch/FixedPositionChild",
+  "chip": "B",
+  "linkText": "FixedPositionChild",
+  "scrapedAt": "2025-10-31T11:03:09.820Z",
+  "title": "FF! Doc | FixedPositionChild",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "FixedPositionChild"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedPositionManager",
+    "FieldPositionChild",
+    "FieldPositionManager",
+    "Github - FixedPositionChild Implementation Examples",
+    "Javadoc - org.frankframework.batch.FixedPositionRecordHandlerManager",
+    "FixedPositionChild",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<FixedPositionChild />",
+    "<FixedPositionChild />",
+    "false"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nFixedPositionManager\nFieldPositionChild\nFieldPositionManager\nFixedPositionChild\nBatch\nManager that decides the handlers based on the content of a field in the specified position in a record. The fields in the record are of a fixed length. The data beween the start position and end position is taken as key in the flow-table.\nSee also\nGithub - FixedPositionChild Implementation Examples\nJavadoc - org.frankframework.batch.FixedPositionRecordHandlerManager\nSyntax\nCopy\n<FixedPositionChild />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstartPosition\tnumber\t0\nStart position of the field in the record that identifies the recordtype (first character is 0)\nendPosition\tnumber\t-1\nIf endPosition >= 0 then this field contains the endPosition (Java style, i.e the position of the next character) of the recordtype field in the record;"
+}

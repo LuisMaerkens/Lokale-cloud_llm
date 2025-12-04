@@ -1,0 +1,66 @@
+{
+  "href": "#/Components/Batch/RecordXmlTransformerChild",
+  "chip": "B",
+  "linkText": "RecordXmlTransformerChild",
+  "scrapedAt": "2025-10-31T11:03:44.932Z",
+  "title": "FF! Doc | RecordXmlTransformerChild",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "RecordXmlTransformerChild"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "RecordTransformerChild",
+    "RecordTransformerRecordHandler",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "FixedPositionChild",
+    "FixedPositionManager",
+    "Github - RecordXmlTransformerChild Implementation Examples",
+    "Javadoc - org.frankframework.batch.RecordXmlTransformer",
+    "RecordXmlTransformerChild",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<RecordXmlTransformerChild />",
+    "<RecordXmlTransformerChild />",
+    "prefix=namespaceuri",
+    "xpathExpression",
+    "TEXT",
+    "XML",
+    "inputSeparator",
+    "inputFields",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nRecordTransformerChild\nRecordTransformerRecordHandler\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nFixedPositionChild\nFixedPositionManager\nRecordXmlTransformerChild\nBatch\nEncapsulates a record in XML, optionally translates it using XSLT or XPath.\nSee also\nGithub - RecordXmlTransformerChild Implementation Examples\nJavadoc - org.frankframework.batch.RecordXmlTransformer\nSyntax\nCopy\n<RecordXmlTransformerChild />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\noutputFields\ttext\t-\nComma separated string with tagnames for the individual input fields (related using there positions). if you leave a tagname empty, the field is not xml-ized\nrootTag\ttext\trecord\nRoot tag for the generated xml document that will"
+}

@@ -1,0 +1,89 @@
+{
+  "href": "#/Components/Pipes/SkipPipe",
+  "chip": "P",
+  "linkText": "SkipPipe",
+  "scrapedAt": "2025-10-31T10:43:51.021Z",
+  "title": "FF! Doc | SkipPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SkipPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "ApiSoapInputWrapper",
+    "ApiSoapOutputWrapper",
+    "ApiSoapWrapperPipe",
+    "Github - SkipPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.SkipPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "SkipPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SkipPipe name=\"\"/>",
+    "<SkipPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated6\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nApiSoapInputWrapper\nApiSoapOutputWrapper\nApiSoapWrapperPipe\nSkipPipe\nPipesTranslator\nSkip a number of bytes or characters from the input message.\nSee also\nGithub - SkipPipe Implementation Examples\nJavadoc - org.frankframework.pipes.SkipPipe\nSyntax\nCopy\n<SkipPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskip\tnumber\t0\nNumber of bytes (for binary input) or characters (for character input) to skip. An empty byte array or string is returned when skip is larger than the length of the input.\nlength\tnumber\t-1\nIf length>=0 only these number of bytes (for binary input) or characters (for character input) is returned.\nFixedForwardPipe\nATTRIBUTE NAME & D"
+}

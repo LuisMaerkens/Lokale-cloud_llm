@@ -1,0 +1,83 @@
+{
+  "href": "#/Components/Listeners/DirectoryListener",
+  "chip": "L",
+  "linkText": "DirectoryListener",
+  "scrapedAt": "2025-10-31T10:58:48.968Z",
+  "title": "FF! Doc | DirectoryListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DirectoryListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Example usage:",
+    "To avoid problems with duplicate filenames in folders like the errorFolder or processedFolder, you should configure either overwrite=\"true\", configure numberOfBackups to a value larger than 0, or configure an inProcessFolder and fileTimeSensitive=\"true\". These options can be used together as well.",
+    "In addition to the above, prior to release 9.0 it was not sufficient to configure inProcessFolder and fileTimeSensitive to avoid potential duplicate filename errors. Prior to release 9.0, it is recommended to configure numberOfBackups to avoid these issues.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedResultPipe",
+    "MqttListener",
+    "Github - DirectoryListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.DirectoryListener",
+    "DirectoryListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "root",
+    "createFolders",
+    "messageType",
+    "<DirectoryListener\n \tname=\"directoryListener\"\n \tmessageType=\"info\"\n \troot=\"${rootdirectory}\"\n \tinputFolder=\"in\"\n \tinProcessFolder=\"inProcess\"\n \terrorFolder=\"error\"\n \tcreateFolders=\"true\"\n />",
+    "<DirectoryListener\n \tname=\"directoryListener\"\n \tmessageType=\"info\"\n \troot=\"${rootdirectory}\"\n \tinputFolder=\"in\"\n \tinProcessFolder=\"inProcess\"\n \terrorFolder=\"error\"\n \tcreateFolders=\"true\"\n />",
+    "messageType",
+    "errorFolder",
+    "processedFolder",
+    "overwrite=\"true\"",
+    "numberOfBackups",
+    "inProcessFolder",
+    "fileTimeSensitive=\"true\"",
+    "inProcessFolder",
+    "fileTimeSensitive",
+    "numberOfBackups",
+    "Copy\n<DirectoryListener />",
+    "<DirectoryListener />",
+    "ATTRIBUTE",
+    "NAME",
+    "PATH",
+    "CONTENTS",
+    "INFO",
+    "success",
+    "true",
+    "true",
+    "true",
+    "true",
+    "true",
+    "originalMessage",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nFixedResultPipe\nMqttListener\nDirectoryListener\nBasicListenersListenerFILE_SYSTEM\nListener that looks for files in a LocalFileSystem. The DirectoryListener keeps track of the file process by storing it in different folders. The application may create the folders if you (a) set the root attribute and (b) set the attribute createFolders to true. The attribute messageType dictates what information of the file is passed to the pipeline. This may be the name, canonical path, the entire file, or the file's metadata.\n\nExample usage:\n\n\n\n <DirectoryListener\n \tname=\"directoryListener\"\n \tmessageType=\"info\"\n \troot=\"${rootdirectory}\"\n \tinputFolder=\"in\"\n \tinProcessFolder=\"inProcess\"\n \terrorFolder=\"error\"\n \tcreateFolders=\"true\"\n />\n \n\nlistener that looks in a FileSystem for files. When a file is found, it is moved to an in-process folder, so that it isn't found more than once.\nThe information specified"
+}

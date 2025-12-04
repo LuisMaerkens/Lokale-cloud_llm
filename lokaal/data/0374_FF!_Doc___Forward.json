@@ -1,0 +1,62 @@
+{
+  "href": "#/Components/Other/Forward",
+  "chip": "O",
+  "linkText": "Forward",
+  "scrapedAt": "2025-10-31T11:07:00.518Z",
+  "title": "FF! Doc | Forward",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Forward"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Exit",
+    "Pipeline",
+    "GlobalForwards",
+    "Adapter",
+    "Github - Forward Implementation Examples",
+    "Javadoc - org.frankframework.core.PipeForward",
+    "Forward",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "filenotfound",
+    "success",
+    "<Forward>",
+    "name",
+    "path",
+    "path",
+    "name",
+    "Copy\n<Forward name=\"\" path=\"\"/>",
+    "<Forward name=\"\" path=\"\"/>",
+    "name",
+    "path"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nExit\nPipeline\nGlobalForwards\nAdapter\nForward\nOther\nAppears inside a pipe and defines what pipe or exit to execute next. When the execution of a pipe is done, the pipe looks up the next pipe or exit to execute. This pipe or exit is searched based on a key that describes what happened during pipe execution. For example a FixedResultPipe searches for key filenotfound if it tried to read a file that did not exist, preventing it from producing the desired output message. If there was no error, the FixedResultPipe searches for key success.\n\nEach <Forward> tag is used to link a search key (name attribute) to a pipe or exit to execute next (path attribute). The forward's path attribute references the target pipe or exit by its name attribute, see AbstractPipe and PipeLineExit. For most pipes and most keys, the next pipe is executed if no forward is found. By default, the pipes in a pipeline are"
+}

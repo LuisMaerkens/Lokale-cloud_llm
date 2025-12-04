@@ -1,0 +1,69 @@
+{
+  "href": "#/Components/Scheduling/CheckReloadJob",
+  "chip": "S",
+  "linkText": "CheckReloadJob",
+  "scrapedAt": "2025-10-31T11:05:45.293Z",
+  "title": "FF! Doc | CheckReloadJob",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CheckReloadJob"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This is a default job that can be controlled with the property checkReload.active and checkReload.interval.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - CheckReloadJob Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.job.CheckReloadJob",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CheckReloadJob",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "IBISCONFIG",
+    "checkReload.active",
+    "checkReload.interval",
+    "Copy\n<CheckReloadJob name=\"\" query=\"\"/>",
+    "<CheckReloadJob name=\"\" query=\"\"/>",
+    "jdbc.datasource.default",
+    "0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nCheckReloadJob\nScheduling\nFrank!Framework job which periodically looks in the IBISCONFIG table to see if a new Configuration should be loaded.\n\nThis is a default job that can be controlled with the property checkReload.active and checkReload.interval.\n\nSee also\nGithub - CheckReloadJob Implementation Examples\nJavadoc - org.frankframework.scheduler.job.CheckReloadJob\nSyntax\nCopy\n<CheckReloadJob name=\"\" query=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nquery\ttext\t-\nThe SQL query text to be executed.\nname\ttext\t-\nName of the job\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndatasourceName\ttext\tjdbc.datasource.default\nJNDI name of datasource to be used.\nqueryTimeout\tnumber\t0\nThe number of seconds the database driver will wait for a statement to execute. If the limit is exceeded, a TimeoutException is thrown. 0 means no timeout\nAbstractJobDef\nATTRIBUTE NAME & DESCRI"
+}

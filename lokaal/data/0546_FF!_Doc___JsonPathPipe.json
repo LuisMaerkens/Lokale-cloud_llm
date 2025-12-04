@@ -1,0 +1,110 @@
+{
+  "href": "#/EIP/Translator/JsonPathPipe",
+  "chip": "T",
+  "linkText": "JsonPathPipe",
+  "scrapedAt": "2025-10-31T11:21:23.278Z",
+  "title": "FF! Doc | JsonPathPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JsonPathPipe"
+    },
+    {
+      "level": 3,
+      "text": "Examples"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "The following attributes are all inherited",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "IfPipe",
+    "JsonPipe",
+    "Json2XmlValidatorPipe",
+    "SwitchPipe",
+    "DataSonnetPipe",
+    "JsonValidatorPipe",
+    "JsonXsltPipe",
+    "JsonWellFormedCheckerPipe",
+    "Github - JsonPathPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.JsonPathPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "JsonPathPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "$.a",
+    "{\n   \"a\": \"Hello World\"\n }",
+    "{\n   \"a\": \"Hello World\"\n }",
+    "Hello World",
+    "$.*.a",
+    "{\n   \"k1\": {\"a\": 1},\n   \"k2\": {\"a\": 2}\n }",
+    "{\n   \"k1\": {\"a\": 1},\n   \"k2\": {\"a\": 2}\n }",
+    "[1, 2]",
+    "[1, 2]",
+    "$.a",
+    "{\n   \"a\": {\n     \"Hello\": \"World\"\n   }\n }",
+    "{\n   \"a\": {\n     \"Hello\": \"World\"\n   }\n }",
+    "{\n   \"Hello\": \"World\"\n }",
+    "{\n   \"Hello\": \"World\"\n }",
+    "Copy\n<JsonPathPipe name=\"\" jsonPathExpression=\"\"/>",
+    "<JsonPathPipe name=\"\" jsonPathExpression=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated8\nIfPipe\nJsonPipe\nJson2XmlValidatorPipe\nSwitchPipe\nDataSonnetPipe\nJsonValidatorPipe\nJsonXsltPipe\nJsonWellFormedCheckerPipe\nJsonPathPipe\nPipesTranslator\nApply a one-liner JSON path expression to the input to extract a value from input data. If the input is in XML format, it will be converted to JSON using the same method as the org.frankframework.align.Xml2Json pipe. Depending on the result of the expression, this pipe can return a string value or JSON value.\nExamples\n\nJSON Path Expression\tInput Message\tOutput\n$.a\t\n{\n   \"a\": \"Hello World\"\n }\n\tString with value Hello World\n$.*.a\t\n{\n   \"k1\": {\"a\": 1},\n   \"k2\": {\"a\": 2}\n }\n\tJSON Array with value\n[1, 2]\n\n$.a\t\n{\n   \"a\": {\n     \"Hello\": \"World\"\n   }\n }\n\tJSON Object with value\n{\n   \"Hello\": \"World\"\n }\nIf the input message does not have a match with the expression, then the Exception Forward path will be taken.\n\nSee also\nGithub - JsonPathPipe Impl"
+}

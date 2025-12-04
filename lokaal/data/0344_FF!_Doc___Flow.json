@@ -1,0 +1,56 @@
+{
+  "href": "#/Components/Batch/Flow",
+  "chip": "B",
+  "linkText": "Flow",
+  "scrapedAt": "2025-10-31T11:04:30.077Z",
+  "title": "FF! Doc | Flow",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Flow"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedPositionChild",
+    "FixedPositionManager",
+    "Manager",
+    "FieldPositionChild",
+    "FieldPositionManager",
+    "Github - Flow Implementation Examples",
+    "Javadoc - org.frankframework.batch.RecordHandlingFlow",
+    "Flow",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Flow />",
+    "<Flow />",
+    "true",
+    "openBlockBeforeLine"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nFixedPositionChild\nFixedPositionManager\nManager\nFieldPositionChild\nFieldPositionManager\nFlow\nBatch\nThe flow contains the handlers to handle records of a specific type. Each flow is registered to a manager using the recordHandlerManagerRef.\nSee also\nGithub - Flow Implementation Examples\nJavadoc - org.frankframework.batch.RecordHandlingFlow\nSyntax\nCopy\n<Flow />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nrecordKey\ttext\t-\nKey under which this flow is registered in the manager\nnextRecordHandlerManagerRef\ttext\t-\nName of the manager to be used after handling this record\nrecordHandlerRef\ttext\t-\nName of the recordHandler to be used to transform records of the type specified in the key (optional)\nrecordHandlerManagerRef\ttext\t-\nName of the manager to which this flow must be added\nresultHandlerRef\ttext\t-\nName of the resultHandl"
+}

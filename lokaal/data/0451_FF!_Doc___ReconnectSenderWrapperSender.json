@@ -1,0 +1,57 @@
+{
+  "href": "#/EIP/Endpoint/ReconnectSenderWrapperSender",
+  "chip": "E",
+  "linkText": "ReconnectSenderWrapperSender",
+  "scrapedAt": "2025-10-31T11:13:26.707Z",
+  "title": "FF! Doc | ReconnectSenderWrapperSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ReconnectSenderWrapperSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "MqttSender",
+    "Github - ReconnectSenderWrapperSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.ReconnectSenderWrapper",
+    "ReconnectSenderWrapperSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<SenderPipe>\n     <ReconnectSenderWrapper>\n         <EchoSender myAttribute=\"myValue\" />\n     </ReconnectSenderWrapper>\n </SenderPipe>",
+    "<SenderPipe>\n     <ReconnectSenderWrapper>\n         <EchoSender myAttribute=\"myValue\" />\n     </ReconnectSenderWrapper>\n </SenderPipe>",
+    "Copy\n<ReconnectSenderWrapperSender />",
+    "<ReconnectSenderWrapperSender />",
+    "HTTP",
+    "SOCKS4",
+    "SOCKS5",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nMqttSender\nReconnectSenderWrapperSender\nSendersEndpoint\nWrapper for senders, that opens the wrapped sender at runtime before each sender action, and closes it afterwards. This prevents (long) open connections inside Senders and possible connection failures. Example:\n<SenderPipe>\n     <ReconnectSenderWrapper>\n         <EchoSender myAttribute=\"myValue\" />\n     </ReconnectSenderWrapper>\n </SenderPipe>\n\nSee also\nGithub - ReconnectSenderWrapperSender Implementation Examples\nJavadoc - org.frankframework.senders.ReconnectSenderWrapper\nSyntax\nCopy\n<ReconnectSenderWrapperSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nremoteDirectory\ttext\tHome folder of the sftp user\nPath of the file or directory to start working.\nhost\ttext\t-\nName or ip address of remote host\nport\tnumber\t21\nPort number of remote host\nauthAlias\ttext\t-\nNa"
+}

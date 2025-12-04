@@ -1,0 +1,102 @@
+{
+  "href": "#/Category/Basic/AsyncSenderWithListenerPipe",
+  "chip": "B",
+  "linkText": "AsyncSenderWithListenerPipe",
+  "scrapedAt": "2025-10-31T10:37:59.870Z",
+  "title": "FF! Doc | AsyncSenderWithListenerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "AsyncSenderWithListenerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedResultPipe",
+    "MessageStoreSender",
+    "Receiver",
+    "Github - AsyncSenderWithListenerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.AsyncSenderWithListenerPipe",
+    "ALL to mask the entire string",
+    "FIRSTHALF to only mask the first half of the string",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "AsyncSenderWithListenerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<AsyncSenderWithListenerPipe name=\"\"/>",
+    "<AsyncSenderWithListenerPipe name=\"\"/>",
+    "path",
+    "prefix=namespaceUri",
+    "prefix=namespaceUri",
+    "prefix=namespaceUri",
+    "true",
+    "MESSAGEID",
+    "CORRELATIONID",
+    "ALL",
+    "FIRSTHALF",
+    "true",
+    "retryXPath",
+    "retryMaxInterval",
+    "true",
+    "prefix=namespaceUri",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nFixedResultPipe\nMessageStoreSender\nReceiver\nAsyncSenderWithListenerPipe\nBasicPipesEndpoint\nSends a message using an asynchronous sender and receives a reply from a listener.\nSee also\nGithub - AsyncSenderWithListenerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.AsyncSenderWithListenerPipe\nSyntax\nCopy\n<AsyncSenderWithListenerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncorrelationIDStyleSheet\ttext\t-\nStylesheet to extract correlationid from message\ncorrelationIDXPath\ttext\t-\nXPath expression to extract correlationid from message\ncorrelationIDNamespaceDefs\ttext\t-\nNamespace definitions for correlationIDXPath. Must be in the form of a comma or space separated list of prefix=namespaceUri de"
+}

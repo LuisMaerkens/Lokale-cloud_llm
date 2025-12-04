@@ -1,0 +1,60 @@
+{
+  "href": "#/Components/Senders/SenderWrapperSender",
+  "chip": "S",
+  "linkText": "SenderWrapperSender",
+  "scrapedAt": "2025-10-31T10:53:17.872Z",
+  "title": "FF! Doc | SenderWrapperSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SenderWrapperSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CmisSender",
+    "MQSender",
+    "ImapSender",
+    "ReloadSender",
+    "LdapSender",
+    "EchoSender",
+    "SapSender",
+    "ParallelSendersSender",
+    "LocalFileSystemPipe",
+    "Github - SenderWrapperSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.SenderWrapper",
+    "SenderWrapperSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SenderWrapperSender />",
+    "<SenderWrapperSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nCmisSender\nMQSender\nImapSender\nReloadSender\nLdapSender\nEchoSender\nSapSender\nParallelSendersSender\nLocalFileSystemPipe\nSenderWrapperSender\nSendersEndpoint\nWrapper for senders, that allows to get input from a session variable, and to store output in a session variable.\nSee also\nGithub - SenderWrapperSender Implementation Examples\nJavadoc - org.frankframework.senders.SenderWrapper\nSyntax\nCopy\n<SenderWrapperSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndelayTime\tnumber\t5000 [ms]\nThe time in milliseconds the thread will be put to sleep\nAbstractSenderWrapper\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ngetInputFromSessionKey\ttext\t-\nIf set, input is taken from this session key, instead of regular input\ngetInputFromFixedValue\ttext\t-\nIf set, this fixed value is taken as input, instead of regular input\npreserveInput\tbool"
+}

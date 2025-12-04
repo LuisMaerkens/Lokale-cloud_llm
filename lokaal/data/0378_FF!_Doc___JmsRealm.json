@@ -1,0 +1,50 @@
+{
+  "href": "#/Components/Other/JmsRealm",
+  "chip": "O",
+  "linkText": "JmsRealm",
+  "scrapedAt": "2025-10-31T11:07:20.576Z",
+  "title": "FF! Doc | JmsRealm",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JmsRealm"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JmsRealms",
+    "Github - JmsRealm Implementation Examples",
+    "Javadoc - org.frankframework.jms.JmsRealm",
+    "JmsRealm",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JmsRealm />",
+    "<JmsRealm />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nJmsRealms\nJmsRealm\nOther\nA JmsRealm is a definition of a JMS provider, and is kind of a utility class to prevent the tedious work of repeatedly defining all parameters to connect to a queue or topic.\nThis class is not an extension of JNDIBase, which would be logical, because in the JMSBase class the function PropertyUtils.copyProperties is used, which cannot handle this.\nSee also\nGithub - JmsRealm Implementation Examples\nJavadoc - org.frankframework.jms.JmsRealm\nSyntax\nCopy\n<JmsRealm />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naliasForRealm\ttext\t-\nIncludes another realm into this one\nrealmName\ttext\t-\nSet the name of this realm\n\nqueueConnectionFactoryName\ttext\t-\nSet the name of the QueueConnectionFactory\n\ntopicConnectionFactoryName\ttext\t-\nSet the name of the TopicConnectionFactory\n\ndatasourceName\ttext\t-\nsecurityPro"
+}

@@ -1,0 +1,51 @@
+{
+  "href": "#/Components/Monitoring/SenderMonitorAdapterDestination",
+  "chip": "M",
+  "linkText": "SenderMonitorAdapterDestination",
+  "scrapedAt": "2025-10-31T11:05:00.152Z",
+  "title": "FF! Doc | SenderMonitorAdapterDestination",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SenderMonitorAdapterDestination"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This element is deprecated!",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Destination",
+    "Github - SenderMonitorAdapterDestination Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.SenderMonitorAdapter",
+    "SenderMonitorAdapterDestination",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SenderMonitorAdapterDestination name=\"\"/>",
+    "<SenderMonitorAdapterDestination name=\"\"/>"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nDestination\nSenderMonitorAdapterDestination\nDeprecatedMonitoring\n\nThis element is deprecated!\n\nClass has been renamed to 'MonitorDestination'.\nSee also\nGithub - SenderMonitorAdapterDestination Implementation Examples\nJavadoc - org.frankframework.monitoring.SenderMonitorAdapter\nSyntax\nCopy\n<SenderMonitorAdapterDestination name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nadapter\ttext\t-\nSet the name of the Adapter that this AdapterFilter filters on.\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nAbstractMonitorDestination\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nSenderMonitorAdapterDestination\nSee also\nSyntax\nAttributes\nRequire"
+}

@@ -1,0 +1,86 @@
+{
+  "href": "#/EIP/Router/CounterSwitchPipe",
+  "chip": "R",
+  "linkText": "CounterSwitchPipe",
+  "scrapedAt": "2025-10-31T11:19:02.838Z",
+  "title": "FF! Doc | CounterSwitchPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CounterSwitchPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - CounterSwitchPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CounterSwitchPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CounterSwitchPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "divisor",
+    "divisor",
+    "divisor",
+    "Copy\n<CounterSwitchPipe name=\"\"/>",
+    "<CounterSwitchPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nCounterSwitchPipe\nPipesRouter\nSelects an exitState, based on the number of received messages by this pipe. The exitState is the difference (subtraction) between the divisor and the remainder of [number of received messages] modulus divisor. This will always be an integer between 1 and divisor, inclusive.\nSee also\nGithub - CounterSwitchPipe Implementation Examples\nJavadoc - org.frankframework.pipes.CounterSwitchPipe\nSyntax\nCopy\n<CounterSwitchPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndivisor\tnumber\t2\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues directly at the forward of this pipe, without executing the pipe itself, if th"
+}

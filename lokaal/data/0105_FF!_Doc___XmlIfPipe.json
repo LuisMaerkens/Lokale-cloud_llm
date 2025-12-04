@@ -1,0 +1,98 @@
+{
+  "href": "#/Components/Pipes/XmlIfPipe",
+  "chip": "P",
+  "linkText": "XmlIfPipe",
+  "scrapedAt": "2025-10-31T10:44:31.142Z",
+  "title": "FF! Doc | XmlIfPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XmlIfPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This element is deprecated!",
+    "Since: 9.0.0",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlValidatorPipe",
+    "EsbSoapValidatorPipe",
+    "JsonPathPipe",
+    "BytesOutputPipe",
+    "XmlWellFormedCheckerPipe",
+    "IfPipe",
+    "Github - XmlIfPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.XmlIf",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "XmlIfPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XmlIfPipe name=\"\"/>",
+    "<XmlIfPipe name=\"\"/>",
+    "path",
+    "xpathExpression",
+    "jsonPathExpression",
+    "true",
+    "false",
+    "2",
+    "3",
+    "prefix=namespaceuri",
+    "XML",
+    "JSON",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "thenForwardName",
+    "elseForwardName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nFxfXmlValidatorPipe\nEsbSoapValidatorPipe\nJsonPathPipe\nBytesOutputPipe\nXmlWellFormedCheckerPipe\nIfPipe\nXmlIfPipe\nDeprecatedPipesRouter\n\nThis element is deprecated!\n\nSince: 9.0.0\n\nSelects a forward, based on XPath evaluation\nSee also\nGithub - XmlIfPipe Implementation Examples\nJavadoc - org.frankframework.pipes.XmlIf\nSyntax\nCopy\n<XmlIfPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nregex\ttext\t-\nRegular expression to be applied to the input-message (ignored if either xpathExpression or jsonPathExpression is specified). The input-message fully matching the given regular expression leads to the 'then'-forward\nIfPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nthenForwardName\ttext\tthen\nForward returned when out"
+}

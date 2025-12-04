@@ -1,0 +1,50 @@
+{
+  "href": "#/EIP/Endpoint/XfbSender",
+  "chip": "E",
+  "linkText": "XfbSender",
+  "scrapedAt": "2025-10-31T11:12:46.585Z",
+  "title": "FF! Doc | XfbSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XfbSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - XfbSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.xfb.XfbSender",
+    "XfbSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XfbSender />",
+    "<XfbSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nXfbSender\nSendersEndpoint\nSender for transferring files using the XFB protocol. Assumes sender input is local filename.\nSome comments from Richard Maddox (FTO) about UNIX File permissions:\n\nIn case of AIX or SUN systems we advise the following user and directory permissions:\n\nSENDING CFT:\n- App_user must have secondary group: xfbgw\n- Folder should have ownership: app_user:xfbgw (owner:group)\n- Folder should have access rights: 770 (rwx.rwx.---) so nobody other then app_user and group xfbgw can do something in this folder\n- Folder should have SGID bit set so that all files what is copied to this folder get group ownership xfbgw\n- send file must have rights 660 after putting the file in the send directory.\n\nRECEIVING CFT:\n- App_user (the application user of customer) should have secondary group: xfbgw\n- Folder should have ownership: app_user:xfbgw (owner:group)\n- Folder should have access"
+}

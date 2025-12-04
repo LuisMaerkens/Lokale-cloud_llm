@@ -1,0 +1,85 @@
+{
+  "href": "#/EIP/Session/IncreaseIntegerPipe",
+  "chip": "S",
+  "linkText": "IncreaseIntegerPipe",
+  "scrapedAt": "2025-10-31T11:20:28.100Z",
+  "title": "FF! Doc | IncreaseIntegerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IncreaseIntegerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CompareIntegerPipe",
+    "Github - IncreaseIntegerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.IncreaseIntegerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "IncreaseIntegerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<IncreaseIntegerPipe name=\"\" sessionKey=\"\"/>",
+    "<IncreaseIntegerPipe name=\"\" sessionKey=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nCompareIntegerPipe\nIncreaseIntegerPipe\nPipesSession\nPipe that increases the integer value of a session variable. It can be used in combination with CompareIntegerPipe to construct loops.\nSee also\nGithub - IncreaseIntegerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.IncreaseIntegerPipe\nSyntax\nCopy\n<IncreaseIntegerPipe name=\"\" sessionKey=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsessionKey\ttext\t-\nReference to the session variable whose value is to be increased.\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nincrement\tnumber\t1\nAmount to increment the value. This can be set from the attribute or the parameter 'increment'.\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing conti"
+}
