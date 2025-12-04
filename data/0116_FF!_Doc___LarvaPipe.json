@@ -1,0 +1,95 @@
+{
+  "href": "#/Components/Pipes/LarvaPipe",
+  "chip": "P",
+  "linkText": "LarvaPipe",
+  "scrapedAt": "2025-10-31T10:45:26.310Z",
+  "title": "FF! Doc | LarvaPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LarvaPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - LarvaPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.LarvaPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LarvaPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<LarvaPipe name=\"\"/>",
+    "<LarvaPipe name=\"\"/>",
+    "path",
+    "DEBUG",
+    "PIPELINE_MESSAGES_PREPARED_FOR_DIFF",
+    "PIPELINE_MESSAGES",
+    "INFO",
+    "WRONG_PIPELINE_MESSAGES_PREPARED_FOR_DIFF",
+    "WRONG_PIPELINE_MESSAGES",
+    "STEP_PASSED_FAILED",
+    "SCENARIO_PASSED_FAILED",
+    "SCENARIO_FAILED",
+    "TOTALS",
+    "WARNING",
+    "ERROR",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nLarvaPipe\nPipes\nCall Larva Test Tool\nSee also\nGithub - LarvaPipe Implementation Examples\nJavadoc - org.frankframework.pipes.LarvaPipe\nSyntax\nCopy\n<LarvaPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nwriteToLog\tboolean\tfalse\nwriteToSystemOut\tboolean\tfalse\nexecute\ttext\t-\nThe scenario sub directory to execute\nlogLevel\toptions\twrong pipeline messages\nThe larva log level: one of [debug], [pipeline messages prepared for diff], [pipeline messages], [wrong pipeline messages prepared for diff], [wrong pipeline messages], [step passed/failed], [scenario passed/failed], [scenario failed], [totals], [error]\nAvailable Options: DEBUG, PIPELINE_MESSAGES_PREPARED_FOR_DIFF, PIPELINE_MESSAGES, INFO, WRONG_PIPELINE_MESSA"
+}

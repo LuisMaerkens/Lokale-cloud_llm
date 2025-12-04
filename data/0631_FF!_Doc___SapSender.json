@@ -1,0 +1,79 @@
+{
+  "href": "#/TYPE/SAP/SapSender",
+  "chip": "S",
+  "linkText": "SapSender",
+  "scrapedAt": "2025-10-31T11:28:29.535Z",
+  "title": "FF! Doc | SapSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SapSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SapListener",
+    "IdocSender",
+    "Github - SapSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.sap.SapSender",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "PEM Currently only used by the SignaturePipe to use a PEM certificate directly as a truststore.",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "SapSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SapSender />",
+    "<SapSender />",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "keystoreAlias",
+    "keystoreAlias",
+    "PEM",
+    "PKCS12",
+    "JKS",
+    "JCEKS",
+    "true",
+    "true",
+    "true",
+    "true",
+    "staleChecking",
+    "true",
+    "false",
+    "false",
+    "functionName",
+    "sapSystemName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nSapListener\nIdocSender\nSapSender\nSendersEndpointSAP\nImplementation of sender that calls a SAP RFC-function. N.B. If no requestFieldIndex or requestFieldName is specified, input is converted from xml; If no replyFieldIndex or replyFieldName is specified, output is converted to xml.\nSee also\nGithub - SapSender Implementation Examples\nJavadoc - org.frankframework.extensions.sap.SapSender\nSyntax\nCopy\n<SapSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntimeout\tnumber\t10000\nTimeout in ms of obtaining a connection/result.\nmaxConnections\tnumber\t10\nThe maximum number of concurrent connections\nmaxExecuteRetries\tnumber\t1 (for repeatable messages) else 0\nThe maximum number of times the execution is retried\nproxyHost\ttext\t-\nProxy host\nproxyPort\tnumber\t80\nProxy port\nproxyAuthAlias\ttext\t-\nAlias used to obtain credentials for "
+}

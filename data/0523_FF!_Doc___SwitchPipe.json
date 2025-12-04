@@ -1,0 +1,90 @@
+{
+  "href": "#/EIP/Router/SwitchPipe",
+  "chip": "R",
+  "linkText": "SwitchPipe",
+  "scrapedAt": "2025-10-31T11:19:27.922Z",
+  "title": "FF! Doc | SwitchPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SwitchPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CounterSwitchPipe",
+    "Adapter",
+    "XmlSwitchPipe",
+    "Github - SwitchPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.SwitchPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "SwitchPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SwitchPipe name=\"\"/>",
+    "<SwitchPipe name=\"\"/>",
+    "path",
+    "prefix=namespaceuri",
+    "emptyforwardname",
+    "notfoundforwardname",
+    "2",
+    "3",
+    "0",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "styleSheetName",
+    "xpathExpression"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nCounterSwitchPipe\nAdapter\nXmlSwitchPipe\nSwitchPipe\nBasicPipesRouter\nSelects an exitState, based on either the content of the input message, by means of an XSLT-stylesheet, the content of a session variable, a JSON Path expression, or, by default, by returning the name of the root-element.\nSee also\nGithub - SwitchPipe Implementation Examples\nJavadoc - org.frankframework.pipes.SwitchPipe\nSyntax\nCopy\n<SwitchPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstyleSheetName\ttext\ta stylesheet that returns the name of the root-element\nStylesheet may return a string representing the forward to look up\nxpathExpression\ttext\t-\nXpath-expression that returns a string representing the forward to look up. It's possible t"
+}

@@ -1,0 +1,88 @@
+{
+  "href": "#/Category/Basic/Pipeline",
+  "chip": "B",
+  "linkText": "Pipeline",
+  "scrapedAt": "2025-10-31T10:37:39.807Z",
+  "title": "FF! Doc | Pipeline",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Pipeline"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Forward",
+    "Exits",
+    "Exit",
+    "IbisLocalSender",
+    "FixedResultPipe",
+    "DirectoryListener",
+    "GlobalForwards",
+    "Adapter",
+    "Receiver",
+    "FrankSender",
+    "Github - Pipeline Implementation Examples",
+    "Javadoc - org.frankframework.core.PipeLine",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "Pipeline",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<Exits>",
+    "log.logIntermediaryResults",
+    "true",
+    "true",
+    "true",
+    "Copy\n<Pipeline />",
+    "<Pipeline />",
+    "true",
+    "KB",
+    "MB",
+    "GB",
+    "null",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "READY",
+    "SUCCESS",
+    "<forward name=\"exception\" path=\"error_exception\" />",
+    "exception"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nForward\nExits\nExit\nIbisLocalSender\nFixedResultPipe\nDirectoryListener\nGlobalForwards\nAdapter\nReceiver\nFrankSender\nPipeline\nBasicOther\nRequired in each Adapter to transform incoming messages. A pipeline is a sequence of pipes. A pipeline also defines its allowed end states using the <Exits> tag.\n\nThe pipes in a PipeLine may not be executed in sequential order, see PipeForward.\n\nA pipeline gathers statistics about the messages it processes.\n\nIn the AppConstants there may be a property named log.logIntermediaryResults (true/false) which indicates whether the intermediary results (between calling pipes) have to be logged.\n\nTransaction control\n\nTHE FOLLOWING TO BE UPDATED, attribute 'transacted' replaced by 'transactionAttribute' If transacted is set to true, messages will be processed under transaction control. Processing by XA-compliant pipes (i.e. Pipes that implement the IXAEnabled-inter"
+}

@@ -1,0 +1,83 @@
+{
+  "href": "#/Components/Pipes/SapLUWManagerPipe",
+  "chip": "P",
+  "linkText": "SapLUWManagerPipe",
+  "scrapedAt": "2025-10-31T10:50:12.288Z",
+  "title": "FF! Doc | SapLUWManagerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SapLUWManagerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - SapLUWManagerPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.sap.jco3.SapLUWManagerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "SapLUWManagerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SapLUWManagerPipe name=\"\"/>",
+    "<SapLUWManagerPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nSapLUWManagerPipe\nPipes\nManager for SAP Logical Units of Work (LUWs). Used to begin, commit or rollback LUWs. A SapLUWManager can be placed before a number of SapSenders. The SapLUWManager and the SapSenders must each use the same value for luwHandleSessionKey. By doing so, they use the same connection to SAP. This allows to perform a commit on a number of actions.\nThe placement of the the first SapLUWManager is optionan: By specifying a new luwHandleSessionKey a new handle is created implicitly.\nTo explicityly commit or rollback a set of actions, a SapLUWManager-pipe can be used, with the action-attribute set apropriately.\nSee also\nGithub - SapLUWManagerPipe Implementation Examples\nJavadoc - org.frankframework.extensions.sap.jco3.SapLUWManagerPipe\nSyntax\nCopy\n<SapLUWManagerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of th"
+}

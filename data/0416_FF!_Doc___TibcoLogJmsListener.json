@@ -1,0 +1,102 @@
+{
+  "href": "#/EIP/Listener/TibcoLogJmsListener",
+  "chip": "L",
+  "linkText": "TibcoLogJmsListener",
+  "scrapedAt": "2025-10-31T11:10:31.144Z",
+  "title": "FF! Doc | TibcoLogJmsListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "TibcoLogJmsListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Setting listener.acknowledgeMode to \"auto\" means that messages are allways acknowledged (removed from the queue, regardless of what the status of the Adapter is. \"client\" means that the message will only be removed from the queue when the state of the Adapter equals the success state for committing. The \"dups\" mode instructs the session to lazily acknowledge the delivery of the messages. This is likely to result in the delivery of duplicate messages if JMS fails. It should be used by consumers who are tolerant in processing duplicate messages. In cases where the client is tolerant of duplicate messages, some enhancement in performance can be achieved using this mode, since a session has lower overhead in trying to prevent duplicate messages.",
+    "The setting for listener.acknowledgeMode will only be processed if the setting for listener.transacted.",
+    "If useReplyTo is set and a replyTo-destination is specified in the message, the JmsListener sends the result of the processing in the pipeline to this destination. Otherwise the result is sent using the (optionally) specified, that in turn sends the message to whatever it is configured to.",
+    "You can add parameters to the JmsListener, the values will be added as Headers to the JMS response message.",
+    "Notice: the JmsListener is ONLY capable of processing jakarta.jms.TextMessages and jakarta.jms.BytesMessage",
+    "Setting listener.acknowledgeMode to \"auto\" means that messages are allways acknowledged (removed from the queue, regardless of what the status of the Adapter is. \"client\" means that the message will only be removed from the queue when the state of the Adapter equals the success state. The \"dups\" mode instructs the session to lazily acknowledge the delivery of the messages. This is likely to result in the delivery of duplicate messages if JMS fails. It should be used by consumers who are tolerant in processing duplicate messages. In cases where the client is tolerant of duplicate messages, some enhancement in performance can be achieved using this mode, since a session has lower overhead in trying to prevent duplicate messages.",
+    "The setting for listener.acknowledgeMode will only be processed if the setting for listener.transacted.",
+    "If useReplyTo is set and a replyTo-destination is specified in the message, the JmsListener sends the result of the processing in the pipeline to this destination. Otherwise the result is sent using the (optionally) specified Sender, that in turn sends the message to whatever it is configured to.",
+    "Notice: the JmsListener is ONLY capable of processing jakarta.jms.TextMessages and jakarta.jms.BytesMessage",
+    "Defaults to MessageClass.AUTO, unless the default is overridden in AppConstants with property jms.messageClass.default",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfListener",
+    "Github - TibcoLogJmsListener Implementation Examples",
+    "Javadoc - org.frankframework.extensions.tibco.TibcoLogJmsListener",
+    "AUTO Automatically determine the type of the outgoing jakarta.jms.Message based on the value of Message.isBinary().",
+    "TEXT Create the outgoing message as TextMessage.",
+    "BYTES Create the outgoing message as BytesMessage.",
+    "none",
+    "auto auto or auto_acknowledge: Specifies that the session is to automatically acknowledge consumer receipt of messages when message processing is complete.",
+    "client client or client_acknowledge: Specifies that the consumer is to acknowledge all messages delivered in this session. The Frank application will acknowledge all messages processed correctly. The skipping of the acknowledgement of messages processed in error will cause them to be redelivered, thus providing an automatic retry.",
+    "dups dups or dups_ok_acknowledge: Specifies that the session is to \"lazily\" acknowledge the delivery of messages to the consumer. \"Lazy\" means that the consumer can delay the acknowledgment of messages to the server until a convenient time; meanwhile the server might redeliver messages. This mode reduces the session overhead. If JMS fails, the consumer may receive duplicate messages.",
+    "TibcoLogJmsListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "true",
+    "JmsListener",
+    "Queue",
+    "Topic",
+    "destinationType",
+    "Copy\n<TibcoLogJmsListener destinationName=\"\"/>",
+    "<TibcoLogJmsListener destinationName=\"\"/>",
+    "CACHE_NONE",
+    "CACHE_CONNECTION",
+    "CACHE_SESSION",
+    "CACHE_CONSUMER",
+    "true",
+    "useReplyTo=true",
+    "NOT_SET",
+    "PERSISTENT",
+    "NON_PERSISTENT",
+    "-1",
+    "true",
+    "jms.messageClass.default",
+    "AUTO",
+    "TEXT",
+    "BYTES",
+    "useTopicFunctions",
+    "QUEUE",
+    "TOPIC",
+    "none",
+    "auto",
+    "client",
+    "dups",
+    "true",
+    "DURABLE",
+    "TRANSIENT",
+    "queue",
+    "false",
+    "false",
+    "true",
+    "false"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nFxfListener\nTibcoLogJmsListener\nListenersListenerJMS\nA true multi-threaded Listener-class.\nSince version 4.1, Ibis supports distributed transactions using the XA-protocol. This feature is controlled by the transacted attribute. If this is set to true, received messages are committed or rolled back, possibly together with other actions, by the receiver or the pipeline. In case of a failure, all actions within the transaction are rolled back.\n\nSetting listener.acknowledgeMode to \"auto\" means that messages are allways acknowledged (removed from the queue, regardless of what the status of the Adapter is. \"client\" means that the message will only be removed from the queue when the state of the Adapter equals the success state for committing. The \"dups\" mode instructs the session to lazily acknowledge the delivery of the messages. This is likely to result in the delivery of duplicate messages"
+}

@@ -1,0 +1,60 @@
+{
+  "href": "#/Components/Batch/Result2FilewriterResultHandler",
+  "chip": "B",
+  "linkText": "Result2FilewriterResultHandler",
+  "scrapedAt": "2025-10-31T11:03:59.987Z",
+  "title": "FF! Doc | Result2FilewriterResultHandler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Result2FilewriterResultHandler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "Result2FilewriterChild",
+    "Result2BlobWriterChild",
+    "Result2BlobWriterResultHandler",
+    "Github - Result2FilewriterResultHandler Implementation Examples",
+    "Javadoc - org.frankframework.batch.Result2Filewriter",
+    "Result2FilewriterResultHandler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Result2FilewriterResultHandler />",
+    "<Result2FilewriterResultHandler />",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nResult2FilewriterChild\nResult2BlobWriterChild\nResult2BlobWriterResultHandler\nResult2FilewriterResultHandler\nBatch\nResulthandler that writes the transformed record to a file.\nSee also\nGithub - Result2FilewriterResultHandler Implementation Examples\nJavadoc - org.frankframework.batch.Result2Filewriter\nSyntax\nCopy\n<Result2FilewriterResultHandler />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\noutputDirectory\ttext\t-\nDirectory in which the resultfile must be stored\nmove2dirAfterFinalize\ttext\t-\nDirectory to which the created file must be moved after finalization (is optional)\nfilenamePattern\ttext\t-\nName of the file is created using the messageformat. Params: 1"
+}

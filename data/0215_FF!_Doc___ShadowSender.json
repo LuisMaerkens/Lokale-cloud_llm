@@ -1,0 +1,52 @@
+{
+  "href": "#/Components/Senders/ShadowSender",
+  "chip": "S",
+  "linkText": "ShadowSender",
+  "scrapedAt": "2025-10-31T10:53:42.943Z",
+  "title": "FF! Doc | ShadowSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ShadowSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Multiple sub-senders can be configured within the ShadowSender, the minimum amount of senders is 2 (originalSender + resultSender)",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - ShadowSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.ShadowSender",
+    "ShadowSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ShadowSender />",
+    "<ShadowSender />",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nShadowSender\nAdvancedSendersEndpoint\nCollection of Senders, that are executed all at the same time. Once the results are processed, all results will be sent to the resultSender, while the original sender will return its result to the pipeline.\n\nMultiple sub-senders can be configured within the ShadowSender, the minimum amount of senders is 2 (originalSender + resultSender)\n\nSee also\nGithub - ShadowSender Implementation Examples\nJavadoc - org.frankframework.senders.ShadowSender\nSyntax\nCopy\n<ShadowSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\noriginalSender\ttext\tthe first sender specified\nName of the sender that is considered that is considered to be the golden standard, i.e. the source of truth.\nresultSender\ttext\tthe last sender specified\nThe sender name which will process the results\nwaitForShadowsToFinish\tbo"
+}

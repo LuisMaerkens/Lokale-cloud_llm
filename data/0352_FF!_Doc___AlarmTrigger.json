@@ -1,0 +1,67 @@
+{
+  "href": "#/Components/Monitoring/AlarmTrigger",
+  "chip": "M",
+  "linkText": "AlarmTrigger",
+  "scrapedAt": "2025-10-31T11:05:10.188Z",
+  "title": "FF! Doc | AlarmTrigger",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "AlarmTrigger"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Trigger",
+    "Monitor",
+    "Github - AlarmTrigger Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.Alarm",
+    "AlarmTrigger",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<AlarmTrigger name=\"\"/>",
+    "<AlarmTrigger name=\"\"/>",
+    "TECHNICAL",
+    "FUNCTIONAL",
+    "HEARTBEAT",
+    "CLEARING",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "NONE",
+    "ADAPTER",
+    "SOURCE",
+    "ALARM",
+    "CLEARING"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nTrigger\nMonitor\nAlarmTrigger\nMonitoring\nA Trigger that starts its life with type = ALARM. The type of the trigger can be changed dynamically.\nSee also\nGithub - AlarmTrigger Implementation Examples\nJavadoc - org.frankframework.monitoring.Alarm\nSyntax\nCopy\n<AlarmTrigger name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndestinations\ttext\t-\nraised\tboolean\t-\nadditionalHitCount\tnumber\t-\ntype\toptions\t-\nAvailable Options: TECHNICAL, FUNCTIONAL, HEARTBEAT, CLEARING\nalarmSeverity\toptions\t-\nAvailable Options: HARMLESS, WARNING, CRITICAL, FATAL\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nTrigger\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\neventCode\ttext\t-\nthreshold\tnumber\t-\nAmount of triggers required before sounding an alarm\nperio"
+}

@@ -1,0 +1,52 @@
+{
+  "href": "#/Components/Other/Scheduler",
+  "chip": "O",
+  "linkText": "Scheduler",
+  "scrapedAt": "2025-10-31T11:07:40.638Z",
+  "title": "FF! Doc | Scheduler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Scheduler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Configure/start/stop lifecycles are managed by Spring.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Locker",
+    "Github - Scheduler Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.ScheduleManager",
+    "Scheduler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Scheduler />",
+    "<Scheduler />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nLocker\nScheduler\nOther\nContainer for jobs that are scheduled for periodic execution.\n\nConfigure/start/stop lifecycles are managed by Spring.\n\nSee also\nGithub - Scheduler Implementation Examples\nJavadoc - org.frankframework.scheduler.ScheduleManager\nSyntax\nCopy\n<Scheduler />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nNested Components\nCOMPONENT NAME\tDESCRIPTION\tCARDINALITY\njob\tJob that is executed periodically. The time of execution can be configured within the job or from outside the configuration through the Frank!Console.\t0 .. n\nScheduler\nSee also\nSyntax\nAttributes\nOptional\nNested Elements\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

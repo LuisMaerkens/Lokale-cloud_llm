@@ -1,0 +1,74 @@
+{
+  "href": "#/TYPE/AMQP/AmqpListener",
+  "chip": "A",
+  "linkText": "AmqpListener",
+  "scrapedAt": "2025-10-31T11:24:28.830Z",
+  "title": "FF! Doc | AmqpListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "AmqpListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "AmqpSender",
+    "Github - AmqpListener Implementation Examples",
+    "Javadoc - org.frankframework.messaging.amqp.AmqpListener",
+    "FF Fire & Forget protocol",
+    "RR Request-Reply protocol",
+    "AmqpListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<AmqpListener connectionName=\"\" address=\"\"/>",
+    "<AmqpListener connectionName=\"\" address=\"\"/>",
+    "amqp",
+    "resources.yaml",
+    "30",
+    "QUEUE",
+    "MessageProtocol#RR",
+    "TOPIC",
+    "QUEUE",
+    "replyAddressName",
+    "replyAddressName",
+    "replyAddressName",
+    "true",
+    "-1",
+    "FF",
+    "FF",
+    "RR",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nAmqpSender\nAmqpListener\nExperimentalListenersListenerAMQP\nListener for AMQP 1.0 end-points.\nSee also\nGithub - AmqpListener Implementation Examples\nJavadoc - org.frankframework.messaging.amqp.AmqpListener\nSyntax\nCopy\n<AmqpListener connectionName=\"\" address=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nconnectionName\ttext\t-\nName of the AMQP connection in the amqp section of the resources.yaml file.\naddress\ttext\t-\nSet the address (name of the queue or topic) on which to send messages\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsendReplyTimeout\tnumber\t30\nTimeout in seconds for sending messages and receiving replies.\naddressType\toptions\tQUEUE\nSet the type of address to which messages are being sent, TOPIC or QUEUE. For MessageProtocol#RR the type will always be QUEUE.\nAvailable Options: TOPIC, QUEUE\nreplyAddress\ttext\t-\nIf the adapter needs to send a reply message,"
+}

@@ -1,0 +1,97 @@
+{
+  "href": "#/Components/Pipes/PdfPipe",
+  "chip": "P",
+  "linkText": "PdfPipe",
+  "scrapedAt": "2025-10-31T10:52:12.653Z",
+  "title": "FF! Doc | PdfPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "PdfPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Conversion result files are stored as messages in the session, under keys numbered based on the value set here. If isSaveSeparate is false then only the main document is stored in the session, if it is true then each attachment is stored separately.",
+    "For example, if a file is converted that has 2 attachments and setSaveSeparate is set to true then there will be the following 3 session keys (assuming the default value is unchanged):",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "AmountOfPagesPipe",
+    "Github - PdfPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.aspose.pipe.PdfPipe",
+    "pdfConversionResultFiles1",
+    "pdfConversionResultFiles2",
+    "pdfConversionResultFiles3",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "PdfPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<PdfPipe name=\"\"/>",
+    "<PdfPipe name=\"\"/>",
+    "path",
+    "CONVERT",
+    "COMBINE",
+    "false",
+    "true",
+    "true",
+    "pdfConversionResultFiles1",
+    "pdfConversionResultFiles2",
+    "pdfConversionResultFiles3",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nAmountOfPagesPipe\nPdfPipe\nPipes\nConverts files to pdf type. This pipe has two actions convert and combine. With combine action you can attach files into main pdf file.\nSee also\nGithub - PdfPipe Implementation Examples\nJavadoc - org.frankframework.extensions.aspose.pipe.PdfPipe\nSyntax\nCopy\n<PdfPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\naction\toptions\t-\nAvailable Options: CONVERT, COMBINE\nmainDocumentSessionKey\ttext\tdefaultMainDocumentSessionKey\nSession key that contains the document that the attachments will be attached to. Only used when action is set to 'combine'\nconversionResultDocumentSessionKey\ttext\tdocuments\nThe session key used to store the main conversion result document. Only to be used whe"
+}

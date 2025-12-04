@@ -1,0 +1,102 @@
+{
+  "href": "#/Components/Pipes/DirectWrapperPipe",
+  "chip": "P",
+  "linkText": "DirectWrapperPipe",
+  "scrapedAt": "2025-10-31T10:45:06.253Z",
+  "title": "FF! Doc | DirectWrapperPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DirectWrapperPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlValidatorPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "UnzipPipe",
+    "EscapePipe",
+    "LabelFormatPipe",
+    "Github - DirectWrapperPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.esb.DirectWrapperPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "DirectWrapperPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<DirectWrapperPipe name=\"\"/>",
+    "<DirectWrapperPipe name=\"\"/>",
+    "path",
+    "MD5",
+    "SHA",
+    "SHA256",
+    "SHA384",
+    "SHA512",
+    "CRC32",
+    "ADLER32",
+    "HmacMD5",
+    "HmacSHA1",
+    "HmacSHA256",
+    "HmacSHA384",
+    "HmacSHA512",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nFxfXmlValidatorPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nUnzipPipe\nEscapePipe\nLabelFormatPipe\nDirectWrapperPipe\nNN-SpecialPipes\nKind of extension to EsbSoapWrapperPipe for real time destinations.\nSee also\nGithub - DirectWrapperPipe Implementation Examples\nJavadoc - org.frankframework.extensions.esb.DirectWrapperPipe\nSyntax\nCopy\n<DirectWrapperPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntype\toptions\tMD5\nType of checksum to be calculated.\nAvailable Options: MD5, SHA, SHA256, SHA384, SHA512, CRC32, ADLER32, HmacMD5, HmacSHA1, HmacSHA256, HmacSHA384, HmacSHA512\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continu"
+}

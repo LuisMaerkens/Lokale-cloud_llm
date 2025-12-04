@@ -1,0 +1,103 @@
+{
+  "href": "#/Components/Pipes/GetTibcoQueuesPipe",
+  "chip": "P",
+  "linkText": "GetTibcoQueuesPipe",
+  "scrapedAt": "2025-10-31T10:48:21.931Z",
+  "title": "FF! Doc | GetTibcoQueuesPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "GetTibcoQueuesPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "If the parameter queueName is empty then",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "GetPrincipalPipe",
+    "BytesOutputPipe",
+    "GetFromSessionPipe",
+    "ForPipe",
+    "FixedResultPipe",
+    "all Tibco queues including information about these queues are returned",
+    "one message on a specific Tibco queue including information about this message is returned (without removing it)",
+    "Github - GetTibcoQueuesPipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.tibco.GetTibcoQueues",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "GetTibcoQueuesPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "queueName",
+    "Copy\n<GetTibcoQueuesPipe name=\"\"/>",
+    "<GetTibcoQueuesPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "queueName",
+    "jndi.properties",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "true",
+    "pendingMsgCount>0",
+    "receiverCount=0",
+    "true",
+    "queueName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nGetPrincipalPipe\nBytesOutputPipe\nGetFromSessionPipe\nForPipe\nFixedResultPipe\nGetTibcoQueuesPipe\nPipes\nReturns information about Tibco queues in a XML string.\n\nIf the parameter queueName is empty then\n\nall Tibco queues including information about these queues are returned\nelse\none message on a specific Tibco queue including information about this message is returned (without removing it)\n\nSee also\nGithub - GetTibcoQueuesPipe Implementation Examples\nJavadoc - org.frankframework.extensions.tibco.GetTibcoQueues\nSyntax\nCopy\n<GetTibcoQueuesPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nurl\ttext\t-\nURL or base of URL to be used. When multiple URLs are defined (comma separated list), the first URL is used of whi"
+}

@@ -1,0 +1,60 @@
+{
+  "href": "#/Components/Monitoring/Destination",
+  "chip": "M",
+  "linkText": "Destination",
+  "scrapedAt": "2025-10-31T11:04:50.129Z",
+  "title": "FF! Doc | Destination",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Destination"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Monitor",
+    "Github - Destination Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.MonitorDestination",
+    "Destination",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Destination name=\"\"/>",
+    "<Destination name=\"\"/>",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "NONE",
+    "ADAPTER",
+    "SOURCE",
+    "ALARM",
+    "CLEARING"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nMonitor\nDestination\nMonitoring\nIMonitorAdapter that uses a sender to send its message.\nSee also\nGithub - Destination Implementation Examples\nJavadoc - org.frankframework.monitoring.MonitorDestination\nSyntax\nCopy\n<Destination name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\neventCode\ttext\t-\nthreshold\tnumber\t-\nAmount of triggers required before sounding an alarm\nperiod\tnumber\t-\nAmount of hits required within 'x' amount of seconds before it counts as a trigger\nseverity\toptions\t-\nAvailable Options: HARMLESS, WARNING, CRITICAL, FATAL\nsourceFiltering\toptions\t-\nAvailable Options: NONE, ADAPTER, SOURCE\ntriggerType\toptions\t-\nAvailable Options: ALARM, CLEARING\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nAbstractMonitorDestinat"
+}

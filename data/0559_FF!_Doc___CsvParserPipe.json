@@ -1,0 +1,90 @@
+{
+  "href": "#/EIP/Translator/CsvParserPipe",
+  "chip": "T",
+  "linkText": "CsvParserPipe",
+  "scrapedAt": "2025-10-31T11:22:28.472Z",
+  "title": "FF! Doc | CsvParserPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CsvParserPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CrlPipe",
+    "Github - CsvParserPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CsvParserPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CsvParserPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CsvParserPipe name=\"\"/>",
+    "<CsvParserPipe name=\"\"/>",
+    "path",
+    "fileContainsHeader",
+    "LOWERCASE",
+    "UPPERCASE",
+    "(RS) Record Separator",
+    "(US) Unit Separator",
+    "fieldSeparator",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nCrlPipe\nCsvParserPipe\nPipesTranslator\nReads a message in CSV format and turns it into XML.\nSee also\nGithub - CsvParserPipe Implementation Examples\nJavadoc - org.frankframework.pipes.CsvParserPipe\nSyntax\nCopy\n<CsvParserPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfileContainsHeader\tboolean\ttrue\nSpecifies if the first line should be treated as a header or as data.\nfieldNames\ttext\t-\nComma separated list of header names. If set, then fileContainsHeader defaults to false. If not set, headers are taken from the first line.\nfieldSeparator\ttext\t,\nCharacter that separates fields.\nheaderCase\toptions\t-\nWhen set, character casing will be changed for the header.\nAvailable Options: LOWERCASE, UPPERCASE\nprettyPrint"
+}

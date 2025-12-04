@@ -1,0 +1,89 @@
+{
+  "href": "#/EIP/Session/GetPrincipalPipe",
+  "chip": "S",
+  "linkText": "GetPrincipalPipe",
+  "scrapedAt": "2025-10-31T11:20:43.156Z",
+  "title": "FF! Doc | GetPrincipalPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "GetPrincipalPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "BytesOutputPipe",
+    "GetFromSessionPipe",
+    "ForPipe",
+    "GetTibcoQueuesPipe",
+    "FixedResultPipe",
+    "Github - GetPrincipalPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.GetPrincipalPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "GetPrincipalPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<GetPrincipalPipe name=\"\"/>",
+    "<GetPrincipalPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "notFoundForwardName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nBytesOutputPipe\nGetFromSessionPipe\nForPipe\nGetTibcoQueuesPipe\nFixedResultPipe\nGetPrincipalPipe\nPipesSession\nReturns the name of the user executing the request.\nSee also\nGithub - GetPrincipalPipe Implementation Examples\nJavadoc - org.frankframework.pipes.GetPrincipalPipe\nSyntax\nCopy\n<GetPrincipalPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nnotFoundForwardName\ttext\t-\nName of the forward returned if the principal has not been found.\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues directly at the forward of this pipe, without executing the pipe itself, if the input is empty.\nifParam\ttext\t-\nIf set, this pipe is only executed when "
+}

@@ -1,0 +1,94 @@
+{
+  "href": "#/Components/Pipes/PutSystemDateInSessionPipe",
+  "chip": "P",
+  "linkText": "PutSystemDateInSessionPipe",
+  "scrapedAt": "2025-10-31T10:48:41.999Z",
+  "title": "FF! Doc | PutSystemDateInSessionPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "PutSystemDateInSessionPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "StreamLineIteratorPipe",
+    "SkipPipe",
+    "JsonPathPipe",
+    "LogContextPipe",
+    "CompareIntegerPipe",
+    "RegExPipe",
+    "ExceptionPipe",
+    "Github - PutSystemDateInSessionPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.PutSystemDateInSession",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "PutSystemDateInSessionPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<PutSystemDateInSessionPipe name=\"\"/>",
+    "<PutSystemDateInSessionPipe name=\"\"/>",
+    "path",
+    "-1",
+    "true",
+    "2001-12-17 09:30:47",
+    "stub4testtool.fixeddate",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nStreamLineIteratorPipe\nSkipPipe\nJsonPathPipe\nLogContextPipe\nCompareIntegerPipe\nRegExPipe\nExceptionPipe\nPutSystemDateInSessionPipe\nPipesSession\nPuts the system date/time under a key in the pipeLineSession.\nSee also\nGithub - PutSystemDateInSessionPipe Implementation Examples\nJavadoc - org.frankframework.pipes.PutSystemDateInSession\nSyntax\nCopy\n<PutSystemDateInSessionPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsessionKey\ttext\tsystemDate\nKey of session variable to store systemdate in\ndateFormat\ttext\tfull ISO format: DateUtils.fullIsoFormat\nFormat to store date in\ntimeZone\ttext\tthe default time zone for the JVM\nTime zone to use for the formatter\nsleepWhenEqualToPrevious\tnumber\t-1\nSet to a time in millis"
+}

@@ -1,0 +1,78 @@
+{
+  "href": "#/EIP/Endpoint/AmqpSender",
+  "chip": "E",
+  "linkText": "AmqpSender",
+  "scrapedAt": "2025-10-31T11:15:32.134Z",
+  "title": "FF! Doc | AmqpSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "AmqpSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "When a message is to be received as a streaming message by the recipient, it has to be sent as a MessageType.BINARY message.\nWhen setStreamingMessages is configured",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "AmqpListener",
+    "Github - AmqpSender Implementation Examples",
+    "Javadoc - org.frankframework.messaging.amqp.AmqpSender",
+    "AUTO Automatically determine the type of the outgoing org.apache.qpid.protonj2.client.Message based on the value of Message.isBinary().",
+    "TEXT Create the outgoing message with an AmqpValue section containing character data.",
+    "BINARY Create the outgoing message with an AMQP Body section containing the message as binary data. Only binary messages can be read or created in a streaming manner when messages are large.",
+    "FF Fire & Forget protocol",
+    "RR Request-Reply protocol",
+    "AmqpSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<AmqpSender connectionName=\"\" address=\"\"/>",
+    "<AmqpSender connectionName=\"\" address=\"\"/>",
+    "amqp",
+    "resources.yaml",
+    "30",
+    "QUEUE",
+    "MessageProtocol#RR",
+    "TOPIC",
+    "QUEUE",
+    "AUTO",
+    "AmqpValue",
+    "Data",
+    "true",
+    "messageType",
+    "AUTO",
+    "TEXT",
+    "AmqpValue",
+    "BINARY",
+    "Body",
+    "Body",
+    "-1",
+    "FF",
+    "FF",
+    "RR"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nAmqpListener\nAmqpSender\nExperimentalSendersEndpointAMQP\nSender to send to AMQP 1.0 end-points.\nSee also\nGithub - AmqpSender Implementation Examples\nJavadoc - org.frankframework.messaging.amqp.AmqpSender\nSyntax\nCopy\n<AmqpSender connectionName=\"\" address=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nconnectionName\ttext\t-\nName of the AMQP connection in the amqp section of the resources.yaml file.\naddress\ttext\t-\nSet the address (name of the queue or topic) on which to send messages.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntimeout\tnumber\t30\nTimeout in seconds for sending messages and receiving replies.\naddressType\toptions\tQUEUE\nSet the type of address to which messages are being sent, TOPIC or QUEUE. For MessageProtocol#RR the type will always be QUEUE.\nAvailable Options: TOPIC, QUEUE\nmessageType\toptions\tAUTO\nSet the message type: MessageType.TEXT to character"
+}

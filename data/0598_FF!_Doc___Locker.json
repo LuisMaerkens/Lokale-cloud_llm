@@ -1,0 +1,88 @@
+{
+  "href": "#/TYPE/JDBC/Locker",
+  "chip": "J",
+  "linkText": "Locker",
+  "scrapedAt": "2025-10-31T11:25:44.053Z",
+  "title": "FF! Doc | Locker",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Locker"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Tries to set a lock (by inserting a record in the database table IbisLock) and only if this is done successfully the job is executed.",
+    "For an Oracle database the following objects are used:",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - Locker Implementation Examples",
+    "Javadoc - org.frankframework.util.Locker",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "Locker",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "CREATE TABLE &lt;schema_owner&gt;.IBISLOCK\n\t(\n\tOBJECTID VARCHAR2(100 CHAR),\n\tTYPE CHAR(1 CHAR),\n\tHOST VARCHAR2(100 CHAR),\n\tCREATIONDATE TIMESTAMP(6),\n\tEXPIRYDATE TIMESTAMP(6)\n\tCONSTRAINT PK_IBISLOCK PRIMARY KEY (OBJECTID)\n\t);\n\n\tCREATE INDEX &lt;schema_owner&gt;.IX_IBISLOCK ON &lt;schema_owner&gt;.IBISLOCK\n\t(EXPIRYDATE);\n\n\tGRANT DELETE, INSERT, SELECT, UPDATE ON &lt;schema_owner&gt;.IBISLOCK TO &lt;rolename&gt;;\n\tGRANT SELECT ON SYS.DBA_PENDING_TRANSACTIONS TO &lt;rolename&gt;;\n\n\tCOMMIT;",
+    "CREATE TABLE &lt;schema_owner&gt;.IBISLOCK\n\t(\n\tOBJECTID VARCHAR2(100 CHAR),\n\tTYPE CHAR(1 CHAR),\n\tHOST VARCHAR2(100 CHAR),\n\tCREATIONDATE TIMESTAMP(6),\n\tEXPIRYDATE TIMESTAMP(6)\n\tCONSTRAINT PK_IBISLOCK PRIMARY KEY (OBJECTID)\n\t);\n\n\tCREATE INDEX &lt;schema_owner&gt;.IX_IBISLOCK ON &lt;schema_owner&gt;.IBISLOCK\n\t(EXPIRYDATE);\n\n\tGRANT DELETE, INSERT, SELECT, UPDATE ON &lt;schema_owner&gt;.IBISLOCK TO &lt;rolename&gt;;\n\tGRANT SELECT ON SYS.DBA_PENDING_TRANSACTIONS TO &lt;rolename&gt;;\n\n\tCOMMIT;",
+    "Copy\n<Locker objectId=\"\"/>",
+    "<Locker objectId=\"\"/>",
+    "T",
+    "P",
+    "objectid",
+    "SECONDS",
+    "MINUTES",
+    "HOURS",
+    "DAYS",
+    "WEEKS",
+    "MONTHS",
+    "YEARS",
+    "SECONDS",
+    "MINUTES",
+    "HOURS",
+    "DAYS",
+    "WEEKS",
+    "MONTHS",
+    "YEARS",
+    "true",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "0",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nLocker\nOtherJDBC\nLocker of scheduler jobs and pipes.\n\nTries to set a lock (by inserting a record in the database table IbisLock) and only if this is done successfully the job is executed.\n\nFor an Oracle database the following objects are used:\n\nCREATE TABLE &lt;schema_owner&gt;.IBISLOCK\n\t(\n\tOBJECTID VARCHAR2(100 CHAR),\n\tTYPE CHAR(1 CHAR),\n\tHOST VARCHAR2(100 CHAR),\n\tCREATIONDATE TIMESTAMP(6),\n\tEXPIRYDATE TIMESTAMP(6)\n\tCONSTRAINT PK_IBISLOCK PRIMARY KEY (OBJECTID)\n\t);\n\n\tCREATE INDEX &lt;schema_owner&gt;.IX_IBISLOCK ON &lt;schema_owner&gt;.IBISLOCK\n\t(EXPIRYDATE);\n\n\tGRANT DELETE, INSERT, SELECT, UPDATE ON &lt;schema_owner&gt;.IBISLOCK TO &lt;rolename&gt;;\n\tGRANT SELECT ON SYS.DBA_PENDING_TRANSACTIONS TO &lt;rolename&gt;;\n\n\tCOMMIT;\nSee also\nGithub - Locker Implementation Examples\nJavadoc - org.frankframework.util.Locker\nSyntax\nCopy\n<Locker objectId=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & D"
+}

@@ -1,0 +1,94 @@
+{
+  "href": "#/Components/Pipes/BatchBlobTransformerPipe",
+  "chip": "P",
+  "linkText": "BatchBlobTransformerPipe",
+  "scrapedAt": "2025-10-31T10:45:21.298Z",
+  "title": "FF! Doc | BatchBlobTransformerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "BatchBlobTransformerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "BatchBlobTransformerPipe: Not tested and maintained, please look for alternatives if you use BatchBlobTransformerPipe inform WeAreFrank! that there are no suitable alternatives for your use-case",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JsonPathPipe",
+    "RegExPipe",
+    "IfPipe",
+    "Adios2XmlPipe",
+    "BatchFileTransformerPipe",
+    "FixedResultPipe",
+    "Github - BatchBlobTransformerPipe Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.BatchBlobTransformerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "BatchBlobTransformerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<BatchBlobTransformerPipe query=\"\" name=\"\"/>",
+    "<BatchBlobTransformerPipe query=\"\" name=\"\"/>",
+    "path",
+    "jdbc.datasource.default",
+    "true",
+    "originalBlock",
+    "false",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJsonPathPipe\nRegExPipe\nIfPipe\nAdios2XmlPipe\nBatchFileTransformerPipe\nFixedResultPipe\nBatchBlobTransformerPipe\nDeprecatedPipesTranslator\n\nBatchBlobTransformerPipe: Not tested and maintained, please look for alternatives if you use BatchBlobTransformerPipe inform WeAreFrank! that there are no suitable alternatives for your use-case\n\nPipe that batch-transforms the lines in a BLOB.\nSee also\nGithub - BatchBlobTransformerPipe Implementation Examples\nJavadoc - org.frankframework.jdbc.BatchBlobTransformerPipe\nSyntax\nCopy\n<BatchBlobTransformerPipe query=\"\" name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nquery\ttext\t-\nThe SQL query text to be executed each time sendMessage() is called\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nblobCharset\ttext\t-\nblobsCompressed"
+}

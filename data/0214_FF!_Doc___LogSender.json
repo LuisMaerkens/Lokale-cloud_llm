@@ -1,0 +1,52 @@
+{
+  "href": "#/Components/Senders/LogSender",
+  "chip": "S",
+  "linkText": "LogSender",
+  "scrapedAt": "2025-10-31T10:53:37.931Z",
+  "title": "FF! Doc | LogSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LogSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Samba2Sender",
+    "IMSSender",
+    "MessageStoreSender",
+    "Github - LogSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.LogSender",
+    "LogSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<LogSender />",
+    "<LogSender />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nSamba2Sender\nIMSSender\nMessageStoreSender\nLogSender\nAdvancedSendersEndpoint\nSender that just logs its message.\nSee also\nGithub - LogSender Implementation Examples\nJavadoc - org.frankframework.senders.LogSender\nSyntax\nCopy\n<LogSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nlogCategory\ttext\tname of the sender\nCategory under which messages are logged\nlogLevel\ttext\tinfo\nLevel on which messages are logged\nAbstractSender\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the sender\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nLogSender\nSee also\nSyntax\nAttributes\nOptional\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

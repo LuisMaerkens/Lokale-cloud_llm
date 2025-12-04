@@ -1,0 +1,77 @@
+{
+  "href": "#/TYPE/FILE_SYSTEM/ImapListener",
+  "chip": "F",
+  "linkText": "ImapListener",
+  "scrapedAt": "2025-10-31T11:29:24.691Z",
+  "title": "FF! Doc | ImapListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ImapListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "ImapSender",
+    "Github - ImapListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.ImapListener",
+    "EMAIL, for an XML containing most relevant information, except the body and the attachments",
+    "CONTENTS, for the body of the message",
+    "MIME, for the MIME contents of the message",
+    "NAME or PATH, for an internal handle of mail message, that can be used by a related MailFileSystemSender",
+    "HEADER, for the value of the header matching the searchKey in the message context",
+    "ImapListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ImapListener host=\"\"/>",
+    "<ImapListener host=\"\"/>",
+    "replyTo,from,sender,Return-Path",
+    "true",
+    "EMAIL",
+    "CONTENTS",
+    "MIME",
+    "NAME",
+    "PATH",
+    "HEADER",
+    "EMAIL",
+    "CONTENTS",
+    "MIME",
+    "NAME",
+    "PATH",
+    "success",
+    "true",
+    "true",
+    "true",
+    "true",
+    "true",
+    "originalMessage",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nImapSender\nImapListener\nAdvancedListenersListenerFILE_SYSTEM\nSee also\nGithub - ImapListener Implementation Examples\nJavadoc - org.frankframework.receivers.ImapListener\nSyntax\nCopy\n<ImapListener host=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nhost\ttext\t-\nThe hostname of the IMAP server\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nport\tnumber\t993\nThe port of the IMAP server\nauthAlias\ttext\t-\nAlias used to obtain accessToken or username and password for authentication to Exchange mail server. If the alias refers to a combination of a username and a password, the deprecated Basic Authentication method is used. If the alias refers to a password without a username, the password is treated as the accessToken.\nusername\ttext\t-\nUsername for authentication to mail server.\npassword\ttext\t-\nPassword for authentication to mail server.\nbaseFolder\ttext\t-\nFolder (subfolder of"
+}

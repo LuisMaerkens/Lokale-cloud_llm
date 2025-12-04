@@ -1,0 +1,87 @@
+{
+  "href": "#/EIP/Router/CompareStringPipe",
+  "chip": "R",
+  "linkText": "CompareStringPipe",
+  "scrapedAt": "2025-10-31T11:18:57.822Z",
+  "title": "FF! Doc | CompareStringPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CompareStringPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "IncreaseIntegerPipe",
+    "CompareIntegerPipe",
+    "FixedResultPipe",
+    "CompressPipe",
+    "Github - CompareStringPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.CompareStringPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "CompareStringPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CompareStringPipe name=\"\"/>",
+    "<CompareStringPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "<ignores>\n \t   <ignore>\n \t       <after>...</after>\n \t       <before>...</before>\n \t   </ignore>\n \t   <ignore>\n \t       <after>...</after>\n \t       <before>...</before>\n \t   </ignore>\n </ignores>",
+    "<ignores>\n \t   <ignore>\n \t       <after>...</after>\n \t       <before>...</before>\n \t   </ignore>\n \t   <ignore>\n \t       <after>...</after>\n \t       <before>...</before>\n \t   </ignore>\n </ignores>"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nIncreaseIntegerPipe\nCompareIntegerPipe\nFixedResultPipe\nCompressPipe\nCompareStringPipe\nBasicPipesRouter\nPipe that lexicographically compares two strings, which must NOT be empty.\nSee also\nGithub - CompareStringPipe Implementation Examples\nJavadoc - org.frankframework.pipes.CompareStringPipe\nSyntax\nCopy\n<CompareStringPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nxml\tboolean\tfalse\nIf true, the string values to compare are considered to be XML strings, and before the actual comparison, both XML strings are transformed to a canonical form.\nAbstractPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ngetInputFromSessionKey\ttext\t-\nIf set, input is taken from this session key, instead of regular input\ngetInputFromF"
+}

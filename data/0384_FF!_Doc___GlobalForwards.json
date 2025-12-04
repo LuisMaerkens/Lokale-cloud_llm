@@ -1,0 +1,52 @@
+{
+  "href": "#/Components/Other/GlobalForwards",
+  "chip": "O",
+  "linkText": "GlobalForwards",
+  "scrapedAt": "2025-10-31T11:07:50.658Z",
+  "title": "FF! Doc | GlobalForwards",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "GlobalForwards"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - GlobalForwards Implementation Examples",
+    "Javadoc - org.frankframework.core.PipeForwards",
+    "GlobalForwards",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<forward name=\"exception\" path=\"error_exception\" />",
+    "exception",
+    "Copy\n<GlobalForwards />",
+    "<GlobalForwards />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nGlobalForwards\nOther\nOptional element in a pipeline. Global forwards that will be added to every pipe, when the forward name has not been explicitly set. For example the <forward name=\"exception\" path=\"error_exception\" />, which will add the 'exception' forward to every pipe in the pipeline.\nSee also\nGithub - GlobalForwards Implementation Examples\nJavadoc - org.frankframework.core.PipeForwards\nSyntax\nCopy\n<GlobalForwards />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nNested Components\nCOMPONENT NAME\tDESCRIPTION\tCARDINALITY\nforward\tDefines what pipe or exit to execute next. When the execution of a pipe is done, the pipe looks up the next pipe or exit to execute. See Forward for more information.\t0 .. n\nGlobalForwards\nSee al"
+}

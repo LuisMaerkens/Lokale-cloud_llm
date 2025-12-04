@@ -1,0 +1,6 @@
+requests
+nltk
+sentence-transformers
+numpy
+
+

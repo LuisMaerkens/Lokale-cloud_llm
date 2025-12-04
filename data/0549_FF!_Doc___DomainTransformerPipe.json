@@ -1,0 +1,97 @@
+{
+  "href": "#/EIP/Translator/DomainTransformerPipe",
+  "chip": "T",
+  "linkText": "DomainTransformerPipe",
+  "scrapedAt": "2025-10-31T11:21:38.320Z",
+  "title": "FF! Doc | DomainTransformerPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "DomainTransformerPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "LdapFindGroupMembershipsPipe",
+    "string (default): the method setString() is used.",
+    "number: the method setDouble() is used.",
+    "Github - DomainTransformerPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.DomainTransformerPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "DomainTransformerPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "label",
+    "valueIn",
+    "type",
+    "valueOut",
+    "type",
+    "valueIn",
+    "string",
+    "number",
+    "Copy\n<DomainTransformerPipe name=\"\"/>",
+    "<DomainTransformerPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nLdapFindGroupMembershipsPipe\nDomainTransformerPipe\nPipesTranslator\nPipe that performs domain transforming on the basis of a database table. Every string that equals \"%![DT{label,valueIn,type}]\" will be replaced by valueOut. The field type, which is optional, indicates the format of valueIn. Currently, the following types are supported:\nstring (default): the method setString() is used.\nnumber: the method setDouble() is used.\nSee also\nGithub - DomainTransformerPipe Implementation Examples\nJavadoc - org.frankframework.pipes.DomainTransformerPipe\nSyntax\nCopy\n<DomainTransformerPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndatasourceName\ttext\t-\ntab"
+}

@@ -1,0 +1,85 @@
+{
+  "href": "#/Components/Pipes/LadybugPipe",
+  "chip": "P",
+  "linkText": "LadybugPipe",
+  "scrapedAt": "2025-10-31T10:48:47.014Z",
+  "title": "FF! Doc | LadybugPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LadybugPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - LadybugPipe Implementation Examples",
+    "Javadoc - org.frankframework.ladybug.LadybugPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LadybugPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<LadybugPipe name=\"\"/>",
+    "<LadybugPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nLadybugPipe\nPipes\nCall Ladybug Test Tool to rerun the reports present in test storage (see Test tab in Ladybug)\nSee also\nGithub - LadybugPipe Implementation Examples\nJavadoc - org.frankframework.ladybug.LadybugPipe\nSyntax\nCopy\n<LadybugPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nwriteToLog\tboolean\tfalse\nWhether or not to write results to the logfile (testtool4<instance.name>)\nwriteToSystemOut\tboolean\tfalse\nWhether or not to write results to system out\ncheckRoles\tboolean\tfalse\nSet this to true if you wish to enforce the user roles (e.g. when using an HTTP based listener). When set to false the Ladybug is run anonymously.\nenableReportGenerator\tboolean\tfalse\nSet to true to enable Ladybug's report genera"
+}

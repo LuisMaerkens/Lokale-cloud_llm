@@ -1,0 +1,55 @@
+{
+  "href": "#/Components/Batch/Manager",
+  "chip": "B",
+  "linkText": "Manager",
+  "scrapedAt": "2025-10-31T11:03:19.851Z",
+  "title": "FF! Doc | Manager",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Manager"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedPositionChild",
+    "FixedPositionManager",
+    "FieldPositionChild",
+    "FieldPositionManager",
+    "Flow",
+    "Github - Manager Implementation Examples",
+    "Javadoc - org.frankframework.batch.RecordHandlerManager",
+    "Manager",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Manager />",
+    "<Manager />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nFixedPositionChild\nFixedPositionManager\nFieldPositionChild\nFieldPositionManager\nFlow\nManager\nBatch\nBasic implementation of RecordHandlerManager, that allows only for a single flow. The manager decides which handlers to be used for a specific record.\nSee also\nGithub - Manager Implementation Examples\nJavadoc - org.frankframework.batch.RecordHandlerManager\nSyntax\nCopy\n<Manager />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the manager\ninitial\tboolean\tfalse\nThis manager is the initial manager, i.e. to be used for the first record\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nNested Components\nCOMPONENT NAME\tDESCRIPTION\tCARDINALITY\nflow\tElement that contains the handlers for a specific record type, to be assigned to the manager\t0 .. n\nManager\nSee also\nS"
+}

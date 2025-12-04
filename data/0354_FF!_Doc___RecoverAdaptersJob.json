@@ -1,0 +1,75 @@
+{
+  "href": "#/Components/Scheduling/RecoverAdaptersJob",
+  "chip": "S",
+  "linkText": "RecoverAdaptersJob",
+  "scrapedAt": "2025-10-31T11:05:20.220Z",
+  "title": "FF! Doc | RecoverAdaptersJob",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "RecoverAdaptersJob"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This is a default job that can be controlled with the property recover.adapters.interval.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - RecoverAdaptersJob Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.job.RecoverAdaptersJob",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "RecoverAdaptersJob",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "HEARTBEAT",
+    "recover.adapters.interval",
+    "Copy\n<RecoverAdaptersJob name=\"\"/>",
+    "<RecoverAdaptersJob name=\"\"/>",
+    "TECHNICAL",
+    "FUNCTIONAL",
+    "HEARTBEAT",
+    "CLEARING",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nRecoverAdaptersJob\nScheduling\nFrank!Framework Adapter recovery-job, which monitors all adapter states, attempts to recover them if required, and logs this information to the HEARTBEAT log appender.\n\nThis is a default job that can be controlled with the property recover.adapters.interval.\n\nSee also\nGithub - RecoverAdaptersJob Implementation Examples\nJavadoc - org.frankframework.scheduler.job.RecoverAdaptersJob\nSyntax\nCopy\n<RecoverAdaptersJob name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of the object.\nname\ttext\t-\nName of the job\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ndestinations\ttext\t-\nraised\tboolean\t-\nadditionalHitCount\tnumber\t-\ntype\toptions\t-\nAvailable Options: TECHNICAL, FUNCTIONAL, HEARTBEAT, CLEARING\nalarmSeverity\toptions\t-\nAvailable Options: HARMLESS, WARNING, CRITICAL, FATAL\nactive\ttext\t-\nIf defined and empty o"
+}

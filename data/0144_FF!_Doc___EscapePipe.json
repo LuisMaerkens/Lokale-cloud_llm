@@ -1,0 +1,90 @@
+{
+  "href": "#/Components/Pipes/EscapePipe",
+  "chip": "P",
+  "linkText": "EscapePipe",
+  "scrapedAt": "2025-10-31T10:47:46.814Z",
+  "title": "FF! Doc | EscapePipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "EscapePipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "When direction=cdata2text, all CDATA nodes are converted to text nodes without any other translations.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - EscapePipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.EscapePipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "EscapePipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<EscapePipe name=\"\"/>",
+    "<EscapePipe name=\"\"/>",
+    "path",
+    "ENCODE",
+    "DECODE",
+    "CDATA2TEXT",
+    "true",
+    "substringstart",
+    "substringend",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nEscapePipe\nPipesTranslator\nPipe that performs translations between special characters and their XML equivalents.\n\nWhen direction=cdata2text, all CDATA nodes are converted to text nodes without any other translations.\n\nSee also\nGithub - EscapePipe Implementation Examples\nJavadoc - org.frankframework.pipes.EscapePipe\nSyntax\nCopy\n<EscapePipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsubstringStart\ttext\t-\nSubstring to start translation.\nsubstringEnd\ttext\t-\nSubstring to end translation.\ndirection\toptions\t-\nAvailable Options: ENCODE, DECODE, CDATA2TEXT\nencodeSubstring\tboolean\tfalse\nWhen set to true, special characters in substringstart and substringend are first translated to their XML equivalents.\nFixedForw"
+}

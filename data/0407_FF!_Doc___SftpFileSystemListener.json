@@ -1,0 +1,79 @@
+{
+  "href": "#/EIP/Listener/SftpFileSystemListener",
+  "chip": "L",
+  "linkText": "SftpFileSystemListener",
+  "scrapedAt": "2025-10-31T11:09:45.994Z",
+  "title": "FF! Doc | SftpFileSystemListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SftpFileSystemListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "To avoid problems with duplicate filenames in folders like the errorFolder or processedFolder, you should configure either overwrite=\"true\", configure numberOfBackups to a value larger than 0, or configure an inProcessFolder and fileTimeSensitive=\"true\". These options can be used together as well.",
+    "In addition to the above, prior to release 9.0 it was not sufficient to configure inProcessFolder and fileTimeSensitive to avoid potential duplicate filename errors. Prior to release 9.0, it is recommended to configure numberOfBackups to avoid these issues.",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SftpFileSystemSender",
+    "Github - SftpFileSystemListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.SftpFileSystemListener",
+    "SftpFileSystemListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "messageType",
+    "errorFolder",
+    "processedFolder",
+    "overwrite=\"true\"",
+    "numberOfBackups",
+    "inProcessFolder",
+    "fileTimeSensitive=\"true\"",
+    "inProcessFolder",
+    "fileTimeSensitive",
+    "numberOfBackups",
+    "Copy\n<SftpFileSystemListener />",
+    "<SftpFileSystemListener />",
+    "ATTRIBUTE",
+    "NAME",
+    "PATH",
+    "CONTENTS",
+    "INFO",
+    "HTTP",
+    "SOCKS4",
+    "SOCKS5",
+    "success",
+    "true",
+    "true",
+    "true",
+    "true",
+    "true",
+    "originalMessage",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nSftpFileSystemSender\nSftpFileSystemListener\nListenersListenerFILE_SYSTEM\nFile listener for an SFTP connection. listener that looks in a FileSystem for files. When a file is found, it is moved to an in-process folder, so that it isn't found more than once.\nThe information specified by messageType is then passed to the pipeline.\n\nTo avoid problems with duplicate filenames in folders like the errorFolder or processedFolder, you should configure either overwrite=\"true\", configure numberOfBackups to a value larger than 0, or configure an inProcessFolder and fileTimeSensitive=\"true\". These options can be used together as well.\n\nIn addition to the above, prior to release 9.0 it was not sufficient to configure inProcessFolder and fileTimeSensitive to avoid potential duplicate filename errors. Prior to release 9.0, it is recommended to configure numberOfBackups to avoid these issues.\n\nSee also\nG"
+}

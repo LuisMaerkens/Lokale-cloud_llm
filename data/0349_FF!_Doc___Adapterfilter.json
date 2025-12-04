@@ -1,0 +1,50 @@
+{
+  "href": "#/Components/Monitoring/Adapterfilter",
+  "chip": "M",
+  "linkText": "Adapterfilter",
+  "scrapedAt": "2025-10-31T11:04:55.142Z",
+  "title": "FF! Doc | Adapterfilter",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Adapterfilter"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - Adapterfilter Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.AdapterFilter",
+    "Adapterfilter",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Adapterfilter />",
+    "<Adapterfilter />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nAdapterfilter\nMonitoring\nFilter on Adapters, used by Triggers.\nSee also\nGithub - Adapterfilter Implementation Examples\nJavadoc - org.frankframework.monitoring.AdapterFilter\nSyntax\nCopy\n<Adapterfilter />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nadapter\ttext\t-\nSet the name of the Adapter that this AdapterFilter filters on.\nactive\ttext\t-\nIf defined and empty or false, then this element and all its children are ignored\nNested Components\nCOMPONENT NAME\tDESCRIPTION\tCARDINALITY\nsource\tAdd the name of a SubObject (such as a Pipe) to be included in the filter.\t0 .. n\nAdapterfilter\nSee also\nSyntax\nAttributes\nOptional\nNested Elements\nForwards\nDownload XSD\nFrank!Manual\nFF!Flow\n\n© 2025 Frank!Framework"
+}

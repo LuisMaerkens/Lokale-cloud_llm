@@ -1,0 +1,62 @@
+{
+  "href": "#/Components/Monitoring/ClearingTrigger",
+  "chip": "M",
+  "linkText": "ClearingTrigger",
+  "scrapedAt": "2025-10-31T11:04:35.097Z",
+  "title": "FF! Doc | ClearingTrigger",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ClearingTrigger"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Trigger",
+    "Monitor",
+    "Github - ClearingTrigger Implementation Examples",
+    "Javadoc - org.frankframework.monitoring.Clearing",
+    "ClearingTrigger",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ClearingTrigger />",
+    "<ClearingTrigger />",
+    "true",
+    "openBlockBeforeLine",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "NONE",
+    "ADAPTER",
+    "SOURCE",
+    "ALARM",
+    "CLEARING"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nTrigger\nMonitor\nClearingTrigger\nMonitoring\nA Trigger that starts its life with type = CLEARING. The type of the trigger can be changed dynamically.\nSee also\nGithub - ClearingTrigger Implementation Examples\nJavadoc - org.frankframework.monitoring.Clearing\nSyntax\nCopy\n<ClearingTrigger />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nrecordKey\ttext\t-\nKey under which this flow is registered in the manager\nnextRecordHandlerManagerRef\ttext\t-\nName of the manager to be used after handling this record\nrecordHandlerRef\ttext\t-\nName of the recordHandler to be used to transform records of the type specified in the key (optional)\nrecordHandlerManagerRef\ttext\t-\nName of the manager to which this flow must be added\nresultHandlerRef\ttext\t-\nName of the resultHandler to be used to handle the transformed result\nopenBlockBeforeLine\ttext\t-\nI"
+}

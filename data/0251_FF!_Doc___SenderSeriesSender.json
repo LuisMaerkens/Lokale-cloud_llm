@@ -1,0 +1,60 @@
+{
+  "href": "#/Components/Senders/SenderSeriesSender",
+  "chip": "S",
+  "linkText": "SenderSeriesSender",
+  "scrapedAt": "2025-10-31T10:56:43.546Z",
+  "title": "FF! Doc | SenderSeriesSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SenderSeriesSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CmisSender",
+    "MQSender",
+    "ImapSender",
+    "ReloadSender",
+    "LdapSender",
+    "EchoSender",
+    "SapSender",
+    "ParallelSendersSender",
+    "LocalFileSystemPipe",
+    "Github - SenderSeriesSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.SenderSeries",
+    "SenderSeriesSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SenderSeriesSender />",
+    "<SenderSeriesSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nCmisSender\nMQSender\nImapSender\nReloadSender\nLdapSender\nEchoSender\nSapSender\nParallelSendersSender\nLocalFileSystemPipe\nSenderSeriesSender\nSendersEndpoint\nSeries of Senders, that are executed one after another.\nSee also\nGithub - SenderSeriesSender Implementation Examples\nJavadoc - org.frankframework.senders.SenderSeries\nSyntax\nCopy\n<SenderSeriesSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\t-\nAbstractSenderWrapper\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ngetInputFromSessionKey\ttext\t-\nIf set, input is taken from this session key, instead of regular input\ngetInputFromFixedValue\ttext\t-\nIf set, this fixed value is taken as input, instead of regular input\npreserveInput\tboolean\tfalse\nIf true, the input of a pipe is restored before processing the next one\nstoreResultInSessionKey\ttext\t-\nIf set, the"
+}

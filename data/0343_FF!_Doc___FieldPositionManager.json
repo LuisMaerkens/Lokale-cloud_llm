@@ -1,0 +1,56 @@
+{
+  "href": "#/Components/Batch/FieldPositionManager",
+  "chip": "B",
+  "linkText": "FieldPositionManager",
+  "scrapedAt": "2025-10-31T11:04:25.062Z",
+  "title": "FF! Doc | FieldPositionManager",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "FieldPositionManager"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "OutputFields",
+    "RecordTransformerChild",
+    "RecordTransformerRecordHandler",
+    "FixedPositionChild",
+    "FixedPositionManager",
+    "InputFields",
+    "FieldPositionChild",
+    "Github - FieldPositionManager Implementation Examples",
+    "Javadoc - org.frankframework.batch.FieldPositionRecordHandlerManager",
+    "FieldPositionManager",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<FieldPositionManager />",
+    "<FieldPositionManager />"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nOutputFields\nRecordTransformerChild\nRecordTransformerRecordHandler\nFixedPositionChild\nFixedPositionManager\nInputFields\nFieldPositionChild\nFieldPositionManager\nBatch\nManager that decides the handlers based on the content of a field in the specified position in a record. The fields in the record are separated by a separator. The value of the specified field is taken as key in the flow-table.\nSee also\nGithub - FieldPositionManager Implementation Examples\nJavadoc - org.frankframework.batch.FieldPositionRecordHandlerManager\nSyntax\nCopy\n<FieldPositionManager />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfieldNr\tnumber\t-\nPosition of field that identifies the recordtype (position of first field is 1)\nseparator\ttext\t-\nSeparator that separates the fields in the record\nRecordHandlerManager\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEF"
+}

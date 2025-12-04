@@ -1,0 +1,100 @@
+{
+  "href": "#/Components/Pipes/XsltPipe",
+  "chip": "P",
+  "linkText": "XsltPipe",
+  "scrapedAt": "2025-10-31T10:49:57.236Z",
+  "title": "FF! Doc | XsltPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XsltPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SwitchPipe",
+    "FixedResultPipe",
+    "RekenBoxCallerPipe",
+    "JsonXsltPipe",
+    "XmlSwitchPipe",
+    "Github - XsltPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.XsltPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "XsltPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XsltPipe name=\"\"/>",
+    "<XsltPipe name=\"\"/>",
+    "path",
+    "true",
+    "@disable-output-escaping='yes'",
+    "prefix=namespaceuri",
+    "TEXT",
+    "XML",
+    "true",
+    "true",
+    "true",
+    "true",
+    "2",
+    "3",
+    "0",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nSwitchPipe\nFixedResultPipe\nRekenBoxCallerPipe\nJsonXsltPipe\nXmlSwitchPipe\nXsltPipe\nBasicPipesTranslator\nPerform an XSLT transformation with a specified stylesheet.\nSee also\nGithub - XsltPipe Implementation Examples\nJavadoc - org.frankframework.pipes.XsltPipe\nSyntax\nCopy\n<XsltPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstyleSheetName\ttext\t-\nLocation of stylesheet to apply to the input message\nstyleSheetNameSessionKey\ttext\t-\nSession key to retrieve stylesheet location. Overrides stylesheetName or xpathExpression attribute\nstyleSheetCacheSize\tnumber\t100\nSize of cache of stylesheets retrieved from styleSheetNameSessionKey\nxpathExpression\ttext\t-\nAlternatively: XPath-expression to create stylesheet from\nom"
+}

@@ -1,0 +1,67 @@
+{
+  "href": "#/Components/Listeners/JdbcListener",
+  "chip": "L",
+  "linkText": "JdbcListener",
+  "scrapedAt": "2025-10-31T10:59:09.026Z",
+  "title": "FF! Doc | JdbcListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JdbcListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JdbcTableListener",
+    "JdbcErrorStorage",
+    "JdbcMessageLog",
+    "MessageStoreSender",
+    "SimpleJdbcListener",
+    "MessageStoreListener",
+    "Github - JdbcListener Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.JdbcListener",
+    "JdbcListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JdbcListener />",
+    "<JdbcListener />",
+    "peekUntransacted",
+    "true",
+    "STRING",
+    "CLOB",
+    "BLOB",
+    "messageId",
+    "correlationId",
+    "messageId",
+    "correlationId",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJdbcTableListener\nJdbcErrorStorage\nJdbcMessageLog\nMessageStoreSender\nSimpleJdbcListener\nMessageStoreListener\nJdbcListener\nListenersListenerJDBC\nJdbcListener base class.\nSee also\nGithub - JdbcListener Implementation Examples\nJavadoc - org.frankframework.jdbc.JdbcListener\nSyntax\nCopy\n<JdbcListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\npeekUntransacted\tboolean\ttrue\nWhen true, then PollingListener container will execute getRawMessage() only when hasRawMessageAvailable() has returned true. This avoids rolling back a lot of XA transactions, that appears to be problematic on MS SQL Server\npeekQuery\ttext\tselectQuery\n(Only used when peekUntransacted=true) peek query to determine if the select query should be executed. Peek queries are, unlike select queries, executed without a transaction and without a rowlock\nkeyFie"
+}

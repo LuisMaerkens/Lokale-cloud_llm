@@ -1,0 +1,139 @@
+{
+  "href": "#/Components/Pipes/IfPipe",
+  "chip": "P",
+  "linkText": "IfPipe",
+  "scrapedAt": "2025-10-31T10:45:56.419Z",
+  "title": "FF! Doc | IfPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IfPipe"
+    },
+    {
+      "level": 4,
+      "text": "Expressions"
+    },
+    {
+      "level": 4,
+      "text": "expressionValue"
+    },
+    {
+      "level": 4,
+      "text": "XML/XPATH"
+    },
+    {
+      "level": 4,
+      "text": "Without expression"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Selects a forward based on an expression. The expression type is coupled to the mediaType:",
+    "The XML mediaType is the default type. If you want to use JSON, you need to set this using 'mimeType' in the Message.",
+    "Expressions are used to select nodes in the given input document. Imagine a collection of books:",
+    "With both expression languages, you'll be able to select one or multiple nodes from this collection.",
+    "Using this pipe, there are two options. Use it only with an expression or combine it with an expressionValue. When using the expression, the pipe evaluates to thenForwardName when there is a match, even if it is empty. In the given example, this might be one of:",
+    "When using expression combined with expressionValue, the pipe evaluates to thenForwardName when the matched value is equal to expressionValue. This needs to be an exact match.",
+    "Xpath has been around a long time. Information about the syntax can be found everywhere on the internet. The XML implementation wraps the Xpath expression in an XSL. This enables us to use complex expressions which evaluate to true or false instead of being used only as a selector of nodes in the input XML. This is available to be backwards compatible with the XmlIf pipe. For instance, take the following example input:",
+    "Examples with complex expressions might be something like: number(count(/results/result[contains(@name , 'test')])) > 1, to test if there's more than one node found containing the string 'test'. Please check if a simpler, less error-prone expression like /results/result[contains(@name, 'test')] can suffice.",
+    "Without an expression, the default behaviour is to assume the input is a string. The code will try to match the string to an optional regular expression or tries to match the string value to the optional expressionValue.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "RemoveCacheKeyPipe",
+    "CounterSwitchPipe",
+    "BytesOutputPipe",
+    "GetFromSessionPipe",
+    "DelayPipe",
+    "UUIDGeneratorPipe",
+    "EsbSoapInputWrapper",
+    "XML (application/xml) uses Xpath.",
+    "JSON (application/json) uses jsonPath.",
+    "JsonPath / Jayway implementation including examples",
+    "JsonPath online evaluator",
+    "Xpath syntax",
+    "Xpath online evaluator",
+    "Xpath information and history",
+    "Github - IfPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.IfPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "IfPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "{\n   \"store\": {\n     \"book\": [\n       {\n         \"category\": \"reference\",\n         \"author\": \"Nigel Rees\",\n         \"title\": \"Sayings of the Century\",\n         \"price\": 8.95\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"Evelyn Waugh\",\n         \"title\": \"Sword of Honour\",\n         \"price\": 12.99\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"Herman Melville\",\n         \"title\": \"Moby Dick\",\n         \"isbn\": \"0-553-21311-3\",\n         \"price\": 8.99\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"J. R. R. Tolkien\",\n         \"title\": \"The Lord of the Rings\",\n         \"isbn\": \"0-395-19395-8\",\n         \"price\": 22.99\n       }\n     ]\n   }\n }",
+    "{\n   \"store\": {\n     \"book\": [\n       {\n         \"category\": \"reference\",\n         \"author\": \"Nigel Rees\",\n         \"title\": \"Sayings of the Century\",\n         \"price\": 8.95\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"Evelyn Waugh\",\n         \"title\": \"Sword of Honour\",\n         \"price\": 12.99\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"Herman Melville\",\n         \"title\": \"Moby Dick\",\n         \"isbn\": \"0-553-21311-3\",\n         \"price\": 8.99\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"J. R. R. Tolkien\",\n         \"title\": \"The Lord of the Rings\",\n         \"isbn\": \"0-395-19395-8\",\n         \"price\": 22.99\n       }\n     ]\n   }\n }",
+    "expression",
+    "expressionValue",
+    "thenForwardName",
+    "$.store\n   $.store.book[1]\n   $.store.book[?(@.price == 22.99)].author\n   $.store.book[?(@.category == 'fiction')]",
+    "$.store\n   $.store.book[1]\n   $.store.book[?(@.price == 22.99)].author\n   $.store.book[?(@.category == 'fiction')]",
+    "thenForwardName",
+    "<results>\n     <result name=\"test\"></result>\n     <result name=\"test\"></result>\n   </results>",
+    "<results>\n     <result name=\"test\"></result>\n     <result name=\"test\"></result>\n   </results>",
+    "number(count(/results/result[contains(@name , 'test')])) > 1",
+    "/results/result[contains(@name, 'test')]",
+    "Copy\n<IfPipe name=\"\"/>",
+    "<IfPipe name=\"\"/>",
+    "path",
+    "true",
+    "false",
+    "2",
+    "3",
+    "prefix=namespaceuri",
+    "XML",
+    "JSON",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "thenForwardName",
+    "elseForwardName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nRemoveCacheKeyPipe\nCounterSwitchPipe\nBytesOutputPipe\nGetFromSessionPipe\nDelayPipe\nUUIDGeneratorPipe\nEsbSoapInputWrapper\nIfPipe\nPipesRouter\n\nSelects a forward based on an expression. The expression type is coupled to the mediaType:\n\nXML (application/xml) uses Xpath.\nJSON (application/json) uses jsonPath.\n\nThe XML mediaType is the default type. If you want to use JSON, you need to set this using 'mimeType' in the Message.\n\nExpressions\n\nExpressions are used to select nodes in the given input document. Imagine a collection of books:\n\n{\n   \"store\": {\n     \"book\": [\n       {\n         \"category\": \"reference\",\n         \"author\": \"Nigel Rees\",\n         \"title\": \"Sayings of the Century\",\n         \"price\": 8.95\n       },\n       {\n         \"category\": \"fiction\",\n         \"author\": \"Evelyn Waugh\",\n         \"title\": \"Sword of Honour\",\n         \"price\": 12.99\n       },\n       {\n         \"category\": \""
+}

@@ -1,0 +1,65 @@
+{
+  "href": "#/TYPE/ADAPTER/FrankListener",
+  "chip": "A",
+  "linkText": "FrankListener",
+  "scrapedAt": "2025-10-31T11:25:03.946Z",
+  "title": "FF! Doc | FrankListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "FrankListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "WebServiceListener",
+    "ApiListener",
+    "JavaListener",
+    "IbisLocalSender",
+    "FixedResultPipe",
+    "Adapter",
+    "Receiver",
+    "FrankSender",
+    "Github - FrankListener Implementation Examples",
+    "Javadoc - org.frankframework.receivers.FrankListener",
+    "FrankListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<FrankListener />",
+    "<FrankListener />",
+    "FrankListener",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN",
+    "RETHROW",
+    "FORMAT_AND_RETURN"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nWebServiceListener\nApiListener\nJavaListener\nIbisLocalSender\nFixedResultPipe\nAdapter\nReceiver\nFrankSender\nFrankListener\nBasicListenersListenerADAPTER\nListener to receive messages sent by the org.frankframework.senders.FrankSender, for situations where calling an Adapter directly is not desired. This could be because message / error logging is required for messages sent to the subadapter.\nSee the org.frankframework.senders.FrankSender documentation for more information.\nSee also\nGithub - FrankListener Implementation Examples\nJavadoc - org.frankframework.receivers.FrankListener\nSyntax\nCopy\n<FrankListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nName of the listener by which it can be found by the org.frankframework.senders.FrankSender. If this is not configured, the name will default to the name of th"
+}

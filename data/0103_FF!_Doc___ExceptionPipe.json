@@ -1,0 +1,92 @@
+{
+  "href": "#/Components/Pipes/ExceptionPipe",
+  "chip": "P",
+  "linkText": "ExceptionPipe",
+  "scrapedAt": "2025-10-31T10:44:21.116Z",
+  "title": "FF! Doc | ExceptionPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ExceptionPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "The attribute throwException has been deprecated and thus the success forward will be removed along with the throwException attribute.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JsonPathPipe",
+    "BytesOutputPipe",
+    "Github - ExceptionPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.ExceptionPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "ExceptionPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "returnedSessionKey",
+    "success",
+    "throwException",
+    "false",
+    "exception",
+    "throwException",
+    "success",
+    "throwException",
+    "Copy\n<ExceptionPipe name=\"\"/>",
+    "<ExceptionPipe name=\"\"/>",
+    "path",
+    "true",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "throwException"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nJsonPathPipe\nBytesOutputPipe\nExceptionPipe\nPipesErrorhandling\nPipe that throws an exception based on the input message.\nParameters that are set on the ExceptionPipe will be added to the error message that is produced by the org.frankframework.errormessageformatters.ErrorMessageFormatter that has been configured on the org.frankframework.core.Adapter and will also be copied into the PipeLineSession, so that they can be passed back to a calling adapter as returnedSessionKey.\nThe success forward is only used when the (deprecated) attribute throwException has been set to false. Otherwise, the (default) exception forward will be used.\n\nThe attribute throwException has been deprecated and thus the success forward will be removed along with the throwException attribute.\n\nSee also\nGithub - ExceptionPipe Implementation Examples\nJavadoc - org.frankframework.pipes.ExceptionPipe\nSyntax\nCopy\n<Except"
+}

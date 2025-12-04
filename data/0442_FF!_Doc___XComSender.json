@@ -1,0 +1,67 @@
+{
+  "href": "#/EIP/Endpoint/XComSender",
+  "chip": "E",
+  "linkText": "XComSender",
+  "scrapedAt": "2025-10-31T11:12:41.567Z",
+  "title": "FF! Doc | XComSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "XComSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - XComSender Implementation Examples",
+    "Javadoc - org.frankframework.xcom.XComSender",
+    "XComSender",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<XComSender workingDirName=\"\"/>",
+    "<XComSender workingDirName=\"\"/>",
+    "CREATE",
+    "APPEND",
+    "REPLACE",
+    "YES",
+    "VLR",
+    "VLR2",
+    "MPACK",
+    "XPACK",
+    "NO",
+    "EBCDIC",
+    "ASCII",
+    "YES",
+    "COMPACT",
+    "LZLARGE",
+    "LZMEDIUM",
+    "LZSMALL",
+    "RLE",
+    "NO"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nXComSender\nSendersEndpoint\nXCom client voor het versturen van files via XCom.\nSee also\nGithub - XComSender Implementation Examples\nJavadoc - org.frankframework.xcom.XComSender\nSyntax\nCopy\n<XComSender workingDirName=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nworkingDirName\ttext\t-\nDirectory in which to run the xcomtcp command\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfileOption\toptions\t-\nOne of create, append or replace\nAvailable Options: CREATE, APPEND, REPLACE\nremoteDirectory\ttext\t-\nRemote directory is prefixed witht the remote file\ncarriageflag\toptions\t-\nAvailable Options: YES, VLR, VLR2, MPACK, XPACK, NO\ncodeflag\toptions\t-\nCharacterset conversion\nAvailable Options: EBCDIC, ASCII\ncompress\toptions\t-\nAvailable Options: YES, COMPACT, LZLARGE, LZMEDIUM, LZSMALL, RLE, NO\nlogfile\ttext\t-\nName of logfile for xcomtcp to be used\npassword\ttext\t-\nPassword of user o"
+}

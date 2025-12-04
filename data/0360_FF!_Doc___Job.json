@@ -1,0 +1,97 @@
+{
+  "href": "#/Components/Scheduling/Job",
+  "chip": "S",
+  "linkText": "Job",
+  "scrapedAt": "2025-10-31T11:05:50.305Z",
+  "title": "FF! Doc | Job",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Job"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This element is deprecated!",
+    "Since: 7.7.0",
+    "The attribute",
+    "The job function IbisActionJob has been renamed to ActionJob.",
+    "This element in combination with the attribute function has been removed.",
+    "The following attributes are all inherited",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LoadDatabaseSchedulesJob",
+    "RecoverAdaptersJob",
+    "CleanupDatabaseJob",
+    "ActionJob",
+    "CleanupFileSystemJob",
+    "ExecuteQueryJob",
+    "CheckReloadJob",
+    "SendMessageJob",
+    "Github - Job Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.job.Job",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "Job",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<job function='SendMessage' />",
+    "function",
+    "SendMessageJob",
+    "ExecuteQueryJob",
+    "ActionJob",
+    "IbisActionJob",
+    "ActionJob",
+    "function",
+    "Copy\n<Job name=\"\" function=\"\"/>",
+    "<Job name=\"\" function=\"\"/>",
+    "StopAdapter",
+    "StartAdapter",
+    "StopReceiver",
+    "StartReceiver",
+    "SendMessage",
+    "ExecuteQuery",
+    "cleanupDatabase",
+    "cleanupFileSystem",
+    "recoverAdapters",
+    "checkReload",
+    "loadDatabaseSchedules",
+    "0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nLoadDatabaseSchedulesJob\nRecoverAdaptersJob\nCleanupDatabaseJob\nActionJob\nCleanupFileSystemJob\nExecuteQueryJob\nCheckReloadJob\nSendMessageJob\nJob\nDeprecatedScheduling\n\nThis element is deprecated!\n\nSince: 7.7.0\n\nPlaceholder class to allow legacy configuration notations <job function='SendMessage' /> in the new Frank!Config XSD.\n\nThe attribute\n\nfunction has been removed in favor of explicit JobDefinitions such as: SendMessageJob, ExecuteQueryJob and ActionJob. Using the new elements enables the use of auto-completion for the specified type.\n\nThe job function IbisActionJob has been renamed to ActionJob.\n\nThis element in combination with the attribute function has been removed.\n\nSee also\nGithub - Job Implementation Examples\nJavadoc - org.frankframework.scheduler.job.Job\nSyntax\nCopy\n<Job name=\"\" function=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfunction\toptions\t-\nAvai"
+}

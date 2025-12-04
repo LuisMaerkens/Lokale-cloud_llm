@@ -1,0 +1,64 @@
+{
+  "href": "#/Components/Other/SapSystem",
+  "chip": "O",
+  "linkText": "SapSystem",
+  "scrapedAt": "2025-10-31T11:07:35.623Z",
+  "title": "FF! Doc | SapSystem",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SapSystem"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SapSystems",
+    "Github - SapSystem Implementation Examples",
+    "Javadoc - org.frankframework.extensions.sap.SapSystem",
+    "SapSystem",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SapSystem name=\"\" state=\"\"/>",
+    "<SapSystem name=\"\" state=\"\"/>",
+    "path",
+    "READY",
+    "READY",
+    "SUCCESS",
+    "ERROR",
+    "REJECTED",
+    "500",
+    "SUCCESS",
+    "false",
+    "true",
+    "false",
+    "true",
+    "false",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nSapSystems\nSapSystem\nOther\nA SapSystem is a provider of repository information and connections to a SAP-system.\nSee also\nGithub - SapSystem Implementation Examples\nJavadoc - org.frankframework.extensions.sap.SapSystem\nSyntax\nCopy\n<SapSystem name=\"\" state=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe name of the Exit that can be referenced by a PipeForward's path attribute. When a Pipeline doesn't have an Exits element configured it will be initialized with one Exit having name READY (and state SUCCESS)\nstate\toptions\t-\nThe state of the Pipeline that is returned to the Receiver for this Exit. When a Pipeline doesn't have an Exits element configured it will be initialized with one Exit having state SUCCESS (and name READY)\nAvailable Options: SUCCESS, ERROR, REJECTED\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncode\tnumber\t200\nHTTP statusCode e.g. "
+}

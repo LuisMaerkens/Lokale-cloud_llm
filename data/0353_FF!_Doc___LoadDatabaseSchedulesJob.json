@@ -1,0 +1,77 @@
+{
+  "href": "#/Components/Scheduling/LoadDatabaseSchedulesJob",
+  "chip": "S",
+  "linkText": "LoadDatabaseSchedulesJob",
+  "scrapedAt": "2025-10-31T11:05:15.199Z",
+  "title": "FF! Doc | LoadDatabaseSchedulesJob",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "LoadDatabaseSchedulesJob"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This is a default job that can be controlled with the property loadDatabaseSchedules.active and loadDatabaseSchedules.interval.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "CheckReloadJob",
+    "Github - LoadDatabaseSchedulesJob Implementation Examples",
+    "Javadoc - org.frankframework.scheduler.job.LoadDatabaseSchedulesJob",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "LoadDatabaseSchedulesJob",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "IBISSCHEDULES",
+    "loadDatabaseSchedules.active",
+    "loadDatabaseSchedules.interval",
+    "Copy\n<LoadDatabaseSchedulesJob name=\"\"/>",
+    "<LoadDatabaseSchedulesJob name=\"\"/>",
+    "TECHNICAL",
+    "FUNCTIONAL",
+    "HEARTBEAT",
+    "CLEARING",
+    "HARMLESS",
+    "WARNING",
+    "CRITICAL",
+    "FATAL",
+    "0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nCheckReloadJob\nLoadDatabaseSchedulesJob\nScheduling\n1. This method first stores all database jobs that can are found in the Quartz Scheduler in a Map. 2. It then loops through all records found in the database. 3. If the job is found, remove it from the Map and compares it with the already existing scheduled job. Only if they differ, it overwrites the current job. If it is not present it add the job to the scheduler. 4. Once it's looped through all the database jobs, loop through the remaining jobs in the Map. Since they have been removed from the database, remove them from the Quartz Scheduler Frank!Framework job which periodically looks in the IBISSCHEDULES table to see if a new DatabaseJob should be loaded.\n\nThis is a default job that can be controlled with the property loadDatabaseSchedules.active and loadDatabaseSchedules.interval.\n\nSee also\nGithub - LoadDatabaseSchedulesJob Impleme"
+}

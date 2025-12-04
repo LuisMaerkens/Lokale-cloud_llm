@@ -1,0 +1,61 @@
+{
+  "href": "#/Components/Batch/ResultBlock2SenderResultHandler",
+  "chip": "B",
+  "linkText": "ResultBlock2SenderResultHandler",
+  "scrapedAt": "2025-10-31T11:03:04.804Z",
+  "title": "FF! Doc | ResultBlock2SenderResultHandler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ResultBlock2SenderResultHandler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "ResultBlock2SenderChild",
+    "Result2FilewriterChild",
+    "Result2FilewriterResultHandler",
+    "Result2BlobWriterChild",
+    "Result2BlobWriterResultHandler",
+    "Github - ResultBlock2SenderResultHandler Implementation Examples",
+    "Javadoc - org.frankframework.batch.ResultBlock2Sender",
+    "ResultBlock2SenderResultHandler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<ResultBlock2SenderResultHandler />",
+    "<ResultBlock2SenderResultHandler />",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nResultBlock2SenderChild\nResult2FilewriterChild\nResult2FilewriterResultHandler\nResult2BlobWriterChild\nResult2BlobWriterResultHandler\nResultBlock2SenderResultHandler\nBatch\nResultHandler that collects a number of records and sends them together to a sender.\nSee also\nGithub - ResultBlock2SenderResultHandler Implementation Examples\nJavadoc - org.frankframework.batch.ResultBlock2Sender\nSyntax\nCopy\n<ResultBlock2SenderResultHandler />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\noutputFields\ttext\t-\nSemicolon separated list of output record field specifications (see table below)\noutputSeparator\ttext\t-\nOptional separator to add between the fields\nResultWriter\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nonOpenDocument\tte"
+}

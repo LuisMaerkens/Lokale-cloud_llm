@@ -1,0 +1,52 @@
+{
+  "href": "#/TYPE/KAFKA/KafkaListener",
+  "chip": "K",
+  "linkText": "KafkaListener",
+  "scrapedAt": "2025-10-31T11:25:23.989Z",
+  "title": "FF! Doc | KafkaListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "KafkaListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "KafkaSender",
+    "Github - KafkaListener Implementation Examples",
+    "Javadoc - org.frankframework.extensions.kafka.KafkaListener",
+    "KafkaListener",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Nested Elements",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<KafkaListener />",
+    "<KafkaListener />",
+    "example.*"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nKafkaSender\nKafkaListener\nExperimentalListenersListenerKAFKA\nExperimental IListener for listening to a topic in a Kafka instance. The Kafka integration is still under development so do not currently use unless you wish to participate in this development.\nSee also\nGithub - KafkaListener Implementation Examples\nJavadoc - org.frankframework.extensions.kafka.KafkaListener\nSyntax\nCopy\n<KafkaListener />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ngroupId\ttext\t-\nThe group id of the consumer\npatternRecheckInterval\tnumber\t-\nHow often to check for new topics when using Patterns. (in MS)\ntopics\ttext\t-\nThe topics to listen to as comma-separated list. Regular expressions are supported, for instance: example.*.\nname\ttext\t-\nThe functional name of the object.\nAbstractKafkaFacade\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\n"
+}

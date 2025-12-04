@@ -1,0 +1,61 @@
+{
+  "href": "#/Components/Batch/Result2StringWriterResultHandler",
+  "chip": "B",
+  "linkText": "Result2StringWriterResultHandler",
+  "scrapedAt": "2025-10-31T11:02:29.697Z",
+  "title": "FF! Doc | Result2StringWriterResultHandler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Result2StringWriterResultHandler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2ClobWriterChild",
+    "Result2ClobWriterResultHandler",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "Result2FilewriterChild",
+    "Result2FilewriterResultHandler",
+    "Result2BlobWriterChild",
+    "Result2BlobWriterResultHandler",
+    "Github - Result2StringWriterResultHandler Implementation Examples",
+    "Javadoc - org.frankframework.batch.Result2StringWriter",
+    "Result2StringWriterResultHandler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Result2StringWriterResultHandler />",
+    "<Result2StringWriterResultHandler />",
+    "replaceFrom",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nResult2StringWriterChild\nResult2ClobWriterChild\nResult2ClobWriterResultHandler\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nResult2FilewriterChild\nResult2FilewriterResultHandler\nResult2BlobWriterChild\nResult2BlobWriterResultHandler\nResult2StringWriterResultHandler\nBatch\nResulthandler that writes the transformed record to a String, that is passed to the next Pipe literally.\nSee also\nGithub - Result2StringWriterResultHandler Implementation Examples\nJavadoc - org.frankframework.batch.Result2StringWriter\nSyntax\nCopy\n<Result2StringWriterResultHandler />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nreturnString\ttext\t-\nReturned message\nfilename\ttext\t-\nName of the file containing the result message\nreplaceFrom\ttext\t-\nThe string to replace\nreplaceTo\ttext\t-\nWhat to replace the replaceFrom with.\nstyleSheetName\ttext\t-\n"
+}

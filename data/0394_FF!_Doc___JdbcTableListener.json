@@ -1,0 +1,79 @@
+{
+  "href": "#/EIP/Listener/JdbcTableListener",
+  "chip": "L",
+  "linkText": "JdbcTableListener",
+  "scrapedAt": "2025-10-31T11:08:40.817Z",
+  "title": "FF! Doc | JdbcTableListener",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JdbcTableListener"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JdbcErrorStorage",
+    "JdbcMessageLog",
+    "MessageStoreSender",
+    "SimpleJdbcListener",
+    "JdbcListener",
+    "MessageStoreListener",
+    "Github - JdbcTableListener Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.JdbcTableListener",
+    "JdbcTableListener",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JdbcTableListener tableName=\"\" statusField=\"\" statusValueError=\"\" statusValueProcessed=\"\"/>",
+    "<JdbcTableListener tableName=\"\" statusField=\"\" statusValueError=\"\" statusValueProcessed=\"\"/>",
+    "orderField",
+    "statusField",
+    "statusField",
+    "statusField",
+    "statusField",
+    "statusField",
+    "SKIP LOCKED",
+    "transactionAttribute",
+    "Receiver",
+    "Required",
+    "RequiresNew",
+    "statusField",
+    "peekUntransacted",
+    "true",
+    "STRING",
+    "CLOB",
+    "BLOB",
+    "messageId",
+    "correlationId",
+    "messageId",
+    "correlationId",
+    "jdbc.datasource.default",
+    "authAlias",
+    "authAlias"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated7\nJdbcErrorStorage\nJdbcMessageLog\nMessageStoreSender\nSimpleJdbcListener\nJdbcListener\nMessageStoreListener\nJdbcTableListener\nListenersListenerJDBC\nDatabase Listener that operates on a table having at least a key and a status field.\nSee also\nGithub - JdbcTableListener Implementation Examples\nJavadoc - org.frankframework.jdbc.JdbcTableListener\nSyntax\nCopy\n<JdbcTableListener tableName=\"\" statusField=\"\" statusValueError=\"\" statusValueProcessed=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntableName\ttext\t-\nName of the table to be used\nstatusField\ttext\t-\nField containing the status of the message. NB: For optimal performance, an index should exist that starts with this field, followed by all fields that are used with a fixed value in the select condition, and end with the orderField.\nstatusValueError\ttext\t-\nValue of statusField indicating the processing of the row resulted i"
+}

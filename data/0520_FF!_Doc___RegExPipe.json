@@ -1,0 +1,103 @@
+{
+  "href": "#/EIP/Router/RegExPipe",
+  "chip": "R",
+  "linkText": "RegExPipe",
+  "scrapedAt": "2025-10-31T11:19:12.873Z",
+  "title": "FF! Doc | RegExPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "RegExPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Input:",
+    "Output:",
+    "https://regex101.com can be used to quickly create and debug regex expressions.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LocalFileSystemPipe",
+    "IfPipe",
+    "EsbSoapInputWrapper",
+    "EsbSoapOutputWrapper",
+    "EsbSoapWrapperPipe",
+    "BatchFileTransformerPipe",
+    "Github - RegExPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.RegExPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "RegExPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<RegExPipe name=\"regExPipe\" regex=\"^(.*?)(name!)$\" flags=\"CASE_INSENSITIVE\">\n \t\t<Forward name=\"then\" path=\"EXIT\" />\n \t\t<Forward name=\"else\" path=\"EXIT\" />\n \t</RegExPipe>",
+    "<RegExPipe name=\"regExPipe\" regex=\"^(.*?)(name!)$\" flags=\"CASE_INSENSITIVE\">\n \t\t<Forward name=\"then\" path=\"EXIT\" />\n \t\t<Forward name=\"else\" path=\"EXIT\" />\n \t</RegExPipe>",
+    "Hello name!",
+    "Hello name!",
+    "<matches>\n \t\t<match index=\"1\" value=\"Hello name!\">\n \t\t\t<group index=\"1\">Hello </group>\n \t\t\t<group index=\"2\">name!</group>\n \t\t</match>\n  </matches>",
+    "<matches>\n \t\t<match index=\"1\" value=\"Hello name!\">\n \t\t\t<group index=\"1\">Hello </group>\n \t\t\t<group index=\"2\">name!</group>\n \t\t</match>\n  </matches>",
+    "Copy\n<RegExPipe name=\"\" regex=\"\"/>",
+    "<RegExPipe name=\"\" regex=\"\"/>",
+    "path",
+    "CANON_EQ",
+    "CASE_INSENSITIVE",
+    "COMMENTS",
+    "DOT_ALL",
+    "LITERAL",
+    "MULTILINE",
+    "UNICODE_CASE",
+    "UNICODE_CHARACTER_CLASS",
+    "UNIX_LINES",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated6\nLocalFileSystemPipe\nIfPipe\nEsbSoapInputWrapper\nEsbSoapOutputWrapper\nEsbSoapWrapperPipe\nBatchFileTransformerPipe\nRegExPipe\nPipesRouter\nTries to match the input against the provided regex.\n<RegExPipe name=\"regExPipe\" regex=\"^(.*?)(name!)$\" flags=\"CASE_INSENSITIVE\">\n \t\t<Forward name=\"then\" path=\"EXIT\" />\n \t\t<Forward name=\"else\" path=\"EXIT\" />\n \t</RegExPipe>\n\nInput:\n\nHello name!\n\nOutput:\n\n<matches>\n \t\t<match index=\"1\" value=\"Hello name!\">\n \t\t\t<group index=\"1\">Hello </group>\n \t\t\t<group index=\"2\">name!</group>\n \t\t</match>\n  </matches>\n\nhttps://regex101.com can be used to quickly create and debug regex expressions.\n\nSee also\nGithub - RegExPipe Implementation Examples\nJavadoc - org.frankframework.pipes.RegExPipe\nSyntax\nCopy\n<RegExPipe name=\"\" regex=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nregex\ttext\t-\nThe regex expression to match against the input.\nname\ttext\t-\nThe fun"
+}

@@ -1,0 +1,89 @@
+{
+  "href": "#/Components/Pipes/RemoveCacheKeyPipe",
+  "chip": "P",
+  "linkText": "RemoveCacheKeyPipe",
+  "scrapedAt": "2025-10-31T10:43:10.908Z",
+  "title": "FF! Doc | RemoveCacheKeyPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "RemoveCacheKeyPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "GetTibcoQueuesPipe",
+    "IsXmlPipe",
+    "RemoveFromSessionPipe",
+    "Github - RemoveCacheKeyPipe Implementation Examples",
+    "Javadoc - org.frankframework.cache.RemoveCacheKeyPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "RemoveCacheKeyPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<RemoveCacheKeyPipe name=\"\"/>",
+    "<RemoveCacheKeyPipe name=\"\"/>",
+    "path",
+    "TEXT",
+    "XML",
+    "prefix=namespaceuri",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated6\nGetTibcoQueuesPipe\nIsXmlPipe\nRemoveFromSessionPipe\nRemoveCacheKeyPipe\nPipesSession\nRemove specified cache key from cache with specified name.\nSee also\nGithub - RemoveCacheKeyPipe Implementation Examples\nJavadoc - org.frankframework.cache.RemoveCacheKeyPipe\nSyntax\nCopy\n<RemoveCacheKeyPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncacheName\ttext\t-\nName of the cache from which items are to be removed\nkeyXPath\ttext\t-\nXPath expression to extract cache key from request message\nkeyXPathOutputType\toptions\ttext\nOutput type of xpath expression to extract cache key from request message, must be 'xml' or 'text'\nAvailable Options: TEXT, XML\nkeyNamespaceDefs\ttext\t-\nNamespace defintions for keyXPath. Must be in the f"
+}

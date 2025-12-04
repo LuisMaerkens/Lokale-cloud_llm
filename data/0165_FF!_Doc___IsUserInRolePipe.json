@@ -1,0 +1,91 @@
+{
+  "href": "#/Components/Pipes/IsUserInRolePipe",
+  "chip": "P",
+  "linkText": "IsUserInRolePipe",
+  "scrapedAt": "2025-10-31T10:49:32.142Z",
+  "title": "FF! Doc | IsUserInRolePipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "IsUserInRolePipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "If the role is not specified by the role attribute, the input of the pipe is used as the role.",
+    "N.B. The role itself must be specified by hand in the deployment descriptors web.xml and application.xml.",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "LocalFileSystemPipe",
+    "JsonPathPipe",
+    "CompareIntegerPipe",
+    "ExceptionPipe",
+    "DomainTransformerPipe",
+    "IfPipe",
+    "Github - IsUserInRolePipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.IsUserInRolePipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "IsUserInRolePipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<IsUserInRolePipe name=\"\"/>",
+    "<IsUserInRolePipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nLocalFileSystemPipe\nJsonPathPipe\nCompareIntegerPipe\nExceptionPipe\nDomainTransformerPipe\nIfPipe\nIsUserInRolePipe\nAdvancedPipesRouter\nPipe that checks if the calling user has a specified role. Uses the PipeLineSessions methods.\n\nIf the role is not specified by the role attribute, the input of the pipe is used as the role.\n\nN.B. The role itself must be specified by hand in the deployment descriptors web.xml and application.xml.\n\nSee also\nGithub - IsUserInRolePipe Implementation Examples\nJavadoc - org.frankframework.pipes.IsUserInRolePipe\nSyntax\nCopy\n<IsUserInRolePipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nrole\ttext\t-\nThe J2EE role(s) to check. If the user is in multiple roles, the first specified role"
+}

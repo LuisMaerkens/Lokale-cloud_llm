@@ -1,0 +1,89 @@
+{
+  "href": "#/EIP/Translator/UUIDGeneratorPipe",
+  "chip": "T",
+  "linkText": "UUIDGeneratorPipe",
+  "scrapedAt": "2025-10-31T11:22:03.388Z",
+  "title": "FF! Doc | UUIDGeneratorPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "UUIDGeneratorPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Github - UUIDGeneratorPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.UUIDGeneratorPipe",
+    "ALPHANUMERIC the UUID will not have a fixed length which will be about 42",
+    "NUMERIC a UUID with fixed length 31 will be generated",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "UUIDGeneratorPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "alphanumeric",
+    "numeric",
+    "Copy\n<UUIDGeneratorPipe name=\"\"/>",
+    "<UUIDGeneratorPipe name=\"\"/>",
+    "path",
+    "ALPHANUMERIC",
+    "NUMERIC",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nUUIDGeneratorPipe\nPipesTranslator\nPipe that generates an UUID (Universally Unique Identifier). Only type alphanumeric guarantees a 100% unique identifier, type numeric has a 0.01% chance of exactly the same id in case of multiple calls on the same host within a few milliseconds.\nSee also\nGithub - UUIDGeneratorPipe Implementation Examples\nJavadoc - org.frankframework.pipes.UUIDGeneratorPipe\nSyntax\nCopy\n<UUIDGeneratorPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ntype\toptions\talphanumeric\nFormat of generated string.\nAvailable Options:\nALPHANUMERIC the UUID will not have a fixed length which will be about 42\nNUMERIC a UUID with fixed length 31 will be generated\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTIO"
+}

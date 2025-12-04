@@ -1,0 +1,55 @@
+{
+  "href": "#/EIP/Endpoint/SapSender",
+  "chip": "E",
+  "linkText": "SapSender",
+  "scrapedAt": "2025-10-31T11:11:16.260Z",
+  "title": "FF! Doc | SapSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SapSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SapListener",
+    "IdocSender",
+    "Github - SapSender Implementation Examples",
+    "Javadoc - org.frankframework.extensions.sap.SapSender",
+    "SapSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SapSender />",
+    "<SapSender />",
+    "false",
+    "false",
+    "functionName",
+    "sapSystemName"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nSapListener\nIdocSender\nSapSender\nSendersEndpointSAP\nImplementation of sender that calls a SAP RFC-function. N.B. If no requestFieldIndex or requestFieldName is specified, input is converted from xml; If no replyFieldIndex or replyFieldName is specified, output is converted to xml.\nSee also\nGithub - SapSender Implementation Examples\nJavadoc - org.frankframework.extensions.sap.SapSender\nSyntax\nCopy\n<SapSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\ttrue\nHack to allow to introduce a correlationid\nSapSenderImpl\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsynchronous\tboolean\tfalse\nIf false, the sender operates in RR mode: the a reply is expected from SAP, and the sender does not participate in a transaction. When false, the sender operates in FF mode: no reply is expected from SAP, and the sender "
+}

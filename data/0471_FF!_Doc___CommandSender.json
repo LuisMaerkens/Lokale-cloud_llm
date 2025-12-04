@@ -1,0 +1,51 @@
+{
+  "href": "#/EIP/Endpoint/CommandSender",
+  "chip": "E",
+  "linkText": "CommandSender",
+  "scrapedAt": "2025-10-31T11:15:07.052Z",
+  "title": "FF! Doc | CommandSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "CommandSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "IbisJavaSender",
+    "Github - CommandSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.CommandSender",
+    "CommandSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<CommandSender />",
+    "<CommandSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated1\nIbisJavaSender\nCommandSender\nSendersEndpoint\nSender that executes either its input or a fixed line, with all parametervalues appended, as a command.\nSee also\nGithub - CommandSender Implementation Examples\nJavadoc - org.frankframework.senders.CommandSender\nSyntax\nCopy\n<CommandSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\ncommand\ttext\t-\nThe command to be executed. Note: Executing a command in WAS requires <<ALL FILES>> execute permission to avoid that provide the absolute path of the command. Absolute path can be found with the following command 'which -a {commandName}'\ntimeout\tnumber\t0\nThe number of seconds to execute a command. If the limit is exceeded, a TimeoutException is thrown. A value of 0 means execution time is not limited\ncommandWithArguments\tboolean\tfalse\nIn case the command that will be executed co"
+}

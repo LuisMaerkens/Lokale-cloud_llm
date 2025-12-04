@@ -1,0 +1,65 @@
+{
+  "href": "#/Components/Senders/JsonXsltSender",
+  "chip": "S",
+  "linkText": "JsonXsltSender",
+  "scrapedAt": "2025-10-31T10:54:48.172Z",
+  "title": "FF! Doc | JsonXsltSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JsonXsltSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "https://www.xml.com/articles/2017/02/14/why-you-should-be-using-xslt-30/",
+    "Github - JsonXsltSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.JsonXsltSender",
+    "JsonXsltSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JsonXsltSender />",
+    "<JsonXsltSender />",
+    "true",
+    "prefix=namespaceuri",
+    "true",
+    "@disable-output-escaping='yes'",
+    "prefix=namespaceuri",
+    "TEXT",
+    "XML",
+    "true",
+    "true",
+    "true",
+    "true",
+    "2",
+    "3",
+    "0",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated0\nJsonXsltSender\nSendersEndpoint\nPerform an XSLT transformation with a specified stylesheet on a JSON input, yielding JSON, yielding JSON, XML or text. JSON input is transformed into XML map, array, string, integer and boolean elements, in the namespace http://www.w3.org/2013/XSL/json. The XSLT stylesheet or XPathExpression operates on these element.\nSee also\nhttps://www.xml.com/articles/2017/02/14/why-you-should-be-using-xslt-30/\nGithub - JsonXsltSender Implementation Examples\nJavadoc - org.frankframework.senders.JsonXsltSender\nSyntax\nCopy\n<JsonXsltSender />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\njsonResult\tboolean\ttrue\nIf true, the xml result of the transformation is converted back to json\nnamespaceDefs\ttext\tj=http://www.w3.org/2013/XSL/json\nNamespace definitions for xpathExpression. Must be in the form of a com"
+}

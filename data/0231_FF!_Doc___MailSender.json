@@ -1,0 +1,70 @@
+{
+  "href": "#/Components/Senders/MailSender",
+  "chip": "S",
+  "linkText": "MailSender",
+  "scrapedAt": "2025-10-31T10:55:03.233Z",
+  "title": "FF! Doc | MailSender",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "MailSender"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "Sample email.xml:",
+    "Notice: the XML message must be valid XML. Therefore, especially the message element must be plain text or be wrapped as CDATA. Example:",
+    "The sessionKey attribute for attachment can contain an inputstream or a string. Other types are not supported at this moment.",
+    "The attribute order for attachments is as follows:",
+    "The base64 attribute is only used when the value of the PipeLineSession variable sessionKey is a String object or when the value of the attachment element is used. If base64=true then the value will be decoded before it's used.",
+    "Compilation and Deployment Note: mail.jar (v1.2) and activation.jar must appear BEFORE j2ee.jar. Otherwise errors like the following might occur: NoClassDefFoundException: com/sun/mail/util/MailDateFormat",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "SendGridSender",
+    "ExchangeMailListener",
+    "sessionKey",
+    "url",
+    "value of the attachment element",
+    "Github - MailSender Implementation Examples",
+    "Javadoc - org.frankframework.senders.MailSender",
+    "MailSender",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "<email>\n     <recipients>\n         <recipient type=\"to\">***@hotmail.com</recipient>\n         <recipient type=\"cc\">***@gmail.com</recipient>\n     </recipients>\n     <from name=\"*** ***\">***@yahoo.com</from>\n     <subject>This is the subject</subject>\n     <threadTopic>subject</threadTopic>\n     <message>This is the message</message>\n     <messageType>text/plain</messageType><!-- Optional -->\n     <messageBase64>false</messageBase64><!-- Optional -->\n     <charset>UTF-8</charset><!-- Optional -->\n     <attachments>\n         <attachment name=\"filename1.txt\">This is the first attachment</attachment>\n         <attachment name=\"filename2.pdf\" base64=\"true\">JVBERi0xLjQKCjIgMCBvYmoKPDwvVHlwZS9YT2JqZWN0L1N1YnR5cGUvSW1...vSW5mbyA5IDAgUgo+PgpzdGFydHhyZWYKMzQxNDY2CiUlRU9GCg==</attachment>\n         <attachment name=\"filename3.pdf\" url=\"file:/c:/filename3.pdf\"/>\n         <attachment name=\"filename4.pdf\" sessionKey=\"fileContent\"/>\n     </attachments><!-- Optional -->\n </email>",
+    "<email>\n     <recipients>\n         <recipient type=\"to\">***@hotmail.com</recipient>\n         <recipient type=\"cc\">***@gmail.com</recipient>\n     </recipients>\n     <from name=\"*** ***\">***@yahoo.com</from>\n     <subject>This is the subject</subject>\n     <threadTopic>subject</threadTopic>\n     <message>This is the message</message>\n     <messageType>text/plain</messageType><!-- Optional -->\n     <messageBase64>false</messageBase64><!-- Optional -->\n     <charset>UTF-8</charset><!-- Optional -->\n     <attachments>\n         <attachment name=\"filename1.txt\">This is the first attachment</attachment>\n         <attachment name=\"filename2.pdf\" base64=\"true\">JVBERi0xLjQKCjIgMCBvYmoKPDwvVHlwZS9YT2JqZWN0L1N1YnR5cGUvSW1...vSW5mbyA5IDAgUgo+PgpzdGFydHhyZWYKMzQxNDY2CiUlRU9GCg==</attachment>\n         <attachment name=\"filename3.pdf\" url=\"file:/c:/filename3.pdf\"/>\n         <attachment name=\"filename4.pdf\" sessionKey=\"fileContent\"/>\n     </attachments><!-- Optional -->\n </email>",
+    "<message><![CDATA[<h1>This is a HtmlMessage</h1>]]></message>",
+    "<message><![CDATA[<h1>This is a HtmlMessage</h1>]]></message>",
+    "sessionKey",
+    "base64",
+    "sessionKey",
+    "base64=true",
+    "NoClassDefFoundException: com/sun/mail/util/MailDateFormat",
+    "Copy\n<MailSender />",
+    "<MailSender />",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated2\nSendGridSender\nExchangeMailListener\nMailSender\nAdvancedSendersEndpointMAIL\nsender that sends a mail specified by an XML message.\n\nSample email.xml:\n\n<email>\n     <recipients>\n         <recipient type=\"to\">***@hotmail.com</recipient>\n         <recipient type=\"cc\">***@gmail.com</recipient>\n     </recipients>\n     <from name=\"*** ***\">***@yahoo.com</from>\n     <subject>This is the subject</subject>\n     <threadTopic>subject</threadTopic>\n     <message>This is the message</message>\n     <messageType>text/plain</messageType><!-- Optional -->\n     <messageBase64>false</messageBase64><!-- Optional -->\n     <charset>UTF-8</charset><!-- Optional -->\n     <attachments>\n         <attachment name=\"filename1.txt\">This is the first attachment</attachment>\n         <attachment name=\"filename2.pdf\" base64=\"true\">JVBERi0xLjQKCjIgMCBvYmoKPDwvVHlwZS9YT2JqZWN0L1N1YnR5cGUvSW1...vSW5mbyA5IDAgUgo+PgpzdGFydHhy"
+}

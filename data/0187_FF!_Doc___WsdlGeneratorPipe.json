@@ -1,0 +1,87 @@
+{
+  "href": "#/Components/Pipes/WsdlGeneratorPipe",
+  "chip": "P",
+  "linkText": "WsdlGeneratorPipe",
+  "scrapedAt": "2025-10-31T10:51:22.503Z",
+  "title": "FF! Doc | WsdlGeneratorPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "WsdlGeneratorPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FxfXmlValidatorPipe",
+    "ApiWsdlXmlValidatorPipe",
+    "WsdlXmlValidatorPipe",
+    "SoapValidatorPipe",
+    "Github - WsdlGeneratorPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.WsdlGeneratorPipe",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "WsdlGeneratorPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<WsdlGeneratorPipe name=\"\"/>",
+    "<WsdlGeneratorPipe name=\"\"/>",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated4\nFxfXmlValidatorPipe\nApiWsdlXmlValidatorPipe\nWsdlXmlValidatorPipe\nSoapValidatorPipe\nWsdlGeneratorPipe\nPipesSession\nGenerate WSDL of parent or specified adapter.\nSee also\nGithub - WsdlGeneratorPipe Implementation Examples\nJavadoc - org.frankframework.pipes.WsdlGeneratorPipe\nSyntax\nCopy\n<WsdlGeneratorPipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nfrom\ttext\tparent\nEither parent (adapter of pipeline which contains this pipe) or input (name of adapter specified by input of pipe), adapter must be within the same Configuration\nFixedForwardPipe\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nskipOnEmptyInput\tboolean\tfalse\nIf true, the processing continues directly at the forward of this pipe, without executing the pi"
+}

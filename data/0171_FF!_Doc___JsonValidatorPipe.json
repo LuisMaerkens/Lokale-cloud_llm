@@ -1,0 +1,102 @@
+{
+  "href": "#/Components/Pipes/JsonValidatorPipe",
+  "chip": "P",
+  "linkText": "JsonValidatorPipe",
+  "scrapedAt": "2025-10-31T10:50:02.250Z",
+  "title": "FF! Doc | JsonValidatorPipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "JsonValidatorPipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "JsonPathPipe",
+    "IfPipe",
+    "JsonPipe",
+    "Json2XmlInputValidator",
+    "Json2XmlOutputValidator",
+    "Json2XmlValidatorPipe",
+    "SwitchPipe",
+    "DataSonnetPipe",
+    "Adapter",
+    "JsonInputValidator",
+    "Github - JsonValidatorPipe Implementation Examples",
+    "Javadoc - org.frankframework.pipes.JsonValidator",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "JsonValidatorPipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<JsonValidatorPipe name=\"\" schema=\"\"/>",
+    "<JsonValidatorPipe name=\"\" schema=\"\"/>",
+    "path",
+    "true",
+    "path",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never",
+    "failure",
+    "success",
+    "parserError",
+    "parserError",
+    "failure",
+    "failure",
+    "warnings"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nJsonPathPipe\nIfPipe\nJsonPipe\nJson2XmlInputValidator\nJson2XmlOutputValidator\nJson2XmlValidatorPipe\nSwitchPipe\nDataSonnetPipe\nAdapter\nJsonInputValidator\nJsonValidatorPipe\nBasicPipes\nPipe that validates the input message against a JSON Schema.\nSee also\nGithub - JsonValidatorPipe Implementation Examples\nJavadoc - org.frankframework.pipes.JsonValidator\nSyntax\nCopy\n<JsonValidatorPipe name=\"\" schema=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nschema\ttext\t-\nThe JSON Schema to validate to\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nsubSchemaPrefix\ttext\t/definitions/\nThe subSchemaPrefix is an optional attribute used when referencing a subschema located in a nested structure, such as $defs or definitions. Adding only the subSchema attribute is not enough if your"
+}

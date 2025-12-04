@@ -1,0 +1,53 @@
+{
+  "href": "#/Components/Batch/FixedPositionManager",
+  "chip": "B",
+  "linkText": "FixedPositionManager",
+  "scrapedAt": "2025-10-31T11:03:14.838Z",
+  "title": "FF! Doc | FixedPositionManager",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "FixedPositionManager"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "FixedPositionChild",
+    "FieldPositionChild",
+    "FieldPositionManager",
+    "Github - FixedPositionManager Implementation Examples",
+    "Javadoc - org.frankframework.batch.FixedPositionRecordHandlerManager",
+    "FixedPositionManager",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<FixedPositionManager />",
+    "<FixedPositionManager />",
+    "false"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated3\nFixedPositionChild\nFieldPositionChild\nFieldPositionManager\nFixedPositionManager\nBatch\nManager that decides the handlers based on the content of a field in the specified position in a record. The fields in the record are of a fixed length. The data beween the start position and end position is taken as key in the flow-table.\nSee also\nGithub - FixedPositionManager Implementation Examples\nJavadoc - org.frankframework.batch.FixedPositionRecordHandlerManager\nSyntax\nCopy\n<FixedPositionManager />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nstartPosition\tnumber\t0\nStart position of the field in the record that identifies the recordtype (first character is 0)\nendPosition\tnumber\t-1\nIf endPosition >= 0 then this field contains the endPosition (Java style, i.e the position of the next character) of the recordtype field in the rec"
+}

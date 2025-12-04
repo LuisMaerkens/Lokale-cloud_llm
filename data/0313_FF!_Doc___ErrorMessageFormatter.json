@@ -1,0 +1,67 @@
+{
+  "href": "#/Components/ErrorMessageFormatters/ErrorMessageFormatter",
+  "chip": "E",
+  "linkText": "ErrorMessageFormatter",
+  "scrapedAt": "2025-10-31T11:01:54.573Z",
+  "title": "FF! Doc | ErrorMessageFormatter",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "ErrorMessageFormatter"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "{@inheritClassDoc }",
+    "If the exception is a PipeRunException that has parameters set on it, then these parameters are added to a params element in the error message. These parameters can be set from an org.frankframework.pipes.ExceptionPipe.",
+    "If you need more control over the layout of the error message, then configure your org.frankframework.core.Adapter or org.frankframework.configuration.Configuration with an ErrorMessageFormatter implementation that can reformat the error message to the desired layout: the XslErrorMessageFormatter for XML error formats or the DataSonnetErrorMessageFormatter for JSON error messages.",
+    "Sample xml:",
+    "Sample JSON:",
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "DataSonnetErrorMessageFormatter",
+    "XslErrorMessageFormatter",
+    "SoapErrorMessageFormatter",
+    "FixedErrorMessageFormatter",
+    "Github - ErrorMessageFormatter Implementation Examples",
+    "Javadoc - org.frankframework.errormessageformatters.ErrorMessageFormatter",
+    "ErrorMessageFormatter",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "ErrorMessageFormatter",
+    "params",
+    "ErrorMessageFormatter",
+    "<errorMessage>\n    <message timestamp=\"Mon Oct 13 12:01:57 CEST 2003\"\n             originator=\"NN IOS AdapterFramework(set from 'application.name' and 'application.version')\"\n             message=\"message describing the error that occurred\">\n    <location class=\"org.frankframework.pipes.SwitchPipe\" name=\"ServiceSwitch\"/>\n    <details>Exception and stacktrace</details>\n    <params>\n      <param name=\"sampleParam\">paramValue</param>\n      <param name=\"errorCode\">535</param>\n    </params>\n    <originalMessage messageId=\"...\" receivedTime=\"Mon Oct 27 12:10:18 CET 2003\" >\n        <![CDATA[contents of message for which the error occurred]]>\n    </originalMessage>\n </errorMessage>",
+    "<errorMessage>\n    <message timestamp=\"Mon Oct 13 12:01:57 CEST 2003\"\n             originator=\"NN IOS AdapterFramework(set from 'application.name' and 'application.version')\"\n             message=\"message describing the error that occurred\">\n    <location class=\"org.frankframework.pipes.SwitchPipe\" name=\"ServiceSwitch\"/>\n    <details>Exception and stacktrace</details>\n    <params>\n      <param name=\"sampleParam\">paramValue</param>\n      <param name=\"errorCode\">535</param>\n    </params>\n    <originalMessage messageId=\"...\" receivedTime=\"Mon Oct 27 12:10:18 CET 2003\" >\n        <![CDATA[contents of message for which the error occurred]]>\n    </originalMessage>\n </errorMessage>",
+    "{\n     \"errorMessage\": {\n         \"timestamp\": \"Mon Oct 13 12:01:57 CEST 2003\",\n         \"originator\": \"IAF 9.2\",\n         \"message\": \"Message describing error and location\",\n         \"location\": {\n             \"class\": \"org.frankframework.pipes.SwitchPipe\",\n             \"name\": \"ServiceSwitch\"\n         },\n         \"details\": \"Exception and stacktrace\",\n         \"params\": {\n             \"sampleParam\": \"paramValue\",\n             \"errorCode\": 535\n         },\n         \"originalMessage\": {\n             \"messageId\": \"...\",\n             \"receivedTime\": \"Mon Oct 27 12:10:18 CET 2003\",\n             \"message\": \"contents of message for which the error occurred\"\n         }\n     }\n }",
+    "{\n     \"errorMessage\": {\n         \"timestamp\": \"Mon Oct 13 12:01:57 CEST 2003\",\n         \"originator\": \"IAF 9.2\",\n         \"message\": \"Message describing error and location\",\n         \"location\": {\n             \"class\": \"org.frankframework.pipes.SwitchPipe\",\n             \"name\": \"ServiceSwitch\"\n         },\n         \"details\": \"Exception and stacktrace\",\n         \"params\": {\n             \"sampleParam\": \"paramValue\",\n             \"errorCode\": 535\n         },\n         \"originalMessage\": {\n             \"messageId\": \"...\",\n             \"receivedTime\": \"Mon Oct 27 12:10:18 CET 2003\",\n             \"message\": \"contents of message for which the error occurred\"\n         }\n     }\n }",
+    "Copy\n<ErrorMessageFormatter />",
+    "<ErrorMessageFormatter />",
+    "XML",
+    "JSON"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated5\nDataSonnetErrorMessageFormatter\nXslErrorMessageFormatter\nSoapErrorMessageFormatter\nFixedErrorMessageFormatter\nErrorMessageFormatter\nErrorMessageFormatters\nThis is the default IErrorMessageFormatter implementation that is used when no specific ErrorMessageFormatter has been configured. It wraps an error in an XML or JSON string. XML is the default.\n\n{@inheritClassDoc }\n\nIf the exception is a PipeRunException that has parameters set on it, then these parameters are added to a params element in the error message. These parameters can be set from an org.frankframework.pipes.ExceptionPipe.\n\nIf you need more control over the layout of the error message, then configure your org.frankframework.core.Adapter or org.frankframework.configuration.Configuration with an ErrorMessageFormatter implementation that can reformat the error message to the desired layout: the XslErrorMessageFormatter for XML "
+}

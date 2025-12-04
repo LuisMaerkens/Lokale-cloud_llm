@@ -1,0 +1,100 @@
+{
+  "href": "#/Components/Pipes/SendTibcoMessagePipe",
+  "chip": "P",
+  "linkText": "SendTibcoMessagePipe",
+  "scrapedAt": "2025-10-31T10:42:50.852Z",
+  "title": "FF! Doc | SendTibcoMessagePipe",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "SendTibcoMessagePipe"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "StreamLineIteratorPipe",
+    "FxfXmlValidatorPipe",
+    "LocalFileSystemPipe",
+    "PGPPipe",
+    "MailSenderPipe",
+    "FixedResultPipe",
+    "ResultSetIteratingPipe",
+    "ZipIteratorPipe",
+    "AsyncSenderWithListenerPipe",
+    "SapLUWManagerPipe",
+    "Github - SendTibcoMessagePipe Implementation Examples",
+    "Javadoc - org.frankframework.extensions.tibco.SendTibcoMessage",
+    "RR Request-Reply",
+    "FF Fire & Forget",
+    "Required Support a current transaction; create a new one if none exists.",
+    "Supports Support a current transaction; execute non-transactionally if none exists.",
+    "Mandatory Support a current transaction; throw an exception if no current transaction exists.",
+    "RequiresNew Create a new transaction, suspending the current transaction if one exists.",
+    "NotSupported Do not support a current transaction; rather always execute non-transactionally.",
+    "Never Do not support a current transaction; throw an exception if a current transaction exists.",
+    "SendTibcoMessagePipe",
+    "See also",
+    "Syntax",
+    "Attributes\nRequired\nOptional",
+    "Required",
+    "Optional",
+    "Parameters",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<SendTibcoMessagePipe name=\"\"/>",
+    "<SendTibcoMessagePipe name=\"\"/>",
+    "path",
+    "RR",
+    "FF",
+    "jndi.properties",
+    "true",
+    "true",
+    "ifParam",
+    "ifValue",
+    "ifParam",
+    "true",
+    "getInputFromSessionKey",
+    "getInputFromFixedValue",
+    "emptyInputReplacement",
+    "elementToMoveSessionKey",
+    "elementToMove",
+    "elementToMove",
+    "true",
+    "statistics.size",
+    "true",
+    "writeToSecLog",
+    "true",
+    "(?<=<password>).*?(?=</password>)",
+    "hideRegex",
+    "mode = 0",
+    "0",
+    "transactionAttribute",
+    "Required",
+    "Supports",
+    "Mandatory",
+    "RequiresNew",
+    "NotSupported",
+    "Never"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated10\nStreamLineIteratorPipe\nFxfXmlValidatorPipe\nLocalFileSystemPipe\nPGPPipe\nMailSenderPipe\nFixedResultPipe\nResultSetIteratingPipe\nZipIteratorPipe\nAsyncSenderWithListenerPipe\nSapLUWManagerPipe\nSendTibcoMessagePipe\nPipes\nSends a message to a Tibco queue.\nSee also\nGithub - SendTibcoMessagePipe Implementation Examples\nJavadoc - org.frankframework.extensions.tibco.SendTibcoMessage\nSyntax\nCopy\n<SendTibcoMessagePipe name=\"\"/>\nAttributes\nRequired\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nname\ttext\t-\nThe functional name of this pipe. It can be referenced by the path attribute of a PipeForward.\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nurl\ttext\t-\nURL or base of URL to be used. When multiple URLs are defined (comma separated list), the first URL is used of which the server has an active state\nauthAlias\ttext\t-\nAlias used to obtain credentials for authentication to host\nusername\ttext\t-\nUsername"
+}

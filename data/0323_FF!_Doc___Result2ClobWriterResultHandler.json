@@ -1,0 +1,61 @@
+{
+  "href": "#/Components/Batch/Result2ClobWriterResultHandler",
+  "chip": "B",
+  "linkText": "Result2ClobWriterResultHandler",
+  "scrapedAt": "2025-10-31T11:02:44.741Z",
+  "title": "FF! Doc | Result2ClobWriterResultHandler",
+  "headings": [
+    {
+      "level": 1,
+      "text": "Doc"
+    },
+    {
+      "level": 2,
+      "text": "Result2ClobWriterResultHandler"
+    },
+    {
+      "level": 3,
+      "text": "See also"
+    },
+    {
+      "level": 3,
+      "text": "Syntax"
+    }
+  ],
+  "paragraphs": [
+    "This component has no required attributes",
+    "© 2025 Frank!Framework"
+  ],
+  "listItems": [
+    "Search",
+    "Components",
+    "Properties",
+    "Credential Providers",
+    "Servlet Authenticators",
+    "Result2StringWriterChild",
+    "Result2StringWriterResultHandler",
+    "Result2ClobWriterChild",
+    "ResultBlock2SenderChild",
+    "ResultBlock2SenderResultHandler",
+    "Result2FilewriterChild",
+    "Result2FilewriterResultHandler",
+    "Result2BlobWriterChild",
+    "Result2BlobWriterResultHandler",
+    "Github - Result2ClobWriterResultHandler Implementation Examples",
+    "Javadoc - org.frankframework.jdbc.Result2ClobWriter",
+    "Result2ClobWriterResultHandler",
+    "See also",
+    "Syntax",
+    "Attributes\nOptional",
+    "Optional",
+    "Forwards"
+  ],
+  "codeBlocks": [
+    "Copy\n<Result2ClobWriterResultHandler />",
+    "<Result2ClobWriterResultHandler />",
+    "jdbc.datasource.default",
+    "true",
+    "true"
+  ],
+  "excerpt": "Doc\n9.4.0\nSearch\nComponents\nProperties\nCredential Providers\nServlet Authenticators\nResults0\nRelated9\nResult2StringWriterChild\nResult2StringWriterResultHandler\nResult2ClobWriterChild\nResultBlock2SenderChild\nResultBlock2SenderResultHandler\nResult2FilewriterChild\nResult2FilewriterResultHandler\nResult2BlobWriterChild\nResult2BlobWriterResultHandler\nResult2ClobWriterResultHandler\nBatch\nResultHandler that writes the transformed record to a CLOB.\nSee also\nGithub - Result2ClobWriterResultHandler Implementation Examples\nJavadoc - org.frankframework.jdbc.Result2ClobWriter\nSyntax\nCopy\n<Result2ClobWriterResultHandler />\nAttributes\nRequired\n\nThis component has no required attributes\n\nOptional\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nclobColumn\tnumber\t1\nColumn that contains the CLOB to be updated\nResult2LobWriterBase\nATTRIBUTE NAME & DESCRIPTION\tTYPE\tDEFAULT\nquery\ttext\t-\nThe SQL query text\ndatasourceName\ttext\tjdbc.datasource.default\nJNDI name of datasource to be used, can be configured via jmsRealm,"
+}
